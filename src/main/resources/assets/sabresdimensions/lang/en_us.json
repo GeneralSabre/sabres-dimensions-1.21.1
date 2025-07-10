@@ -1,4 +1,7 @@
 {
   "item.sabresdimensions.zalant_ingot": "Zalant Ingot",
-  "item.sabresdimensions.raw_zalant": "Raw Zalant"
+  "item.sabresdimensions.raw_zalant": "Raw Zalant",
+
+  "block.sabresdimensions.zalant_block": "Zalant Block",
+  "block.sabresdimensions.raw_zalant_block": "Raw_Zalant Block"
 }
