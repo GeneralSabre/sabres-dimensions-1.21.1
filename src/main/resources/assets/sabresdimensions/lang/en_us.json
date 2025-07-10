@@ -3,5 +3,12 @@
   "item.sabresdimensions.raw_zalant": "Raw Zalant",
 
   "block.sabresdimensions.zalant_block": "Zalant Block",
-  "block.sabresdimensions.raw_zalant_block": "Raw_Zalant Block"
+  "block.sabresdimensions.zalant_ore": "Zalant Ore",
+  "block.sabresdimensions.raw_zalant_block": "Raw Zalant Block",
+
+  "block.sabresdimensions.arakite": "Arakite",
+  "block.sabresdimensions.arakite_bricks": "Arakite Bricks",
+  "block.sabresdimensions.arakite_tiles": "Arakite Tiles",
+  "block.sabresdimensions.polished_arakite": "Polished Arakite",
+  "block.sabresdimensions.corroded_arakite": "Corroded Arakite"
 }
