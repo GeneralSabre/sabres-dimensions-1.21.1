@@ -30,16 +30,6 @@ public class ModItems {
     public static void registerModItems(){
         SabresDimensions.LOGGER.info("Registering mod items for " + SabresDimensions.MOD_ID);
 
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(fabricItemGroupEntries -> {
-            fabricItemGroupEntries.add(ZALANT_INGOT);
-            fabricItemGroupEntries.add(RAW_ZALANT);
-            fabricItemGroupEntries.add(DALAMINE_CRYSTAL);
-            fabricItemGroupEntries.add(ZALANT_ROD);
-            fabricItemGroupEntries.add(ARAKITE_ROD);
-            fabricItemGroupEntries.add(CHORAZINE_DUST);
-            fabricItemGroupEntries.add(PENKAZ_INGOT);
-            fabricItemGroupEntries.add(RAW_PENKAZ);
-        });
     }
 
 }

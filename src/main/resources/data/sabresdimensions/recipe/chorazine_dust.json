@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "sabresdimensions:chorazine_powder_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "sabresdimensions:chorazine_dust"
+  }
+}

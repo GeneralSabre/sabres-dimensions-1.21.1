@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "sabresdimensions:penkaz_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "sabresdimensions:penkaz_ingot"
+  }
+}

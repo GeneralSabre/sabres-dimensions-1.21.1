@@ -4,6 +4,7 @@ import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.generalsabre.sabresdimensions.SabresDimensions;
+import net.minecraft.block.ExperienceDroppingBlock;
 import net.minecraft.block.FallingBlock;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -12,6 +13,7 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.math.intprovider.UniformIntProvider;
 
 public class ModBlocks {
 
@@ -21,7 +23,7 @@ public class ModBlocks {
     public static final Block RAW_ZALANT_BLOCK = registerBlock("raw_zalant_block",
             new Block(AbstractBlock.Settings.create().strength(5f,6f).requiresTool().sounds(BlockSoundGroup.METAL)));
     public static final Block ZALANT_ORE = registerBlock("zalant_ore",
-            new Block(AbstractBlock.Settings.create().strength(5f,5f).requiresTool().sounds(BlockSoundGroup.DEEPSLATE)));
+            new ExperienceDroppingBlock(UniformIntProvider.create(2,5), AbstractBlock.Settings.create().strength(5f,5f).requiresTool().sounds(BlockSoundGroup.DEEPSLATE)));
 
 
     // Arakite Blocks
@@ -40,15 +42,17 @@ public class ModBlocks {
     public static final Block DALAMINE_BLOCK = registerBlock("dalamine_block",
             new Block(AbstractBlock.Settings.create().strength(1.5f).requiresTool().sounds(BlockSoundGroup.AMETHYST_BLOCK)));
     public static final Block DALAMINE_ORE = registerBlock("dalamine_ore",
-            new Block(AbstractBlock.Settings.create().strength(2.5f,5f).requiresTool().sounds(BlockSoundGroup.DEEPSLATE)));
+            new ExperienceDroppingBlock(UniformIntProvider.create(4,8), (AbstractBlock.Settings.create().strength(2.5f,5f).requiresTool().sounds(BlockSoundGroup.DEEPSLATE))));
 
     // Penkazine Blocks
     public static final Block CHORAZINE_ORE = registerBlock("chorazine_ore",
-            new Block(AbstractBlock.Settings.create().strength(2.5f,5f).requiresTool().sounds(BlockSoundGroup.DEEPSLATE)));
+            new ExperienceDroppingBlock(UniformIntProvider.create(1,3), (AbstractBlock.Settings.create().strength(2.5f,5f).requiresTool().sounds(BlockSoundGroup.DEEPSLATE))));
     public static final Block PENKAZ_ORE = registerBlock("penkaz_ore",
-            new Block(AbstractBlock.Settings.create().strength(2.5f,5f).requiresTool().sounds(BlockSoundGroup.DEEPSLATE)));
+            new ExperienceDroppingBlock(UniformIntProvider.create(2,5), (AbstractBlock.Settings.create().strength(2.5f,5f).requiresTool().sounds(BlockSoundGroup.DEEPSLATE))));
+
     public static final Block CHORAZINE_POWDER_BLOCK = registerBlock("chorazine_powder_block",
             new Block(AbstractBlock.Settings.create().strength(1.5f,1.5f).requiresTool().sounds(BlockSoundGroup.SAND)));
+
     public static final Block PENKAZ_BLOCK = registerBlock("penkaz_block",
             new Block(AbstractBlock.Settings.create().strength(5f,6f).requiresTool().sounds(BlockSoundGroup.METAL)));
     public static final Block RAW_PENKAZ_BLOCK = registerBlock("raw_penkaz_block",
@@ -66,22 +70,5 @@ public class ModBlocks {
 
     public static void registerModBlocks(){
         SabresDimensions.LOGGER.info("Registering mod blocks for " + SabresDimensions.MOD_ID);
-            ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(fabricItemGroupEntries -> {
-            fabricItemGroupEntries.add(ZALANT_BLOCK);
-            fabricItemGroupEntries.add(RAW_ZALANT_BLOCK);
-            fabricItemGroupEntries.add(ZALANT_ORE);
-            fabricItemGroupEntries.add(ARAKITE);
-            fabricItemGroupEntries.add(ARAKITE_BRICKS);
-            fabricItemGroupEntries.add(POLISHED_ARAKITE);
-            fabricItemGroupEntries.add(ARAKITE_TILES);
-            fabricItemGroupEntries.add(CORRODED_ARAKITE);
-            fabricItemGroupEntries.add(DALAMINE_BLOCK);
-            fabricItemGroupEntries.add(DALAMINE_ORE);
-            fabricItemGroupEntries.add(PENKAZ_ORE);
-            fabricItemGroupEntries.add(PENKAZ_BLOCK);
-            fabricItemGroupEntries.add(RAW_PENKAZ_BLOCK);
-            fabricItemGroupEntries.add(CHORAZINE_ORE);
-            fabricItemGroupEntries.add(CHORAZINE_POWDER_BLOCK);
-        });
     }
 }

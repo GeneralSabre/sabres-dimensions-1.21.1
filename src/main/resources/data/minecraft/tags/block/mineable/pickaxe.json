@@ -1,0 +1,19 @@
+{
+  "replace": false,
+  "values": [
+    "sabresdimensions:arakite",
+    "sabresdimensions:arakite_tiles",
+    "sabresdimensions:arakite_bricks",
+    "sabresdimensions:corroded_arakite",
+    "sabresdimensions:polished_arakite",
+    "sabresdimensions:chorazine_ore",
+    "sabresdimensions:dalamine_block",
+    "sabresdimensions:dalamine_ore",
+    "sabresdimensions:penkaz_block",
+    "sabresdimensions:penkaz_ore",
+    "sabresdimensions:raw_penkaz_block",
+    "sabresdimensions:raw_zalant_block",
+    "sabresdimensions:zalant_block",
+    "sabresdimensions:zalant_ore"
+  ]
+}

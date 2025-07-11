@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 300,
+  "experience": 0.2,
+  "group": "corroded_arakite",
+  "ingredient": {
+    "item": "sabresdimensions:arakite"
+  },
+  "result": {
+    "id": "sabresdimensions:corroded_arakite"
+  }
+}

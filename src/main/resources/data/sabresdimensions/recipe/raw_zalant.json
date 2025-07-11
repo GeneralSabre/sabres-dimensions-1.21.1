@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "sabresdimensions:raw_zalant_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "sabresdimensions:raw_zalant"
+  }
+}
