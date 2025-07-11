@@ -24,5 +24,9 @@
   "block.sabresdimensions.raw_penkaz_block": "Block of Raw Penkaz",
   "block.sabresdimensions.penkaz_ore": "Penkaz Ore",
   "block.sabresdimensions.chorazine_ore": "Chorazine Ore",
-  "block.sabresdimensions.chorazine_powder_block": "Chorazine Powder Block"
+  "block.sabresdimensions.chorazine_powder_block": "Chorazine Powder Block",
+
+  "itemgroup.sabresdimensions.sabres_dimensions_blocks": "Sabre's Dimensions Blocks",
+  "itemgroup.sabresdimensions.sabres_dimensions_items": "Sabre's Dimensions Items",
+  "itemgroup.sabresdimensions.sabres_dimensions_misc": "Sabre's Dimensions Misc."
 }

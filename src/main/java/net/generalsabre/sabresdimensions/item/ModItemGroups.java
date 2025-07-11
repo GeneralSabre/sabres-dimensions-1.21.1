@@ -1,0 +1,62 @@
+package net.generalsabre.sabresdimensions.item;
+
+import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
+import net.generalsabre.sabresdimensions.SabresDimensions;
+import net.generalsabre.sabresdimensions.block.ModBlocks;
+import net.minecraft.item.ItemGroup;
+import net.minecraft.item.ItemStack;
+import net.minecraft.registry.Registries;
+import net.minecraft.registry.Registry;
+import net.minecraft.text.Text;
+import net.minecraft.util.Identifier;
+
+public class ModItemGroups {
+
+    public static final ItemGroup SABRES_DIMENSIONS_BLOCKS = Registry.register(Registries.ITEM_GROUP,
+            Identifier.of(SabresDimensions.MOD_ID, "sabres_dimensions_blocks"),
+            FabricItemGroup.builder().icon(() -> new ItemStack(ModBlocks.ARAKITE_BRICKS))
+                    .displayName(Text.translatable("itemgroup.sabresdimensions.sabres_dimensions_blocks"))
+                    .entries((displayContext, entries) -> {
+                        entries.add(ModBlocks.ARAKITE);
+                        entries.add(ModBlocks.ARAKITE_BRICKS);
+                        entries.add(ModBlocks.CORRODED_ARAKITE);
+                        entries.add(ModBlocks.ARAKITE_TILES);
+                        entries.add(ModBlocks.CHORAZINE_ORE);
+                        entries.add(ModBlocks.CHORAZINE_POWDER_BLOCK);
+                        entries.add(ModBlocks.DALAMINE_BLOCK);
+                        entries.add(ModBlocks.DALAMINE_ORE);
+                        entries.add(ModBlocks.PENKAZ_BLOCK);
+                        entries.add(ModBlocks.PENKAZ_ORE);
+                        entries.add(ModBlocks.RAW_PENKAZ_BLOCK);
+                        entries.add(ModBlocks.ZALANT_BLOCK);
+                        entries.add(ModBlocks.RAW_ZALANT_BLOCK);
+                        entries.add(ModBlocks.ZALANT_ORE);
+                    })
+                    .build());
+            public static final ItemGroup SABRES_DIMENSIONS_ITEMS = Registry.register(Registries.ITEM_GROUP,
+            Identifier.of(SabresDimensions.MOD_ID, "sabres_dimensions_items"),
+            FabricItemGroup.builder().icon(() -> new ItemStack(ModItems.CHORAZINE_DUST))
+                    .displayName(Text.translatable("itemgroup.sabresdimensions.sabres_dimensions_items"))
+                    .entries((displayContext, entries) -> {
+                        entries.add(ModItems.ARAKITE_ROD);
+                        entries.add(ModItems.ZALANT_ROD);
+                        entries.add(ModItems.RAW_ZALANT);
+                        entries.add(ModItems.ZALANT_INGOT);
+                        entries.add(ModItems.PENKAZ_INGOT);
+                        entries.add(ModItems.RAW_PENKAZ);
+                        entries.add(ModItems.DALAMINE_CRYSTAL);
+                    })
+                    .build());
+    public static final ItemGroup SABRES_DIMENSIONS_MISC = Registry.register(Registries.ITEM_GROUP,
+            Identifier.of(SabresDimensions.MOD_ID, "sabres_dimensions_misc"),
+            FabricItemGroup.builder().icon(() -> new ItemStack(ModBlocks.CHORAZINE_POWDER_BLOCK))
+                    .displayName(Text.translatable("itemgroup.sabresdimensions.sabres_dimensions_misc"))
+                    .entries((displayContext, entries) -> {
+                        entries.add(ModBlocks.CHORAZINE_POWDER_BLOCK);
+                    })
+                    .build());
+
+    public static void registerItemGroups(){
+        SabresDimensions.LOGGER.info("Registering item groups for " + SabresDimensions.MOD_ID);
+    }
+}
