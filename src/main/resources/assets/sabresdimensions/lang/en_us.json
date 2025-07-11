@@ -1,14 +1,28 @@
 {
   "item.sabresdimensions.zalant_ingot": "Zalant Ingot",
   "item.sabresdimensions.raw_zalant": "Raw Zalant",
-
   "block.sabresdimensions.zalant_block": "Zalant Block",
   "block.sabresdimensions.zalant_ore": "Zalant Ore",
-  "block.sabresdimensions.raw_zalant_block": "Raw Zalant Block",
+  "block.sabresdimensions.raw_zalant_block": "Block of Raw Zalant",
+  "item.sabresdimensions.zalant_rod": "Zalant Rod",
 
   "block.sabresdimensions.arakite": "Arakite",
   "block.sabresdimensions.arakite_bricks": "Arakite Bricks",
   "block.sabresdimensions.arakite_tiles": "Arakite Tiles",
   "block.sabresdimensions.polished_arakite": "Polished Arakite",
-  "block.sabresdimensions.corroded_arakite": "Corroded Arakite"
+  "block.sabresdimensions.corroded_arakite": "Corroded Arakite",
+  "item.sabresdimensions.arakite_rod": "Arakite Rod",
+
+  "item.sabresdimensions.dalamine_crystal": "Dalamine Crystal",
+  "block.sabresdimensions.dalamine_ore": "Dalamine Ore",
+  "block.sabresdimensions.dalamine_block": "Dalamine Block",
+
+  "item.sabresdimensions.chorazine_powder": "Chorazine Powder",
+  "item.sabresdimensions.penkaz_ingot": "Penkaz Ingot",
+  "item.sabresdimensions.raw_penkaz": "Raw Penkaz",
+  "block.sabresdimensions.penkaz_block": "Penkaz Block",
+  "block.sabresdimensions.raw_penkaz_block": "Block of Raw Penkaz",
+  "block.sabresdimensions.penkaz_ore": "Penkaz Ore",
+  "block.sabresdimensions.chorazine_ore": "Chorazine Ore",
+  "block.sabresdimensions.chorazine_powder_block": "Chorazine Powder Block"
 }
