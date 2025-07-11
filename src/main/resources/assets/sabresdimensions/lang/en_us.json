@@ -19,8 +19,10 @@
 
   "item.sabresdimensions.chorazine_dust": "Chorazine Dust",
   "item.sabresdimensions.penkaz_ingot": "Penkaz Ingot",
+  "item.sabresdimensions.penkazine_alloy_ingot": "Penkazine Alloy Ingot",
   "item.sabresdimensions.raw_penkaz": "Raw Penkaz",
   "block.sabresdimensions.penkaz_block": "Penkaz Block",
+  "block.sabresdimensions.penkazine_alloy_block": "Penkazine Alloy Block",
   "block.sabresdimensions.raw_penkaz_block": "Block of Raw Penkaz",
   "block.sabresdimensions.penkaz_ore": "Penkaz Ore",
   "block.sabresdimensions.chorazine_ore": "Chorazine Ore",

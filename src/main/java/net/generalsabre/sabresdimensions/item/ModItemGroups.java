@@ -20,6 +20,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.ARAKITE);
                         entries.add(ModBlocks.ARAKITE_BRICKS);
                         entries.add(ModBlocks.CORRODED_ARAKITE);
+                        entries.add(ModBlocks.POLISHED_ARAKITE);
                         entries.add(ModBlocks.ARAKITE_TILES);
                         entries.add(ModBlocks.CHORAZINE_ORE);
                         entries.add(ModBlocks.CHORAZINE_POWDER_BLOCK);
@@ -31,6 +32,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.ZALANT_BLOCK);
                         entries.add(ModBlocks.RAW_ZALANT_BLOCK);
                         entries.add(ModBlocks.ZALANT_ORE);
+                        entries.add(ModBlocks.PENKAZINE_ALLOY_BLOCK);
                     })
                     .build());
             public static final ItemGroup SABRES_DIMENSIONS_ITEMS = Registry.register(Registries.ITEM_GROUP,
@@ -45,6 +47,7 @@ public class ModItemGroups {
                         entries.add(ModItems.PENKAZ_INGOT);
                         entries.add(ModItems.RAW_PENKAZ);
                         entries.add(ModItems.DALAMINE_CRYSTAL);
+                        entries.add(ModItems.PENKAZINE_ALLOY_INGOT);
                     })
                     .build());
     public static final ItemGroup SABRES_DIMENSIONS_MISC = Registry.register(Registries.ITEM_GROUP,

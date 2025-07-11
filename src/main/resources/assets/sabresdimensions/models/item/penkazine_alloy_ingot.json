@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "sabresdimensions:item/penkazine_alloy_ingot"
+  }
+}

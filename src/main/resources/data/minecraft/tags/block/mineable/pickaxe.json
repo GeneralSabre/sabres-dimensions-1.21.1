@@ -14,6 +14,7 @@
     "sabresdimensions:raw_penkaz_block",
     "sabresdimensions:raw_zalant_block",
     "sabresdimensions:zalant_block",
-    "sabresdimensions:zalant_ore"
+    "sabresdimensions:zalant_ore",
+    "sabresdimensions:penkazine_alloy_block"
   ]
 }
