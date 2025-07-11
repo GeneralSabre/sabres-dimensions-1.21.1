@@ -22,6 +22,8 @@ public class ModItems {
     public static final Item PENKAZ_INGOT = registerItem("penkaz_ingot", new Item(new Item.Settings()));
     public static final Item RAW_PENKAZ = registerItem("raw_penkaz", new Item(new Item.Settings()));
     public static final Item PENKAZINE_ALLOY_INGOT = registerItem("penkazine_alloy_ingot", new Item(new Item.Settings()));
+    // MISC
+    public static final Item ULAU_CLUMP = registerItem("ulau_clump", new Item(new Item.Settings()));
 
     private static Item registerItem(String name, Item item){
         return Registry.register(Registries.ITEM, Identifier.of(SabresDimensions.MOD_ID, name), item);

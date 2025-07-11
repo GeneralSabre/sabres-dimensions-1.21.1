@@ -4,6 +4,7 @@ import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.generalsabre.sabresdimensions.SabresDimensions;
 import net.minecraft.block.ExperienceDroppingBlock;
+import net.minecraft.block.TranslucentBlock;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
@@ -56,6 +57,11 @@ public class ModBlocks {
             new Block(AbstractBlock.Settings.create().strength(2.5f,5f).requiresTool().sounds(BlockSoundGroup.STONE)));
     public static final Block PENKAZINE_ALLOY_BLOCK = registerBlock("penkazine_alloy_block",
             new Block(AbstractBlock.Settings.create().strength(5f,6f).requiresTool().sounds(BlockSoundGroup.METAL)));
+
+    // Misc.
+    public static final Block ULAU_BLOCK = registerBlock("ulau_block",
+            new TranslucentBlock(AbstractBlock.Settings.create().strength(0.5f,0.5f).sounds(BlockSoundGroup.SLIME).nonOpaque()));
+
 
     private static void registerBlockItem(String name, Block block){
         Registry.register(Registries.ITEM, Identifier.of(SabresDimensions.MOD_ID, name),

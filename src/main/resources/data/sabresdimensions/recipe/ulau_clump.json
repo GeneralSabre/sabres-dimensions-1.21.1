@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "sabresdimensions:ulau_block"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "id": "sabresdimensions:ulau_clump"
+  }
+}
