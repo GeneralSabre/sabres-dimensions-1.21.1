@@ -48,6 +48,7 @@ public class ModItemGroups {
                         entries.add(ModItems.RAW_PENKAZ);
                         entries.add(ModItems.DALAMINE_CRYSTAL);
                         entries.add(ModItems.PENKAZINE_ALLOY_INGOT);
+                        entries.add(ModItems.CHORAZINE_DUST);
                     })
                     .build());
     public static final ItemGroup SABRES_DIMENSIONS_MISC = Registry.register(Registries.ITEM_GROUP,
