@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "sabresdimensions:block/raw_zalant_block"
-  }
-}

@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "sabresdimensions:item/zalant_ingot"
-  }
-}

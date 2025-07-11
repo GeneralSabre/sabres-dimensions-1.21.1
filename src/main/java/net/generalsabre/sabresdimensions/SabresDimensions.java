@@ -2,6 +2,7 @@ package net.generalsabre.sabresdimensions;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.generalsabre.sabresdimensions.block.ModBlocks;
 import net.generalsabre.sabresdimensions.item.ModItemGroups;
 import net.generalsabre.sabresdimensions.item.ModItems;
@@ -21,5 +22,7 @@ public class SabresDimensions implements ModInitializer {
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
 
+		FuelRegistry.INSTANCE.add(ModItems.ULAU_CLUMP, 2000);
+		FuelRegistry.INSTANCE.add(ModBlocks.ULAU_BLOCK, 20000);
 	}
 }
