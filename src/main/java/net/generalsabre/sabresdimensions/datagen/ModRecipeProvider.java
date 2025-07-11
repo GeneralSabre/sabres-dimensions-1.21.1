@@ -30,10 +30,10 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerReversibleCompactingRecipes(recipeExporter, RecipeCategory.MISC, ModItems.DALAMINE_CRYSTAL, RecipeCategory.MISC, ModBlocks.DALAMINE_BLOCK);
         offerReversibleCompactingRecipes(recipeExporter, RecipeCategory.MISC, ModItems.ULAU_CLUMP, RecipeCategory.MISC, ModBlocks.ULAU_BLOCK);
         // Stonecutter
-        offerStonecuttingRecipe(recipeExporter,RecipeCategory.MISC,ModBlocks.ARAKITE,ModBlocks.POLISHED_ARAKITE,1);
-        offerStonecuttingRecipe(recipeExporter,RecipeCategory.MISC,ModBlocks.ARAKITE,ModBlocks.ARAKITE_TILES,1);
-        offerStonecuttingRecipe(recipeExporter,RecipeCategory.MISC,ModBlocks.ARAKITE,ModBlocks.ARAKITE_BRICKS,1);
-        offerStonecuttingRecipe(recipeExporter,RecipeCategory.MISC,ModBlocks.POLISHED_ARAKITE,ModBlocks.ARAKITE_TILES,1);
+        offerStonecuttingRecipe(recipeExporter,RecipeCategory.MISC,ModBlocks.ARAKITE_TILES,ModBlocks.POLISHED_ARAKITE,1);
+        offerStonecuttingRecipe(recipeExporter,RecipeCategory.MISC,ModBlocks.ARAKITE_BRICKS,ModBlocks.ARAKITE,1);
+        offerStonecuttingRecipe(recipeExporter,RecipeCategory.MISC,ModBlocks.ARAKITE_TILES,ModBlocks.ARAKITE,1);
+        offerStonecuttingRecipe(recipeExporter,RecipeCategory.MISC,ModBlocks.POLISHED_ARAKITE,ModBlocks.ARAKITE,1);
         // Furnace, Blast Furnace, & Smoker
         List<ItemConvertible> ZALANT_INGOT_SMELTABLES = List.of(ModItems.RAW_ZALANT,ModBlocks.ZALANT_ORE);
         offerSmelting(recipeExporter, ZALANT_INGOT_SMELTABLES, RecipeCategory.MISC, ModItems.ZALANT_INGOT,0.2f,200,"zalant_ingot");

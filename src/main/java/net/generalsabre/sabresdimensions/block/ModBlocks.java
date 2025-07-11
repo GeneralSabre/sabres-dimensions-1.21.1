@@ -60,7 +60,7 @@ public class ModBlocks {
 
     // Misc.
     public static final Block ULAU_BLOCK = registerBlock("ulau_block",
-            new TranslucentBlock(AbstractBlock.Settings.create().strength(0.5f,0.5f).sounds(BlockSoundGroup.SLIME).nonOpaque()));
+            new TranslucentBlock(AbstractBlock.Settings.create().strength(0.25f,0.25f).sounds(BlockSoundGroup.HONEY).nonOpaque()));
 
 
     private static void registerBlockItem(String name, Block block){
