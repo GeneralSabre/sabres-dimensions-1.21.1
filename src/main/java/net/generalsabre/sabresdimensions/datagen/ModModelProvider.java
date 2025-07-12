@@ -15,21 +15,46 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ARAKITE);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ARAKITE_BRICKS);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ARAKITE_TILES);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.POLISHED_ARAKITE);
+        BlockStateModelGenerator.BlockTexturePool arakitePool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.ARAKITE);
+        BlockStateModelGenerator.BlockTexturePool arakiteBrickPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.ARAKITE_BRICKS);
+        BlockStateModelGenerator.BlockTexturePool arakiteTilePool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.ARAKITE_TILES);
+        BlockStateModelGenerator.BlockTexturePool polishedArakitePool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.POLISHED_ARAKITE);
+        arakitePool.slab(ModBlocks.ARAKITE_SLAB);
+        arakitePool.stairs(ModBlocks.ARAKITE_STAIRS);
+        arakitePool.button(ModBlocks.ARAKITE_BUTTON);
+        arakitePool.pressurePlate(ModBlocks.ARAKITE_PRESSURE_PLATE);
+        arakitePool.wall(ModBlocks.ARAKITE_WALL);
+        arakiteBrickPool.slab(ModBlocks.ARAKITE_BRICK_SLAB);
+        arakiteBrickPool.wall(ModBlocks.ARAKITE_BRICK_WALL);
+        arakiteBrickPool.stairs(ModBlocks.ARAKITE_BRICK_STAIRS);
+        arakiteTilePool.stairs(ModBlocks.ARAKITE_TILE_STAIRS);
+        arakiteTilePool.slab(ModBlocks.ARAKITE_TILE_SLAB);
+        polishedArakitePool.slab(ModBlocks.POLISHED_ARAKITE_SLAB);
+        polishedArakitePool.stairs(ModBlocks.POLISHED_ARAKITE_STAIRS);
+        polishedArakitePool.wall(ModBlocks.POLISHED_ARAKITE_WALL);
+        polishedArakitePool.button(ModBlocks.POLISHED_ARAKITE_BUTTON);
+        polishedArakitePool.pressurePlate(ModBlocks.POLISHED_ARAKITE_PRESSURE_PLATE);
+
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CORRODED_ARAKITE);
+
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CHORAZINE_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CHORAZINE_POWDER_BLOCK);
+
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DALAMINE_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DALAMINE_ORE);
+
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.PENKAZ_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RAW_PENKAZ_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.PENKAZ_ORE);
+
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.PENKAZINE_ALLOY_BLOCK);
+
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ULAU_BLOCK);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ZALANT_BLOCK);
+
+        BlockStateModelGenerator.BlockTexturePool zalantPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.ZALANT_BLOCK);
+        zalantPool.pressurePlate(ModBlocks.ZALANT_PRESSURE_PLATE);
+        blockStateModelGenerator.registerDoor(ModBlocks.ZALANT_DOOR);
+        blockStateModelGenerator.registerTrapdoor(ModBlocks.ZALANT_TRAPDOOR);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ZALANT_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RAW_ZALANT_BLOCK);
     }

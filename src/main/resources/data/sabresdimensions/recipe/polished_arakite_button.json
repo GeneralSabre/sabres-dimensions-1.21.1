@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "group": "stone_button",
+  "ingredients": [
+    {
+      "item": "sabresdimensions:polished_arakite"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "sabresdimensions:polished_arakite_button"
+  }
+}

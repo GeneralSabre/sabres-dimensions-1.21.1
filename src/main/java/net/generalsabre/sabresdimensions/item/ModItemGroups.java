@@ -18,21 +18,44 @@ public class ModItemGroups {
                     .displayName(Text.translatable("itemgroup.sabresdimensions.sabres_dimensions_blocks"))
                     .entries((displayContext, entries) -> {
                         entries.add(ModBlocks.ARAKITE);
+                        entries.add(ModBlocks.ARAKITE_SLAB);
+                        entries.add(ModBlocks.ARAKITE_PRESSURE_PLATE);
+                        entries.add(ModBlocks.ARAKITE_BUTTON);
+                        entries.add(ModBlocks.ARAKITE_STAIRS);
+                        entries.add(ModBlocks.ARAKITE_WALL);
                         entries.add(ModBlocks.ARAKITE_BRICKS);
+                        entries.add(ModBlocks.ARAKITE_BRICK_SLAB);
+                        entries.add(ModBlocks.ARAKITE_BRICK_STAIRS);
+                        entries.add(ModBlocks.ARAKITE_BRICK_WALL);
                         entries.add(ModBlocks.CORRODED_ARAKITE);
                         entries.add(ModBlocks.POLISHED_ARAKITE);
+                        entries.add(ModBlocks.POLISHED_ARAKITE_BUTTON);
+                        entries.add(ModBlocks.POLISHED_ARAKITE_SLAB);
+                        entries.add(ModBlocks.POLISHED_ARAKITE_STAIRS);
+                        entries.add(ModBlocks.POLISHED_ARAKITE_WALL);
+                        entries.add(ModBlocks.POLISHED_ARAKITE_PRESSURE_PLATE);
                         entries.add(ModBlocks.ARAKITE_TILES);
+                        entries.add(ModBlocks.ARAKITE_TILE_SLAB);
+                        entries.add(ModBlocks.ARAKITE_TILE_STAIRS);
+
                         entries.add(ModBlocks.CHORAZINE_ORE);
                         entries.add(ModBlocks.CHORAZINE_POWDER_BLOCK);
+
                         entries.add(ModBlocks.DALAMINE_BLOCK);
                         entries.add(ModBlocks.DALAMINE_ORE);
+
                         entries.add(ModBlocks.PENKAZ_BLOCK);
                         entries.add(ModBlocks.PENKAZ_ORE);
                         entries.add(ModBlocks.RAW_PENKAZ_BLOCK);
+
                         entries.add(ModBlocks.ZALANT_BLOCK);
+                        entries.add(ModBlocks.ZALANT_DOOR);
+                        entries.add(ModBlocks.ZALANT_TRAPDOOR);
+                        entries.add(ModBlocks.ZALANT_PRESSURE_PLATE);
                         entries.add(ModBlocks.RAW_ZALANT_BLOCK);
                         entries.add(ModBlocks.ZALANT_ORE);
                         entries.add(ModBlocks.PENKAZINE_ALLOY_BLOCK);
+
                         entries.add(ModBlocks.ULAU_BLOCK);
                     })
                     .build());

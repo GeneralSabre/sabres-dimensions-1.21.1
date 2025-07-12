@@ -18,19 +18,41 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
                 .add(ModBlocks.ARAKITE)
+                .add(ModBlocks.ARAKITE_WALL)
+                .add(ModBlocks.ARAKITE_BUTTON)
+                .add(ModBlocks.ARAKITE_PRESSURE_PLATE)
+                .add(ModBlocks.ARAKITE_STAIRS)
+                .add(ModBlocks.ARAKITE_SLAB)
                 .add(ModBlocks.ARAKITE_BRICKS)
+                .add(ModBlocks.ARAKITE_BRICK_SLAB)
+                .add(ModBlocks.ARAKITE_BRICK_WALL)
+                .add(ModBlocks.ARAKITE_BRICK_STAIRS)
                 .add(ModBlocks.ARAKITE_TILES)
+                .add(ModBlocks.ARAKITE_TILE_SLAB)
+                .add(ModBlocks.ARAKITE_TILE_STAIRS)
                 .add(ModBlocks.POLISHED_ARAKITE)
+                .add(ModBlocks.POLISHED_ARAKITE_WALL)
+                .add(ModBlocks.POLISHED_ARAKITE_BUTTON)
+                .add(ModBlocks.POLISHED_ARAKITE_SLAB)
+                .add(ModBlocks.POLISHED_ARAKITE_PRESSURE_PLATE)
+                .add(ModBlocks.POLISHED_ARAKITE_STAIRS)
+
                 .add(ModBlocks.CORRODED_ARAKITE)
+
                 .add(ModBlocks.CHORAZINE_ORE)
                 .add(ModBlocks.DALAMINE_BLOCK)
                 .add(ModBlocks.DALAMINE_ORE)
+
                 .add(ModBlocks.PENKAZ_BLOCK)
                 .add(ModBlocks.RAW_PENKAZ_BLOCK)
                 .add(ModBlocks.PENKAZ_ORE)
+
                 .add(ModBlocks.ZALANT_BLOCK)
                 .add(ModBlocks.RAW_ZALANT_BLOCK)
                 .add(ModBlocks.ZALANT_ORE)
+                .add(ModBlocks.ZALANT_DOOR)
+                .add(ModBlocks.ZALANT_TRAPDOOR)
+
                 .add(ModBlocks.PENKAZINE_ALLOY_BLOCK);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
@@ -44,6 +66,11 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.ZALANT_BLOCK)
                 .add(ModBlocks.RAW_ZALANT_BLOCK)
                 .add(ModBlocks.ZALANT_ORE);
+
+        getOrCreateTagBuilder(BlockTags.WALLS)
+                .add(ModBlocks.ARAKITE_WALL)
+                .add(ModBlocks.ARAKITE_BRICK_WALL)
+                .add(ModBlocks.POLISHED_ARAKITE_WALL);
 
     }
 }

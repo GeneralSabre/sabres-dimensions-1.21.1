@@ -6,6 +6,7 @@ import net.generalsabre.sabresdimensions.block.ModBlocks;
 import net.generalsabre.sabresdimensions.item.ModItems;
 import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.item.ItemConvertible;
+import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.RegistryWrapper;
 
@@ -24,16 +25,63 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerReversibleCompactingRecipes(recipeExporter, RecipeCategory.MISC, ModItems.PENKAZ_INGOT, RecipeCategory.MISC, ModBlocks.PENKAZ_BLOCK);
         offerReversibleCompactingRecipes(recipeExporter, RecipeCategory.MISC, ModItems.PENKAZINE_ALLOY_INGOT, RecipeCategory.MISC, ModBlocks.PENKAZINE_ALLOY_BLOCK);
         offerReversibleCompactingRecipes(recipeExporter, RecipeCategory.MISC, ModItems.RAW_PENKAZ, RecipeCategory.MISC, ModBlocks.RAW_PENKAZ_BLOCK);
+
         offerReversibleCompactingRecipes(recipeExporter, RecipeCategory.MISC, ModItems.RAW_ZALANT, RecipeCategory.MISC, ModBlocks.RAW_ZALANT_BLOCK);
         offerReversibleCompactingRecipes(recipeExporter, RecipeCategory.MISC, ModItems.ZALANT_INGOT, RecipeCategory.MISC, ModBlocks.ZALANT_BLOCK);
+        createDoorRecipe(ModBlocks.ZALANT_DOOR, Ingredient.ofItems(ModItems.ZALANT_INGOT));
+        createTrapdoorRecipe(ModBlocks.ZALANT_TRAPDOOR, Ingredient.ofItems(ModItems.ZALANT_INGOT));
+        offerPressurePlateRecipe(recipeExporter, ModBlocks.ZALANT_PRESSURE_PLATE, ModItems.ZALANT_INGOT);
+
+
         offerReversibleCompactingRecipes(recipeExporter, RecipeCategory.MISC, ModItems.CHORAZINE_DUST, RecipeCategory.MISC, ModBlocks.CHORAZINE_POWDER_BLOCK);
         offerReversibleCompactingRecipes(recipeExporter, RecipeCategory.MISC, ModItems.DALAMINE_CRYSTAL, RecipeCategory.MISC, ModBlocks.DALAMINE_BLOCK);
         offerReversibleCompactingRecipes(recipeExporter, RecipeCategory.MISC, ModItems.ULAU_CLUMP, RecipeCategory.MISC, ModBlocks.ULAU_BLOCK);
+
+        offerSlabRecipe(recipeExporter, RecipeCategory.MISC, ModBlocks.ARAKITE_SLAB, ModBlocks.ARAKITE);
+        offerSlabRecipe(recipeExporter, RecipeCategory.MISC, ModBlocks.ARAKITE_BRICK_SLAB, ModBlocks.ARAKITE_BRICKS);
+        offerSlabRecipe(recipeExporter, RecipeCategory.MISC, ModBlocks.ARAKITE_TILE_SLAB, ModBlocks.ARAKITE_TILES);
+        offerSlabRecipe(recipeExporter, RecipeCategory.MISC, ModBlocks.POLISHED_ARAKITE_SLAB, ModBlocks.POLISHED_ARAKITE);
+
+        offerWallRecipe(recipeExporter, RecipeCategory.MISC, ModBlocks.ARAKITE_WALL, ModBlocks.ARAKITE);
+        offerWallRecipe(recipeExporter, RecipeCategory.MISC, ModBlocks.ARAKITE_BRICK_WALL, ModBlocks.ARAKITE_BRICKS);
+        offerWallRecipe(recipeExporter, RecipeCategory.MISC, ModBlocks.POLISHED_ARAKITE_WALL, ModBlocks.POLISHED_ARAKITE);
+
+
+        offerPressurePlateRecipe(recipeExporter, ModBlocks.ARAKITE_PRESSURE_PLATE, ModBlocks.ARAKITE);
+        offerPressurePlateRecipe(recipeExporter, ModBlocks.POLISHED_ARAKITE_PRESSURE_PLATE, ModBlocks.POLISHED_ARAKITE);
+
+
+
         // Stonecutter
         offerStonecuttingRecipe(recipeExporter,RecipeCategory.MISC,ModBlocks.ARAKITE_TILES,ModBlocks.POLISHED_ARAKITE,1);
         offerStonecuttingRecipe(recipeExporter,RecipeCategory.MISC,ModBlocks.ARAKITE_BRICKS,ModBlocks.ARAKITE,1);
         offerStonecuttingRecipe(recipeExporter,RecipeCategory.MISC,ModBlocks.ARAKITE_TILES,ModBlocks.ARAKITE,1);
         offerStonecuttingRecipe(recipeExporter,RecipeCategory.MISC,ModBlocks.POLISHED_ARAKITE,ModBlocks.ARAKITE,1);
+        offerStonecuttingRecipe(recipeExporter,RecipeCategory.MISC,ModBlocks.ARAKITE_SLAB,ModBlocks.ARAKITE,2);
+        offerStonecuttingRecipe(recipeExporter,RecipeCategory.MISC,ModBlocks.ARAKITE_STAIRS,ModBlocks.ARAKITE,1);
+        offerStonecuttingRecipe(recipeExporter,RecipeCategory.MISC,ModBlocks.ARAKITE_WALL,ModBlocks.ARAKITE,1);
+        offerStonecuttingRecipe(recipeExporter,RecipeCategory.MISC,ModBlocks.ARAKITE_BRICK_WALL,ModBlocks.ARAKITE_BRICKS,1);
+        offerStonecuttingRecipe(recipeExporter,RecipeCategory.MISC,ModBlocks.ARAKITE_BRICK_WALL,ModBlocks.ARAKITE,1);
+        offerStonecuttingRecipe(recipeExporter,RecipeCategory.MISC,ModBlocks.ARAKITE_BRICK_SLAB,ModBlocks.ARAKITE_BRICKS,2);
+        offerStonecuttingRecipe(recipeExporter,RecipeCategory.MISC,ModBlocks.ARAKITE_BRICK_SLAB,ModBlocks.ARAKITE,2);
+        offerStonecuttingRecipe(recipeExporter,RecipeCategory.MISC,ModBlocks.ARAKITE_BRICK_STAIRS,ModBlocks.ARAKITE_BRICKS,1);
+        offerStonecuttingRecipe(recipeExporter,RecipeCategory.MISC,ModBlocks.ARAKITE_BRICK_STAIRS,ModBlocks.ARAKITE,1);
+        offerStonecuttingRecipe(recipeExporter,RecipeCategory.MISC,ModBlocks.ARAKITE_TILE_STAIRS,ModBlocks.ARAKITE_TILES,1);
+        offerStonecuttingRecipe(recipeExporter,RecipeCategory.MISC,ModBlocks.ARAKITE_TILE_STAIRS,ModBlocks.ARAKITE,1);
+        offerStonecuttingRecipe(recipeExporter,RecipeCategory.MISC,ModBlocks.ARAKITE_TILE_STAIRS,ModBlocks.POLISHED_ARAKITE,1);
+        offerStonecuttingRecipe(recipeExporter,RecipeCategory.MISC,ModBlocks.ARAKITE_TILE_SLAB,ModBlocks.ARAKITE_TILES,2);
+        offerStonecuttingRecipe(recipeExporter,RecipeCategory.MISC,ModBlocks.ARAKITE_TILE_SLAB,ModBlocks.ARAKITE,2);
+        offerStonecuttingRecipe(recipeExporter,RecipeCategory.MISC,ModBlocks.ARAKITE_TILE_SLAB,ModBlocks.POLISHED_ARAKITE,2);
+        offerStonecuttingRecipe(recipeExporter,RecipeCategory.MISC,ModBlocks.POLISHED_ARAKITE_SLAB,ModBlocks.POLISHED_ARAKITE,2);
+        offerStonecuttingRecipe(recipeExporter,RecipeCategory.MISC,ModBlocks.POLISHED_ARAKITE_SLAB,ModBlocks.ARAKITE,2);
+        offerStonecuttingRecipe(recipeExporter,RecipeCategory.MISC,ModBlocks.POLISHED_ARAKITE_STAIRS,ModBlocks.POLISHED_ARAKITE,1);
+        offerStonecuttingRecipe(recipeExporter,RecipeCategory.MISC,ModBlocks.POLISHED_ARAKITE_STAIRS,ModBlocks.ARAKITE,1);
+        offerStonecuttingRecipe(recipeExporter,RecipeCategory.MISC,ModBlocks.POLISHED_ARAKITE_WALL,ModBlocks.POLISHED_ARAKITE,1);
+        offerStonecuttingRecipe(recipeExporter,RecipeCategory.MISC,ModBlocks.POLISHED_ARAKITE_WALL,ModBlocks.ARAKITE,1);
+
+
+
+
         // Furnace, Blast Furnace, & Smoker
         List<ItemConvertible> ZALANT_INGOT_SMELTABLES = List.of(ModItems.RAW_ZALANT,ModBlocks.ZALANT_ORE);
         offerSmelting(recipeExporter, ZALANT_INGOT_SMELTABLES, RecipeCategory.MISC, ModItems.ZALANT_INGOT,0.2f,200,"zalant_ingot");
