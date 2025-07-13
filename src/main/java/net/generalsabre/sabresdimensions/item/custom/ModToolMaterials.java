@@ -16,7 +16,7 @@ import java.util.function.Supplier;
 public enum ModToolMaterials implements ToolMaterial {
 
     ZALANT(ModTags.Blocks.INCORRECT_FOR_ZALANT_TOOL, 1776, 7.0F, 2.5F, 17, () -> Ingredient.ofItems(ModItems.ZALANT_INGOT)),
-    PENKAZINE_ALLOY(ModTags.Blocks.INCORRECT_FOR_PENKAZINE_TOOL, 2279, 8.25F, 3.25F, 15, () -> Ingredient.ofItems(ModItems.PENKAZINE_ALLOY_INGOT));
+    PENKAZINE_ALLOY(ModTags.Blocks.INCORRECT_FOR_PENKAZINE_TOOL, 2279, 8.25F, 3.0F, 15, () -> Ingredient.ofItems(ModItems.PENKAZINE_ALLOY_INGOT));
 
 
     private final TagKey<Block> inverseTag;

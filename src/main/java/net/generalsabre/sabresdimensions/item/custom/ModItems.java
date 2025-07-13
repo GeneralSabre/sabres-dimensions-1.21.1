@@ -15,7 +15,7 @@ public class ModItems {
     public static final Item ZALANT_ROD = registerItem("zalant_rod", new Item(new Item.Settings()));
     public static final Item ZALANT_SWORD = registerItem("zalant_sword",
             new SwordItem(ModToolMaterials.ZALANT, new Item.Settings()
-                    .attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.ZALANT,3,-2.4f))));
+                    .attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.ZALANT,3,-2.2f))));
     public static final Item ZALANT_SHOVEL = registerItem("zalant_shovel",
             new ShovelItem(ModToolMaterials.ZALANT, new Item.Settings()
                     .attributeModifiers(ShovelItem.createAttributeModifiers(ModToolMaterials.ZALANT,1.5f,-3f))));
