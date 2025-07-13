@@ -4,6 +4,7 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.generalsabre.sabresdimensions.block.ModBlocks;
 import net.generalsabre.sabresdimensions.item.custom.ModItems;
+import net.minecraft.block.Blocks;
 import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.item.ItemConvertible;
@@ -38,6 +39,14 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerReversibleCompactingRecipes(recipeExporter, RecipeCategory.MISC, ModItems.CHORAZINE_DUST, RecipeCategory.MISC, ModBlocks.CHORAZINE_POWDER_BLOCK);
         offerReversibleCompactingRecipes(recipeExporter, RecipeCategory.MISC, ModItems.DALAMINE_CRYSTAL, RecipeCategory.MISC, ModBlocks.DALAMINE_BLOCK);
         offerReversibleCompactingRecipes(recipeExporter, RecipeCategory.MISC, ModItems.ULAU_CLUMP, RecipeCategory.MISC, ModBlocks.ULAU_BLOCK);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, Items.TORCH)
+                .pattern("   ")
+                .pattern(" U ")
+                .pattern(" S ")
+                .input('U', ModItems.ULAU_CLUMP)
+                .input('S', Items.STICK)
+                .criterion(hasItem(ModItems.ULAU_CLUMP), conditionsFromItem(ModItems.ULAU_CLUMP))
+                .offerTo(recipeExporter);
 
         offerSlabRecipe(recipeExporter, RecipeCategory.MISC, ModBlocks.ARAKITE_SLAB, ModBlocks.ARAKITE);
         offerSlabRecipe(recipeExporter, RecipeCategory.MISC, ModBlocks.ARAKITE_BRICK_SLAB, ModBlocks.ARAKITE_BRICKS);
@@ -98,6 +107,56 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
         // Tools & Armor
 
+        // Arakite
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, Items.STONE_SWORD)
+                .pattern(" A ")
+                .pattern(" A ")
+                .pattern(" S ")
+                .input('A', ModBlocks.ARAKITE)
+                .input('S', Items.STICK)
+                .criterion(hasItem(ModBlocks.ARAKITE), conditionsFromItem(ModBlocks.ARAKITE))
+                .offerTo(recipeExporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, Items.STONE_SHOVEL)
+                .pattern(" A ")
+                .pattern(" S ")
+                .pattern(" S ")
+                .input('A', ModBlocks.ARAKITE)
+                .input('S', Items.STICK)
+                .criterion(hasItem(ModBlocks.ARAKITE), conditionsFromItem(ModBlocks.ARAKITE))
+                .offerTo(recipeExporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, Items.STONE_PICKAXE)
+                .pattern("AAA")
+                .pattern(" S ")
+                .pattern(" S ")
+                .input('A', ModBlocks.ARAKITE)
+                .input('S', Items.STICK)
+                .criterion(hasItem(ModBlocks.ARAKITE), conditionsFromItem(ModBlocks.ARAKITE))
+                .offerTo(recipeExporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, Items.STONE_AXE)
+                .pattern("AA ")
+                .pattern(" S ")
+                .pattern(" S ")
+                .input('A', ModBlocks.ARAKITE)
+                .input('S', Items.STICK)
+                .criterion(hasItem(ModBlocks.ARAKITE), conditionsFromItem(ModBlocks.ARAKITE))
+                .offerTo(recipeExporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, Items.STONE_HOE)
+                .pattern("AA ")
+                .pattern(" S ")
+                .pattern(" S ")
+                .input('A', ModBlocks.ARAKITE)
+                .input('S', Items.STICK)
+                .criterion(hasItem(ModBlocks.ARAKITE), conditionsFromItem(ModBlocks.ARAKITE))
+                .offerTo(recipeExporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, Blocks.FURNACE)
+                .pattern("AAA")
+                .pattern("A A")
+                .pattern("AAA")
+                .input('A', ModBlocks.ARAKITE)
+                .criterion(hasItem(ModBlocks.ARAKITE), conditionsFromItem(ModBlocks.ARAKITE))
+                .offerTo(recipeExporter);
+
+
         // Zalant
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.ZALANT_SWORD)
                 .pattern(" Z ")
@@ -137,6 +196,34 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .pattern(" S ")
                 .input('Z', ModItems.ZALANT_INGOT)
                 .input('S', Items.STICK)
+                .criterion(hasItem(ModItems.ZALANT_INGOT), conditionsFromItem(ModItems.ZALANT_INGOT))
+                .offerTo(recipeExporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.ZALANT_HELMET)
+                .pattern("ZZZ")
+                .pattern("Z Z")
+                .pattern("   ")
+                .input('Z', ModItems.ZALANT_INGOT)
+                .criterion(hasItem(ModItems.ZALANT_INGOT), conditionsFromItem(ModItems.ZALANT_INGOT))
+                .offerTo(recipeExporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.ZALANT_CHESTPLATE)
+                .pattern("Z Z")
+                .pattern("ZZZ")
+                .pattern("ZZZ")
+                .input('Z', ModItems.ZALANT_INGOT)
+                .criterion(hasItem(ModItems.ZALANT_INGOT), conditionsFromItem(ModItems.ZALANT_INGOT))
+                .offerTo(recipeExporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.ZALANT_LEGGINGS)
+                .pattern("ZZZ")
+                .pattern("Z Z")
+                .pattern("Z Z")
+                .input('Z', ModItems.ZALANT_INGOT)
+                .criterion(hasItem(ModItems.ZALANT_INGOT), conditionsFromItem(ModItems.ZALANT_INGOT))
+                .offerTo(recipeExporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.ZALANT_BOOTS)
+                .pattern("   ")
+                .pattern("Z Z")
+                .pattern("Z Z")
+                .input('Z', ModItems.ZALANT_INGOT)
                 .criterion(hasItem(ModItems.ZALANT_INGOT), conditionsFromItem(ModItems.ZALANT_INGOT))
                 .offerTo(recipeExporter);
 

@@ -21,18 +21,28 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
         getOrCreateTagBuilder(ItemTags.SWORDS)
                 .add(ModItems.ZALANT_SWORD)
                 .add(ModItems.PENKAZINE_ALLOY_SWORD);
+
         getOrCreateTagBuilder(ItemTags.SHOVELS)
                 .add(ModItems.ZALANT_SHOVEL)
                 .add(ModItems.PENKAZINE_ALLOY_SHOVEL);
+
         getOrCreateTagBuilder(ItemTags.PICKAXES)
                 .add(ModItems.ZALANT_PICKAXE)
                 .add(ModItems.PENKAZINE_ALLOY_PICKAXE);
+
         getOrCreateTagBuilder(ItemTags.AXES)
                 .add(ModItems.ZALANT_AXE)
                 .add(ModItems.PENKAZINE_ALLOY_AXE);
+
         getOrCreateTagBuilder(ItemTags.HOES)
                 .add(ModItems.ZALANT_HOE)
                 .add(ModItems.PENKAZINE_ALLOY_HOE);
+
+        getOrCreateTagBuilder(ItemTags.TRIMMABLE_ARMOR)
+                .add(ModItems.ZALANT_HELMET)
+                .add(ModItems.ZALANT_CHESTPLATE)
+                .add(ModItems.ZALANT_LEGGINGS)
+                .add(ModItems.ZALANT_BOOTS);
 
 
     }

@@ -7,6 +7,7 @@ import net.generalsabre.sabresdimensions.item.custom.ModItems;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
 import net.minecraft.data.client.Models;
+import net.minecraft.item.ArmorItem;
 
 public class ModModelProvider extends FabricModelProvider {
     public ModModelProvider(FabricDataOutput output) {
@@ -83,6 +84,11 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.ZALANT_PICKAXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.ZALANT_AXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.ZALANT_HOE, Models.HANDHELD);
+
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.ZALANT_HELMET));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.ZALANT_CHESTPLATE));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.ZALANT_LEGGINGS));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.ZALANT_BOOTS));
 
         itemModelGenerator.register(ModItems.ZALANT_ROD, Models.GENERATED);
         itemModelGenerator.register(ModItems.ULAU_CLUMP, Models.GENERATED);

@@ -75,6 +75,11 @@ public class ModItemGroups {
                         entries.add(ModItems.ZALANT_AXE);
                         entries.add(ModItems.ZALANT_HOE);
 
+                        entries.add(ModItems.ZALANT_HELMET);
+                        entries.add(ModItems.ZALANT_CHESTPLATE);
+                        entries.add(ModItems.ZALANT_LEGGINGS);
+                        entries.add(ModItems.ZALANT_BOOTS);
+
                         entries.add(ModItems.PENKAZ_INGOT);
                         entries.add(ModItems.RAW_PENKAZ);
                         entries.add(ModItems.DALAMINE_CRYSTAL);

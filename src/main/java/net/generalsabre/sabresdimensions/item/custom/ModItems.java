@@ -28,6 +28,18 @@ public class ModItems {
     public static final Item ZALANT_HOE = registerItem("zalant_hoe",
             new HoeItem(ModToolMaterials.ZALANT, new Item.Settings()
                     .attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterials.ZALANT,0,-3f))));
+    public static final Item ZALANT_HELMET = registerItem("zalant_helmet",
+            new ArmorItem(ModArmorMaterials.ZALANT_ARMOR_MATERIAL, ArmorItem.Type.HELMET, new Item.Settings()
+                    .maxDamage(ArmorItem.Type.HELMET.getMaxDamage(15))));
+    public static final Item ZALANT_CHESTPLATE = registerItem("zalant_chestplate",
+            new ArmorItem(ModArmorMaterials.ZALANT_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Settings()
+                    .maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(15))));
+    public static final Item ZALANT_LEGGINGS = registerItem("zalant_leggings",
+            new ArmorItem(ModArmorMaterials.ZALANT_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS, new Item.Settings()
+                    .maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(15))));
+    public static final Item ZALANT_BOOTS = registerItem("zalant_boots",
+            new ArmorItem(ModArmorMaterials.ZALANT_ARMOR_MATERIAL, ArmorItem.Type.BOOTS, new Item.Settings()
+                    .maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(15))));
     // DALAMINE
     public static final Item DALAMINE_CRYSTAL = registerItem("dalamine_crystal", new Item(new Item.Settings()));
     // PENKAZINE
