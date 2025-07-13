@@ -39,7 +39,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerReversibleCompactingRecipes(recipeExporter, RecipeCategory.MISC, ModItems.CHORAZINE_DUST, RecipeCategory.MISC, ModBlocks.CHORAZINE_POWDER_BLOCK);
         offerReversibleCompactingRecipes(recipeExporter, RecipeCategory.MISC, ModItems.DALAMINE_CRYSTAL, RecipeCategory.MISC, ModBlocks.DALAMINE_BLOCK);
         offerReversibleCompactingRecipes(recipeExporter, RecipeCategory.MISC, ModItems.ULAU_CLUMP, RecipeCategory.MISC, ModBlocks.ULAU_BLOCK);
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, Items.TORCH)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, Items.TORCH, 6)
                 .pattern("   ")
                 .pattern(" U ")
                 .pattern(" S ")
@@ -134,7 +134,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo(recipeExporter);
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, Items.STONE_AXE)
                 .pattern("AA ")
-                .pattern(" S ")
+                .pattern("AS ")
                 .pattern(" S ")
                 .input('A', ModBlocks.ARAKITE)
                 .input('S', Items.STICK)
