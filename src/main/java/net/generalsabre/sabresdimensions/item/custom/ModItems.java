@@ -35,6 +35,21 @@ public class ModItems {
     public static final Item PENKAZ_INGOT = registerItem("penkaz_ingot", new Item(new Item.Settings()));
     public static final Item RAW_PENKAZ = registerItem("raw_penkaz", new Item(new Item.Settings()));
     public static final Item PENKAZINE_ALLOY_INGOT = registerItem("penkazine_alloy_ingot", new Item(new Item.Settings()));
+    public static final Item PENKAZINE_ALLOY_SWORD = registerItem("penkazine_alloy_sword",
+            new SwordItem(ModToolMaterials.PENKAZINE_ALLOY, new Item.Settings()
+                    .attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.PENKAZINE_ALLOY,3,-2.4f))));
+    public static final Item PENKAZINE_ALLOY_SHOVEL = registerItem("penkazine_alloy_shovel",
+            new ShovelItem(ModToolMaterials.PENKAZINE_ALLOY, new Item.Settings()
+                    .attributeModifiers(ShovelItem.createAttributeModifiers(ModToolMaterials.PENKAZINE_ALLOY,1.5f,-3f))));
+    public static final Item PENKAZINE_ALLOY_PICKAXE = registerItem("penkazine_alloy_pickaxe",
+            new PickaxeItem(ModToolMaterials.PENKAZINE_ALLOY, new Item.Settings()
+                    .attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterials.PENKAZINE_ALLOY,1,-2.8f))));
+    public static final Item PENKAZINE_ALLOY_AXE = registerItem("penkazine_alloy_axe",
+            new AxeItem(ModToolMaterials.PENKAZINE_ALLOY, new Item.Settings()
+                    .attributeModifiers(AxeItem.createAttributeModifiers(ModToolMaterials.PENKAZINE_ALLOY,6,-3.2f))));
+    public static final Item PENKAZINE_ALLOY_HOE = registerItem("penkazine_alloy_hoe",
+            new HoeItem(ModToolMaterials.PENKAZINE_ALLOY, new Item.Settings()
+                    .attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterials.PENKAZINE_ALLOY,0,-3f))));
     // MISC
     public static final Item ULAU_CLUMP = registerItem("ulau_clump", new Item(new Item.Settings()));
 

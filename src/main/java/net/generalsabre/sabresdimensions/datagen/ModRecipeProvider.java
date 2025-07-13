@@ -97,6 +97,8 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
 
         // Tools & Armor
+
+        // Zalant
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.ZALANT_SWORD)
                 .pattern(" Z ")
                 .pattern(" Z ")
@@ -136,6 +138,48 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('Z', ModItems.ZALANT_INGOT)
                 .input('S', Items.STICK)
                 .criterion(hasItem(ModItems.ZALANT_INGOT), conditionsFromItem(ModItems.ZALANT_INGOT))
+                .offerTo(recipeExporter);
+
+        // Penkazine Alloy
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.PENKAZINE_ALLOY_SWORD)
+                .pattern(" P ")
+                .pattern(" P ")
+                .pattern(" S ")
+                .input('P', ModItems.PENKAZINE_ALLOY_INGOT)
+                .input('S', Items.STICK)
+                .criterion(hasItem(ModItems.PENKAZINE_ALLOY_INGOT), conditionsFromItem(ModItems.PENKAZINE_ALLOY_INGOT))
+                .offerTo(recipeExporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.PENKAZINE_ALLOY_SHOVEL)
+                .pattern(" P ")
+                .pattern(" S ")
+                .pattern(" S ")
+                .input('P', ModItems.PENKAZINE_ALLOY_INGOT)
+                .input('S', Items.STICK)
+                .criterion(hasItem(ModItems.PENKAZINE_ALLOY_INGOT), conditionsFromItem(ModItems.PENKAZINE_ALLOY_INGOT))
+                .offerTo(recipeExporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.PENKAZINE_ALLOY_PICKAXE)
+                .pattern("PPP")
+                .pattern(" S ")
+                .pattern(" S ")
+                .input('P', ModItems.PENKAZINE_ALLOY_INGOT)
+                .input('S', Items.STICK)
+                .criterion(hasItem(ModItems.PENKAZINE_ALLOY_INGOT), conditionsFromItem(ModItems.PENKAZINE_ALLOY_INGOT))
+                .offerTo(recipeExporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.PENKAZINE_ALLOY_AXE)
+                .pattern("PP ")
+                .pattern("PS ")
+                .pattern(" S ")
+                .input('P', ModItems.PENKAZINE_ALLOY_INGOT)
+                .input('S', Items.STICK)
+                .criterion(hasItem(ModItems.PENKAZINE_ALLOY_INGOT), conditionsFromItem(ModItems.PENKAZINE_ALLOY_INGOT))
+                .offerTo(recipeExporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.PENKAZINE_ALLOY_HOE)
+                .pattern("PP ")
+                .pattern(" S ")
+                .pattern(" S ")
+                .input('P', ModItems.PENKAZINE_ALLOY_INGOT)
+                .input('S', Items.STICK)
+                .criterion(hasItem(ModItems.PENKAZINE_ALLOY_INGOT), conditionsFromItem(ModItems.PENKAZINE_ALLOY_INGOT))
                 .offerTo(recipeExporter);
     }
 }

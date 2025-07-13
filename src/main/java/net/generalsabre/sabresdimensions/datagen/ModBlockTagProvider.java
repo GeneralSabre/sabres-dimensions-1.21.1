@@ -68,6 +68,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.RAW_ZALANT_BLOCK)
                 .add(ModBlocks.ZALANT_ORE);
 
+        getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL);
+
         getOrCreateTagBuilder(BlockTags.WALLS)
                 .add(ModBlocks.ARAKITE_WALL)
                 .add(ModBlocks.ARAKITE_BRICK_WALL)
@@ -75,6 +77,9 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
         getOrCreateTagBuilder(ModTags.Blocks.NEEDS_ZALANT_TOOL)
                 .addTag(BlockTags.NEEDS_IRON_TOOL);
+
+        getOrCreateTagBuilder(ModTags.Blocks.NEEDS_PENKAZINE_TOOL)
+                .addTag(BlockTags.NEEDS_DIAMOND_TOOL);
 
     }
 }

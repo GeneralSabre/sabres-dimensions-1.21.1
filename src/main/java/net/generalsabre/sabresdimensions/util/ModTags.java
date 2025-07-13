@@ -12,6 +12,8 @@ public class ModTags {
     public static class Blocks{
         public static final TagKey<Block> NEEDS_ZALANT_TOOL = createTag("needs_zalant_tool");
         public static final TagKey<Block> INCORRECT_FOR_ZALANT_TOOL = createTag("incorrect_for_zalant_tool");
+        public static final TagKey<Block> NEEDS_PENKAZINE_TOOL = createTag("needs_penkazine_tool");
+        public static final TagKey<Block> INCORRECT_FOR_PENKAZINE_TOOL = createTag("incorrect_for_penkazine_tool");
 
         private static TagKey<Block> createTag(String name){
             return TagKey.of(RegistryKeys.BLOCK, Identifier.of(SabresDimensions.MOD_ID, name));

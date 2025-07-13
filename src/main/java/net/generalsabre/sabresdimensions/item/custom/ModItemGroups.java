@@ -78,7 +78,14 @@ public class ModItemGroups {
                         entries.add(ModItems.PENKAZ_INGOT);
                         entries.add(ModItems.RAW_PENKAZ);
                         entries.add(ModItems.DALAMINE_CRYSTAL);
+
                         entries.add(ModItems.PENKAZINE_ALLOY_INGOT);
+                        entries.add(ModItems.PENKAZINE_ALLOY_SWORD);
+                        entries.add(ModItems.PENKAZINE_ALLOY_SHOVEL);
+                        entries.add(ModItems.PENKAZINE_ALLOY_PICKAXE);
+                        entries.add(ModItems.PENKAZINE_ALLOY_AXE);
+                        entries.add(ModItems.PENKAZINE_ALLOY_HOE);
+
                         entries.add(ModItems.CHORAZINE_DUST);
                         entries.add(ModItems.ULAU_CLUMP);
                     })

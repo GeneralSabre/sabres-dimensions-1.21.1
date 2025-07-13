@@ -66,7 +66,15 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.DALAMINE_CRYSTAL, Models.GENERATED);
         itemModelGenerator.register(ModItems.PENKAZ_INGOT, Models.GENERATED);
         itemModelGenerator.register(ModItems.RAW_PENKAZ, Models.GENERATED);
+
         itemModelGenerator.register(ModItems.PENKAZINE_ALLOY_INGOT, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.PENKAZINE_ALLOY_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.PENKAZINE_ALLOY_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.PENKAZINE_ALLOY_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.PENKAZINE_ALLOY_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.PENKAZINE_ALLOY_HOE, Models.HANDHELD);
+
         itemModelGenerator.register(ModItems.RAW_ZALANT, Models.GENERATED);
         itemModelGenerator.register(ModItems.ZALANT_INGOT, Models.GENERATED);
 
