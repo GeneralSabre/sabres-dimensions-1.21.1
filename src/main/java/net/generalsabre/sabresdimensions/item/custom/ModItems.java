@@ -1,9 +1,7 @@
-package net.generalsabre.sabresdimensions.item;
+package net.generalsabre.sabresdimensions.item.custom;
 
-import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.generalsabre.sabresdimensions.SabresDimensions;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroups;
+import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
@@ -15,6 +13,21 @@ public class ModItems {
     public static final Item ZALANT_INGOT = registerItem("zalant_ingot", new Item(new Item.Settings()));
     public static final Item RAW_ZALANT = registerItem("raw_zalant", new Item(new Item.Settings()));
     public static final Item ZALANT_ROD = registerItem("zalant_rod", new Item(new Item.Settings()));
+    public static final Item ZALANT_SWORD = registerItem("zalant_sword",
+            new SwordItem(ModToolMaterials.ZALANT, new Item.Settings()
+                    .attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.ZALANT,3,-2.4f))));
+    public static final Item ZALANT_SHOVEL = registerItem("zalant_shovel",
+            new ShovelItem(ModToolMaterials.ZALANT, new Item.Settings()
+                    .attributeModifiers(ShovelItem.createAttributeModifiers(ModToolMaterials.ZALANT,1.5f,-3f))));
+    public static final Item ZALANT_PICKAXE = registerItem("zalant_pickaxe",
+            new PickaxeItem(ModToolMaterials.ZALANT, new Item.Settings()
+                    .attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterials.ZALANT,1,-2.8f))));
+    public static final Item ZALANT_AXE = registerItem("zalant_axe",
+            new AxeItem(ModToolMaterials.ZALANT, new Item.Settings()
+                    .attributeModifiers(AxeItem.createAttributeModifiers(ModToolMaterials.ZALANT,6,-3.2f))));
+    public static final Item ZALANT_HOE = registerItem("zalant_hoe",
+            new HoeItem(ModToolMaterials.ZALANT, new Item.Settings()
+                    .attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterials.ZALANT,0,-3f))));
     // DALAMINE
     public static final Item DALAMINE_CRYSTAL = registerItem("dalamine_crystal", new Item(new Item.Settings()));
     // PENKAZINE

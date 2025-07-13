@@ -3,7 +3,7 @@ package net.generalsabre.sabresdimensions.datagen;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.generalsabre.sabresdimensions.block.ModBlocks;
-import net.generalsabre.sabresdimensions.item.ModItems;
+import net.generalsabre.sabresdimensions.item.custom.ModItems;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
 import net.minecraft.data.client.Models;
@@ -69,6 +69,13 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.PENKAZINE_ALLOY_INGOT, Models.GENERATED);
         itemModelGenerator.register(ModItems.RAW_ZALANT, Models.GENERATED);
         itemModelGenerator.register(ModItems.ZALANT_INGOT, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.ZALANT_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.ZALANT_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.ZALANT_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.ZALANT_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.ZALANT_HOE, Models.HANDHELD);
+
         itemModelGenerator.register(ModItems.ZALANT_ROD, Models.GENERATED);
         itemModelGenerator.register(ModItems.ULAU_CLUMP, Models.GENERATED);
     }

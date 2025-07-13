@@ -4,8 +4,8 @@ import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.generalsabre.sabresdimensions.block.ModBlocks;
-import net.generalsabre.sabresdimensions.item.ModItemGroups;
-import net.generalsabre.sabresdimensions.item.ModItems;
+import net.generalsabre.sabresdimensions.item.custom.ModItemGroups;
+import net.generalsabre.sabresdimensions.item.custom.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

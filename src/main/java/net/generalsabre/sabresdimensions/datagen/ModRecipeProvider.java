@@ -3,9 +3,11 @@ package net.generalsabre.sabresdimensions.datagen;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.generalsabre.sabresdimensions.block.ModBlocks;
-import net.generalsabre.sabresdimensions.item.ModItems;
+import net.generalsabre.sabresdimensions.item.custom.ModItems;
 import net.minecraft.data.server.recipe.RecipeExporter;
+import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.item.ItemConvertible;
+import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.RegistryWrapper;
@@ -91,5 +93,49 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerSmelting(recipeExporter, PENKAZ_INGOT_SMELTABLES, RecipeCategory.MISC, ModItems.PENKAZ_INGOT,0.4f,200,"penkaz_ingot");
         List<ItemConvertible> ARAKITE_SMELTABLES = List.of(ModBlocks.CORRODED_ARAKITE);
         offerSmelting(recipeExporter, ARAKITE_SMELTABLES, RecipeCategory.MISC, ModBlocks.ARAKITE,0.2f,260,"arakite");
+
+
+
+        // Tools & Armor
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.ZALANT_SWORD)
+                .pattern(" Z ")
+                .pattern(" Z ")
+                .pattern(" S ")
+                .input('Z', ModItems.ZALANT_INGOT)
+                .input('S', Items.STICK)
+                .criterion(hasItem(ModItems.ZALANT_INGOT), conditionsFromItem(ModItems.ZALANT_INGOT))
+                .offerTo(recipeExporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.ZALANT_SHOVEL)
+                .pattern(" Z ")
+                .pattern(" S ")
+                .pattern(" S ")
+                .input('Z', ModItems.ZALANT_INGOT)
+                .input('S', Items.STICK)
+                .criterion(hasItem(ModItems.ZALANT_INGOT), conditionsFromItem(ModItems.ZALANT_INGOT))
+                .offerTo(recipeExporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.ZALANT_PICKAXE)
+                .pattern("ZZZ")
+                .pattern(" S ")
+                .pattern(" S ")
+                .input('Z', ModItems.ZALANT_INGOT)
+                .input('S', Items.STICK)
+                .criterion(hasItem(ModItems.ZALANT_INGOT), conditionsFromItem(ModItems.ZALANT_INGOT))
+                .offerTo(recipeExporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.ZALANT_AXE)
+                .pattern("ZZ ")
+                .pattern("ZS ")
+                .pattern(" S ")
+                .input('Z', ModItems.ZALANT_INGOT)
+                .input('S', Items.STICK)
+                .criterion(hasItem(ModItems.ZALANT_INGOT), conditionsFromItem(ModItems.ZALANT_INGOT))
+                .offerTo(recipeExporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.ZALANT_HOE)
+                .pattern("ZZ ")
+                .pattern(" S ")
+                .pattern(" S ")
+                .input('Z', ModItems.ZALANT_INGOT)
+                .input('S', Items.STICK)
+                .criterion(hasItem(ModItems.ZALANT_INGOT), conditionsFromItem(ModItems.ZALANT_INGOT))
+                .offerTo(recipeExporter);
     }
 }

@@ -3,6 +3,7 @@ package net.generalsabre.sabresdimensions.datagen;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.generalsabre.sabresdimensions.block.ModBlocks;
+import net.generalsabre.sabresdimensions.util.ModTags;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.BlockTags;
 
@@ -71,6 +72,9 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.ARAKITE_WALL)
                 .add(ModBlocks.ARAKITE_BRICK_WALL)
                 .add(ModBlocks.POLISHED_ARAKITE_WALL);
+
+        getOrCreateTagBuilder(ModTags.Blocks.NEEDS_ZALANT_TOOL)
+                .addTag(BlockTags.NEEDS_IRON_TOOL);
 
     }
 }

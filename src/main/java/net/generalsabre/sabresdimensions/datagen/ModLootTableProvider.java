@@ -3,7 +3,7 @@ package net.generalsabre.sabresdimensions.datagen;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
 import net.generalsabre.sabresdimensions.block.ModBlocks;
-import net.generalsabre.sabresdimensions.item.ModItems;
+import net.generalsabre.sabresdimensions.item.custom.ModItems;
 import net.minecraft.registry.RegistryWrapper;
 
 import java.util.concurrent.CompletableFuture;

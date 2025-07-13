@@ -1,4 +1,4 @@
-package net.generalsabre.sabresdimensions.item;
+package net.generalsabre.sabresdimensions.item.custom;
 
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.generalsabre.sabresdimensions.SabresDimensions;
@@ -67,7 +67,14 @@ public class ModItemGroups {
                         entries.add(ModItems.ARAKITE_ROD);
                         entries.add(ModItems.ZALANT_ROD);
                         entries.add(ModItems.RAW_ZALANT);
+
                         entries.add(ModItems.ZALANT_INGOT);
+                        entries.add(ModItems.ZALANT_SWORD);
+                        entries.add(ModItems.ZALANT_SHOVEL);
+                        entries.add(ModItems.ZALANT_PICKAXE);
+                        entries.add(ModItems.ZALANT_AXE);
+                        entries.add(ModItems.ZALANT_HOE);
+
                         entries.add(ModItems.PENKAZ_INGOT);
                         entries.add(ModItems.RAW_PENKAZ);
                         entries.add(ModItems.DALAMINE_CRYSTAL);
