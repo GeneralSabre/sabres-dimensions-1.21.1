@@ -268,5 +268,33 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('S', Items.STICK)
                 .criterion(hasItem(ModItems.PENKAZINE_ALLOY_INGOT), conditionsFromItem(ModItems.PENKAZINE_ALLOY_INGOT))
                 .offerTo(recipeExporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.PENKAZINE_ALLOY_HELMET)
+                .pattern("ZZZ")
+                .pattern("Z Z")
+                .pattern("   ")
+                .input('Z', ModItems.PENKAZINE_ALLOY_INGOT)
+                .criterion(hasItem(ModItems.PENKAZINE_ALLOY_INGOT), conditionsFromItem(ModItems.PENKAZINE_ALLOY_INGOT))
+                .offerTo(recipeExporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.PENKAZINE_ALLOY_CHESTPLATE)
+                .pattern("Z Z")
+                .pattern("ZZZ")
+                .pattern("ZZZ")
+                .input('Z', ModItems.PENKAZINE_ALLOY_INGOT)
+                .criterion(hasItem(ModItems.PENKAZINE_ALLOY_INGOT), conditionsFromItem(ModItems.PENKAZINE_ALLOY_INGOT))
+                .offerTo(recipeExporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.PENKAZINE_ALLOY_LEGGINGS)
+                .pattern("ZZZ")
+                .pattern("Z Z")
+                .pattern("Z Z")
+                .input('Z', ModItems.PENKAZINE_ALLOY_INGOT)
+                .criterion(hasItem(ModItems.PENKAZINE_ALLOY_INGOT), conditionsFromItem(ModItems.PENKAZINE_ALLOY_INGOT))
+                .offerTo(recipeExporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.PENKAZINE_ALLOY_BOOTS)
+                .pattern("   ")
+                .pattern("Z Z")
+                .pattern("Z Z")
+                .input('Z', ModItems.PENKAZINE_ALLOY_INGOT)
+                .criterion(hasItem(ModItems.PENKAZINE_ALLOY_INGOT), conditionsFromItem(ModItems.PENKAZINE_ALLOY_INGOT))
+                .offerTo(recipeExporter);
     }
 }

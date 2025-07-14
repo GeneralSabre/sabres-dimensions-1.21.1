@@ -25,8 +25,19 @@ public class ModArmorMaterials {
                 map.put(ArmorItem.Type.HELMET, 2);
                 map.put(ArmorItem.Type.BODY, 5);
 
-            }),20, SoundEvents.ITEM_ARMOR_EQUIP_IRON, () -> Ingredient.ofItems(ModItems.ZALANT_INGOT),
+            }),17, SoundEvents.ITEM_ARMOR_EQUIP_IRON, () -> Ingredient.ofItems(ModItems.ZALANT_INGOT),
                     List.of(new ArmorMaterial.Layer(Identifier.of(SabresDimensions.MOD_ID, "zalant"))),1,0));
+
+    public static final RegistryEntry<ArmorMaterial> PENKAZINE_ARMOR_MATERIAL = registerArmorMaterial("penkazine",
+            () -> new ArmorMaterial(Util.make(new EnumMap<>(ArmorItem.Type.class), map -> {
+                map.put(ArmorItem.Type.BOOTS, 3);
+                map.put(ArmorItem.Type.LEGGINGS, 6);
+                map.put(ArmorItem.Type.CHESTPLATE, 8);
+                map.put(ArmorItem.Type.HELMET, 3);
+                map.put(ArmorItem.Type.BODY, 11);
+
+            }),15, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, () -> Ingredient.ofItems(ModItems.PENKAZINE_ALLOY_INGOT),
+                    List.of(new ArmorMaterial.Layer(Identifier.of(SabresDimensions.MOD_ID, "penkazine"))),1,0));
 
     public static RegistryEntry<ArmorMaterial> registerArmorMaterial(String name, Supplier<ArmorMaterial> material){
         return Registry.registerReference(Registries.ARMOR_MATERIAL, Identifier.of(SabresDimensions.MOD_ID, name), material.get());

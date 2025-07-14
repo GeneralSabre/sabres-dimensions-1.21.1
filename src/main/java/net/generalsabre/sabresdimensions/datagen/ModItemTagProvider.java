@@ -42,7 +42,11 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.ZALANT_HELMET)
                 .add(ModItems.ZALANT_CHESTPLATE)
                 .add(ModItems.ZALANT_LEGGINGS)
-                .add(ModItems.ZALANT_BOOTS);
+                .add(ModItems.ZALANT_BOOTS)
+                .add(ModItems.PENKAZINE_ALLOY_HELMET)
+                .add(ModItems.PENKAZINE_ALLOY_CHESTPLATE)
+                .add(ModItems.PENKAZINE_ALLOY_LEGGINGS)
+                .add(ModItems.PENKAZINE_ALLOY_BOOTS);
 
 
     }

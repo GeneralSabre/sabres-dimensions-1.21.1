@@ -91,6 +91,11 @@ public class ModItemGroups {
                         entries.add(ModItems.PENKAZINE_ALLOY_AXE);
                         entries.add(ModItems.PENKAZINE_ALLOY_HOE);
 
+                        entries.add(ModItems.PENKAZINE_ALLOY_HELMET);
+                        entries.add(ModItems.PENKAZINE_ALLOY_CHESTPLATE);
+                        entries.add(ModItems.PENKAZINE_ALLOY_LEGGINGS);
+                        entries.add(ModItems.PENKAZINE_ALLOY_BOOTS);
+
                         entries.add(ModItems.CHORAZINE_DUST);
                         entries.add(ModItems.ULAU_CLUMP);
                     })

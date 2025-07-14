@@ -76,6 +76,12 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.PENKAZINE_ALLOY_AXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.PENKAZINE_ALLOY_HOE, Models.HANDHELD);
 
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.PENKAZINE_ALLOY_HELMET));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.PENKAZINE_ALLOY_CHESTPLATE));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.PENKAZINE_ALLOY_LEGGINGS));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.PENKAZINE_ALLOY_BOOTS));
+
+
         itemModelGenerator.register(ModItems.RAW_ZALANT, Models.GENERATED);
         itemModelGenerator.register(ModItems.ZALANT_INGOT, Models.GENERATED);
 

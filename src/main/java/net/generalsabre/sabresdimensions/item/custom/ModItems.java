@@ -62,6 +62,18 @@ public class ModItems {
     public static final Item PENKAZINE_ALLOY_HOE = registerItem("penkazine_alloy_hoe",
             new HoeItem(ModToolMaterials.PENKAZINE_ALLOY, new Item.Settings()
                     .attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterials.PENKAZINE_ALLOY,0,-3f))));
+    public static final Item PENKAZINE_ALLOY_HELMET = registerItem("penkazine_alloy_helmet",
+            new ArmorItem(ModArmorMaterials.PENKAZINE_ARMOR_MATERIAL, ArmorItem.Type.HELMET, new Item.Settings()
+                    .maxDamage(ArmorItem.Type.HELMET.getMaxDamage(40))));
+    public static final Item PENKAZINE_ALLOY_CHESTPLATE = registerItem("penkazine_alloy_chestplate",
+            new ArmorItem(ModArmorMaterials.PENKAZINE_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Settings()
+                    .maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(40))));
+    public static final Item PENKAZINE_ALLOY_LEGGINGS = registerItem("penkazine_alloy_leggings",
+            new ArmorItem(ModArmorMaterials.PENKAZINE_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS, new Item.Settings()
+                    .maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(40))));
+    public static final Item PENKAZINE_ALLOY_BOOTS = registerItem("penkazine_alloy_boots",
+            new ArmorItem(ModArmorMaterials.PENKAZINE_ARMOR_MATERIAL, ArmorItem.Type.BOOTS, new Item.Settings()
+                    .maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(40))));
     // MISC
     public static final Item ULAU_CLUMP = registerItem("ulau_clump", new Item(new Item.Settings()));
 
