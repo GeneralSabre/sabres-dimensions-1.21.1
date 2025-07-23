@@ -57,6 +57,8 @@ public class ModItemGroups {
                         entries.add(ModBlocks.PENKAZINE_ALLOY_BLOCK);
 
                         entries.add(ModBlocks.ULAU_BLOCK);
+                        entries.add(ModBlocks.LUPAMOONE_BLOCK);
+                        entries.add(ModBlocks.LUPAMOONE_ORE);
                     })
                     .build());
             public static final ItemGroup SABRES_DIMENSIONS_ITEMS = Registry.register(Registries.ITEM_GROUP,
@@ -98,6 +100,7 @@ public class ModItemGroups {
 
                         entries.add(ModItems.CHORAZINE_DUST);
                         entries.add(ModItems.ULAU_CLUMP);
+                        entries.add(ModItems.LUPAMOONE);
                     })
                     .build());
     public static final ItemGroup SABRES_DIMENSIONS_MISC = Registry.register(Registries.ITEM_GROUP,

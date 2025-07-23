@@ -54,7 +54,9 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.ZALANT_DOOR)
                 .add(ModBlocks.ZALANT_TRAPDOOR)
 
-                .add(ModBlocks.PENKAZINE_ALLOY_BLOCK);
+                .add(ModBlocks.PENKAZINE_ALLOY_BLOCK)
+                .add(ModBlocks.LUPAMOONE_BLOCK)
+                .add(ModBlocks.LUPAMOONE_ORE);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.PENKAZ_ORE)
@@ -66,7 +68,9 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.PENKAZINE_ALLOY_BLOCK)
                 .add(ModBlocks.ZALANT_BLOCK)
                 .add(ModBlocks.RAW_ZALANT_BLOCK)
-                .add(ModBlocks.ZALANT_ORE);
+                .add(ModBlocks.ZALANT_ORE)
+                .add(ModBlocks.LUPAMOONE_BLOCK)
+                .add(ModBlocks.LUPAMOONE_ORE);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL);
 

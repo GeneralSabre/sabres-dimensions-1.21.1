@@ -76,6 +76,7 @@ public class ModItems {
                     .maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(40))));
     // MISC
     public static final Item ULAU_CLUMP = registerItem("ulau_clump", new Item(new Item.Settings()));
+    public static final Item LUPAMOONE = registerItem("lupamoone", new Item(new Item.Settings()));
 
     private static Item registerItem(String name, Item item){
         return Registry.register(Registries.ITEM, Identifier.of(SabresDimensions.MOD_ID, name), item);

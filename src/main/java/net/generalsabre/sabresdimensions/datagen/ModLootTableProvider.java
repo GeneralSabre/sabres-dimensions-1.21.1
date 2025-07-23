@@ -40,7 +40,9 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.CHORAZINE_ORE, oreDrops(ModBlocks.CHORAZINE_ORE, ModItems.CHORAZINE_DUST));
 
         addDrop(ModBlocks.DALAMINE_BLOCK);
+        addDrop(ModBlocks.LUPAMOONE_BLOCK);
         addDrop(ModBlocks.DALAMINE_ORE, oreDrops(ModBlocks.DALAMINE_ORE, ModItems.DALAMINE_CRYSTAL));
+        addDrop(ModBlocks.LUPAMOONE_ORE, oreDrops(ModBlocks.LUPAMOONE_ORE, ModItems.LUPAMOONE));
 
         addDrop(ModBlocks.PENKAZ_BLOCK);
         addDrop(ModBlocks.RAW_PENKAZ_BLOCK);

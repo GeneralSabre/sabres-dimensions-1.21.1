@@ -68,6 +68,9 @@
   "block.sabresdimensions.chorazine_ore": "Chorazine Ore",
   "block.sabresdimensions.chorazine_powder_block": "Chorazine Powder Block",
   "block.sabresdimensions.ulau_block": "Block of Ulau",
+  "block.sabresdimensions.lupamoone_ore": "Lupamoone Ore",
+  "block.sabresdimensions.lupamoone_block": "Lupamoone Block",
+  "item.sabresdimensions.lupamoone": "Lupamoone",
 
   "itemgroup.sabresdimensions.sabres_dimensions_blocks": "Sabre's Dimensions Blocks",
   "itemgroup.sabresdimensions.sabres_dimensions_items": "Sabre's Dimensions Items",

@@ -42,7 +42,9 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CHORAZINE_POWDER_BLOCK);
 
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DALAMINE_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.LUPAMOONE_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DALAMINE_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.LUPAMOONE_ORE);
 
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.PENKAZ_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RAW_PENKAZ_BLOCK);
@@ -98,5 +100,6 @@ public class ModModelProvider extends FabricModelProvider {
 
         itemModelGenerator.register(ModItems.ZALANT_ROD, Models.GENERATED);
         itemModelGenerator.register(ModItems.ULAU_CLUMP, Models.GENERATED);
+        itemModelGenerator.register(ModItems.LUPAMOONE, Models.GENERATED);
     }
 }
