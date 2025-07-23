@@ -297,5 +297,35 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('Z', ModItems.PENKAZINE_ALLOY_INGOT)
                 .criterion(hasItem(ModItems.PENKAZINE_ALLOY_INGOT), conditionsFromItem(ModItems.PENKAZINE_ALLOY_INGOT))
                 .offerTo(recipeExporter);
+
+        // LUPAMOONE SHIT
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.LUPAMOONE_PROCESSOR)
+                .pattern(" R ")
+                .pattern("RLR")
+                .pattern(" R ")
+                .input('L', ModItems.LUPAMOONE)
+                .input('R', Items.REDSTONE)
+                .criterion(hasItem(ModItems.LUPAMOONE), conditionsFromItem(ModItems.LUPAMOONE))
+                .offerTo(recipeExporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.LOGIC_CHIP)
+                .pattern("RCR")
+                .pattern("LLL")
+                .pattern("RIR")
+                .input('L', ModItems.LUPAMOONE_PROCESSOR)
+                .input('C', Blocks.COMPARATOR)
+                .input('I', Items.COPPER_INGOT)
+                .input('R', Items.REDSTONE)
+                .criterion(hasItem(ModItems.LUPAMOONE_PROCESSOR), conditionsFromItem(ModItems.LUPAMOONE_PROCESSOR))
+                .offerTo(recipeExporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.LUPAMOONE_CORE)
+                .pattern("LML")
+                .pattern("MCM")
+                .pattern("LML")
+                .input('L', ModItems.LOGIC_CHIP)
+                .input('M', ModItems.LUPAMOONE)
+                .input('C', Items.COPPER_INGOT)
+                .criterion(hasItem(ModItems.LOGIC_CHIP), conditionsFromItem(ModItems.LOGIC_CHIP))
+                .offerTo(recipeExporter);
     }
 }

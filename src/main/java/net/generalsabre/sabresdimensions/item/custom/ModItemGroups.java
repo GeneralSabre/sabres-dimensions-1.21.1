@@ -101,6 +101,9 @@ public class ModItemGroups {
                         entries.add(ModItems.CHORAZINE_DUST);
                         entries.add(ModItems.ULAU_CLUMP);
                         entries.add(ModItems.LUPAMOONE);
+                        entries.add(ModItems.LUPAMOONE_PROCESSOR);
+                        entries.add(ModItems.LOGIC_CHIP);
+                        entries.add(ModItems.LUPAMOONE_CORE);
                     })
                     .build());
     public static final ItemGroup SABRES_DIMENSIONS_MISC = Registry.register(Registries.ITEM_GROUP,

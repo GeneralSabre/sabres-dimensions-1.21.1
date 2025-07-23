@@ -71,6 +71,9 @@
   "block.sabresdimensions.lupamoone_ore": "Lupamoone Ore",
   "block.sabresdimensions.lupamoone_block": "Lupamoone Block",
   "item.sabresdimensions.lupamoone": "Lupamoone",
+  "item.sabresdimensions.lupamoone_processor": "Lupamoone Processor",
+  "item.sabresdimensions.lupamoone_core": "Lupamoone Core",
+  "item.sabresdimensions.logic_chip": "Logic Chip",
 
   "itemgroup.sabresdimensions.sabres_dimensions_blocks": "Sabre's Dimensions Blocks",
   "itemgroup.sabresdimensions.sabres_dimensions_items": "Sabre's Dimensions Items",

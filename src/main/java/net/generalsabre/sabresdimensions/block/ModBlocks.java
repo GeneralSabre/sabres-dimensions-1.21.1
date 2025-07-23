@@ -18,7 +18,7 @@ public class ModBlocks {
     public static final Block RAW_ZALANT_BLOCK = registerBlock("raw_zalant_block",
             new Block(AbstractBlock.Settings.create().strength(5f,6f).requiresTool().sounds(BlockSoundGroup.METAL)));
     public static final Block ZALANT_ORE = registerBlock("zalant_ore",
-            new ExperienceDroppingBlock(UniformIntProvider.create(2,5), AbstractBlock.Settings.create().strength(5f,5f).requiresTool().sounds(BlockSoundGroup.METAL)));
+            new ExperienceDroppingBlock(UniformIntProvider.create(2,5), AbstractBlock.Settings.create().strength(5f,5f).requiresTool().sounds(BlockSoundGroup.DEEPSLATE)));
     public static final Block ZALANT_DOOR = registerBlock("zalant_door",
             new DoorBlock(BlockSetType.IRON,AbstractBlock.Settings.create().strength(1.5f,6f).requiresTool().sounds(BlockSoundGroup.METAL).nonOpaque()));
     public static final Block ZALANT_TRAPDOOR = registerBlock("zalant_trapdoor",
