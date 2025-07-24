@@ -3,6 +3,7 @@ package net.generalsabre.sabresdimensions.datagen;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.generalsabre.sabresdimensions.block.ModBlocks;
+import net.generalsabre.sabresdimensions.fluid.ModFluids;
 import net.generalsabre.sabresdimensions.item.custom.ModItems;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
@@ -100,6 +101,7 @@ public class ModModelProvider extends FabricModelProvider {
 
         itemModelGenerator.register(ModItems.ZALANT_ROD, Models.GENERATED);
         itemModelGenerator.register(ModItems.ULAU_CLUMP, Models.GENERATED);
+        itemModelGenerator.register(ModFluids.BUCKET_OF_MOLTEN_DELETERIUM, Models.GENERATED);
         itemModelGenerator.register(ModItems.LUPAMOONE, Models.GENERATED);
         itemModelGenerator.register(ModItems.LUPAMOONE_PROCESSOR, Models.GENERATED);
         itemModelGenerator.register(ModItems.LOGIC_CHIP, Models.GENERATED);

@@ -3,6 +3,7 @@ package net.generalsabre.sabresdimensions.item.custom;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.generalsabre.sabresdimensions.SabresDimensions;
 import net.generalsabre.sabresdimensions.block.ModBlocks;
+import net.generalsabre.sabresdimensions.fluid.ModFluids;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.registry.Registries;
@@ -108,10 +109,10 @@ public class ModItemGroups {
                     .build());
     public static final ItemGroup SABRES_DIMENSIONS_MISC = Registry.register(Registries.ITEM_GROUP,
             Identifier.of(SabresDimensions.MOD_ID, "sabres_dimensions_misc"),
-            FabricItemGroup.builder().icon(() -> new ItemStack(ModBlocks.CHORAZINE_POWDER_BLOCK))
+            FabricItemGroup.builder().icon(() -> new ItemStack(ModFluids.BUCKET_OF_MOLTEN_DELETERIUM))
                     .displayName(Text.translatable("itemgroup.sabresdimensions.sabres_dimensions_misc"))
                     .entries((displayContext, entries) -> {
-                        entries.add(ModBlocks.CHORAZINE_POWDER_BLOCK);
+                        entries.add(ModFluids.BUCKET_OF_MOLTEN_DELETERIUM);
                     })
                     .build());
 
