@@ -156,6 +156,13 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('A', ModBlocks.ARAKITE)
                 .criterion(hasItem(ModBlocks.ARAKITE), conditionsFromItem(ModBlocks.ARAKITE))
                 .offerTo(recipeExporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.ARAKITE_ROD)
+                .pattern("  A")
+                .pattern(" A")
+                .pattern("A  ")
+                .input('A', ModBlocks.ARAKITE)
+                .criterion(hasItem(ModBlocks.ARAKITE), conditionsFromItem(ModBlocks.ARAKITE))
+                .offerTo(recipeExporter);
 
 
         // Zalant
@@ -227,6 +234,14 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('Z', ModItems.ZALANT_INGOT)
                 .criterion(hasItem(ModItems.ZALANT_INGOT), conditionsFromItem(ModItems.ZALANT_INGOT))
                 .offerTo(recipeExporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.ZALANT_ROD)
+                .pattern("  Z")
+                .pattern(" Z ")
+                .pattern("Z  ")
+                .input('Z', ModItems.ZALANT_INGOT)
+                .criterion(hasItem(ModItems.ZALANT_INGOT), conditionsFromItem(ModItems.ZALANT_INGOT))
+                .offerTo(recipeExporter);
+
 
         // Penkazine Alloy
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.PENKAZINE_ALLOY_SWORD)
