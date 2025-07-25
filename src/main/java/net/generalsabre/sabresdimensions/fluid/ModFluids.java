@@ -45,8 +45,6 @@ public abstract class ModFluids extends FlowableFluid{
         BUCKET_OF_MOLTEN_DELETERIUM = Registry.register(Registries.ITEM,
                 Identifier.of(SabresDimensions.MOD_ID, "bucket_of_molten_deleterium"),
                 new BucketItem(ModFluids.STILL_MOLTEN_DELETERIUM, new Item.Settings().maxCount(1).recipeRemainder(Items.BUCKET)));
-
-
     }
 
     @Override

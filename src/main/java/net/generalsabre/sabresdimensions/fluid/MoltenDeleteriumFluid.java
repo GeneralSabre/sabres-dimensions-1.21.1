@@ -8,13 +8,25 @@ import net.minecraft.fluid.FlowableFluid;
 import net.minecraft.fluid.Fluid;
 import net.minecraft.fluid.FluidState;
 import net.minecraft.item.Item;
+import net.minecraft.sound.SoundCategory;
+import net.minecraft.sound.SoundEvents;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.Properties;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.random.Random;
 import net.minecraft.world.World;
 import net.minecraft.world.WorldView;
 
 public abstract class MoltenDeleteriumFluid extends ModFluids{
+
+    @Override
+    public void randomDisplayTick(World world, BlockPos pos, FluidState state, Random random) {
+        super.randomDisplayTick(world, pos, state, random);
+        if (random.nextInt(20) == 0) {
+            world.playSound(null, pos, SoundEvents.BLOCK_LAVA_AMBIENT,
+                    SoundCategory.BLOCKS, 0.5f, 1.0f);
+        }
+    }
 
     @Override
     public FlowableFluid getStill() {
