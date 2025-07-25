@@ -56,7 +56,11 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.ZALANT_DOOR,doorDrops(ModBlocks.ZALANT_DOOR));
         addDrop(ModBlocks.ZALANT_TRAPDOOR);
         addDrop(ModBlocks.RAW_ZALANT_BLOCK);
+
         addDrop(ModBlocks.ZALANT_ORE, oreDrops(ModBlocks.ZALANT_ORE, ModItems.RAW_ZALANT));
+
+        addDrop(ModBlocks.ORAXIUM_ORE, oreDrops(ModBlocks.ORAXIUM_ORE, ModItems.RAW_ORAXIUM));
+        addDrop(ModBlocks.DELETERIUM_BLOCK);
 
     }
 }

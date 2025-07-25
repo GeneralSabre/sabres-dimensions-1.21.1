@@ -60,6 +60,9 @@ public class ModItemGroups {
                         entries.add(ModBlocks.ULAU_BLOCK);
                         entries.add(ModBlocks.LUPAMOONE_BLOCK);
                         entries.add(ModBlocks.LUPAMOONE_ORE);
+
+                        entries.add(ModBlocks.ORAXIUM_ORE);
+                        entries.add(ModBlocks.DELETERIUM_BLOCK);
                     })
                     .build());
             public static final ItemGroup SABRES_DIMENSIONS_ITEMS = Registry.register(Registries.ITEM_GROUP,
@@ -105,6 +108,11 @@ public class ModItemGroups {
                         entries.add(ModItems.LUPAMOONE_PROCESSOR);
                         entries.add(ModItems.LOGIC_CHIP);
                         entries.add(ModItems.LUPAMOONE_CORE);
+
+                        entries.add(ModItems.CRUSHED_ORAXIUM);
+                        entries.add(ModItems.RAW_ORAXIUM);
+                        entries.add(ModItems.COOLED_SLAG);
+                        entries.add(ModItems.DELETERIUM_INGOT);
                     })
                     .build());
     public static final ItemGroup SABRES_DIMENSIONS_MISC = Registry.register(Registries.ITEM_GROUP,

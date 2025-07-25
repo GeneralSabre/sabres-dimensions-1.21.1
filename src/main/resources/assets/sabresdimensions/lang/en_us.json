@@ -76,6 +76,13 @@
   "item.sabresdimensions.lupamoone_core": "Lupamoone Core",
   "item.sabresdimensions.logic_chip": "Logic Chip",
 
+  "block.sabresdimensions.oraxium_ore": "Oraxium Ore",
+  "block.sabresdimensions.deleterium_block": "Deleterium Block",
+  "item.sabresdimensions.crushed_oraxium": "Crushed Oraxium",
+  "item.sabresdimensions.raw_oraxium": "Raw Oraxium",
+  "item.sabresdimensions.cooled_slag": "Cooled Slag",
+  "item.sabresdimensions.deleterium_ingot": "Deleterium Ingot",
+
   "itemgroup.sabresdimensions.sabres_dimensions_blocks": "Sabre's Dimensions Blocks",
   "itemgroup.sabresdimensions.sabres_dimensions_items": "Sabre's Dimensions Items",
   "itemgroup.sabresdimensions.sabres_dimensions_misc": "Sabre's Dimensions Misc."

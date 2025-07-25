@@ -80,13 +80,17 @@ public class ModItems {
     // MISC
     public static final Item ULAU_CLUMP = registerItem("ulau_clump", new Item(new Item.Settings()));
 
-
-
     // LUPAMOONE
     public static final Item LUPAMOONE = registerItem("lupamoone", new Item(new Item.Settings()));
     public static final Item LUPAMOONE_PROCESSOR = registerItem("lupamoone_processor", new Item(new Item.Settings()));
     public static final Item LOGIC_CHIP = registerItem("logic_chip", new Item(new Item.Settings()));
     public static final Item LUPAMOONE_CORE = registerItem("lupamoone_core", new Item(new Item.Settings()));
+
+    // DELETERIUM / ORAXIUM
+    public static final Item CRUSHED_ORAXIUM = registerItem("crushed_oraxium", new Item(new Item.Settings()));
+    public static final Item RAW_ORAXIUM = registerItem("raw_oraxium", new Item(new Item.Settings()));
+    public static final Item COOLED_SLAG = registerItem("cooled_slag", new Item(new Item.Settings()));
+    public static final Item DELETERIUM_INGOT = registerItem("deleterium_ingot", new Item(new Item.Settings()));
 
     private static Item registerItem(String name, Item item){
         return Registry.register(Registries.ITEM, Identifier.of(SabresDimensions.MOD_ID, name), item);

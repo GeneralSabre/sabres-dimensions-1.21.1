@@ -56,7 +56,10 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
                 .add(ModBlocks.PENKAZINE_ALLOY_BLOCK)
                 .add(ModBlocks.LUPAMOONE_BLOCK)
-                .add(ModBlocks.LUPAMOONE_ORE);
+                .add(ModBlocks.LUPAMOONE_ORE)
+
+                .add(ModBlocks.ORAXIUM_ORE)
+                .add(ModBlocks.DELETERIUM_BLOCK);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.PENKAZ_ORE)
@@ -72,7 +75,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.LUPAMOONE_BLOCK)
                 .add(ModBlocks.LUPAMOONE_ORE);
 
-        getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL);
+        getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL)
+                .add((ModBlocks.ORAXIUM_ORE));
 
         getOrCreateTagBuilder(BlockTags.WALLS)
                 .add(ModBlocks.ARAKITE_WALL)

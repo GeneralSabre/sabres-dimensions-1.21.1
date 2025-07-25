@@ -28,6 +28,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerReversibleCompactingRecipes(recipeExporter, RecipeCategory.MISC, ModItems.PENKAZ_INGOT, RecipeCategory.MISC, ModBlocks.PENKAZ_BLOCK);
         offerReversibleCompactingRecipes(recipeExporter, RecipeCategory.MISC, ModItems.PENKAZINE_ALLOY_INGOT, RecipeCategory.MISC, ModBlocks.PENKAZINE_ALLOY_BLOCK);
         offerReversibleCompactingRecipes(recipeExporter, RecipeCategory.MISC, ModItems.RAW_PENKAZ, RecipeCategory.MISC, ModBlocks.RAW_PENKAZ_BLOCK);
+        offerReversibleCompactingRecipes(recipeExporter, RecipeCategory.MISC, ModItems.DELETERIUM_INGOT, RecipeCategory.MISC, ModBlocks.DELETERIUM_BLOCK);
 
         offerReversibleCompactingRecipes(recipeExporter, RecipeCategory.MISC, ModItems.RAW_ZALANT, RecipeCategory.MISC, ModBlocks.RAW_ZALANT_BLOCK);
         offerReversibleCompactingRecipes(recipeExporter, RecipeCategory.MISC, ModItems.ZALANT_INGOT, RecipeCategory.MISC, ModBlocks.ZALANT_BLOCK);
@@ -158,7 +159,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo(recipeExporter);
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.ARAKITE_ROD)
                 .pattern("  A")
-                .pattern(" A")
+                .pattern(" A ")
                 .pattern("A  ")
                 .input('A', ModBlocks.ARAKITE)
                 .criterion(hasItem(ModBlocks.ARAKITE), conditionsFromItem(ModBlocks.ARAKITE))

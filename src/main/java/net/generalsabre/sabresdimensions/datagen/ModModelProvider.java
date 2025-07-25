@@ -61,6 +61,9 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerTrapdoor(ModBlocks.ZALANT_TRAPDOOR);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ZALANT_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RAW_ZALANT_BLOCK);
+
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ORAXIUM_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DELETERIUM_BLOCK);
     }
 
     @Override
@@ -101,10 +104,16 @@ public class ModModelProvider extends FabricModelProvider {
 
         itemModelGenerator.register(ModItems.ZALANT_ROD, Models.GENERATED);
         itemModelGenerator.register(ModItems.ULAU_CLUMP, Models.GENERATED);
-        itemModelGenerator.register(ModFluids.BUCKET_OF_MOLTEN_DELETERIUM, Models.GENERATED);
+
         itemModelGenerator.register(ModItems.LUPAMOONE, Models.GENERATED);
         itemModelGenerator.register(ModItems.LUPAMOONE_PROCESSOR, Models.GENERATED);
         itemModelGenerator.register(ModItems.LOGIC_CHIP, Models.GENERATED);
         itemModelGenerator.register(ModItems.LUPAMOONE_CORE, Models.GENERATED);
+
+        itemModelGenerator.register(ModFluids.BUCKET_OF_MOLTEN_DELETERIUM, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CRUSHED_ORAXIUM, Models.GENERATED);
+        itemModelGenerator.register(ModItems.RAW_ORAXIUM, Models.GENERATED);
+        itemModelGenerator.register(ModItems.COOLED_SLAG, Models.GENERATED);
+        itemModelGenerator.register(ModItems.DELETERIUM_INGOT, Models.GENERATED);
     }
 }
