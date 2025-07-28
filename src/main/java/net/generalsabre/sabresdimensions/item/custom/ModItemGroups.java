@@ -121,6 +121,7 @@ public class ModItemGroups {
                     .displayName(Text.translatable("itemgroup.sabresdimensions.sabres_dimensions_misc"))
                     .entries((displayContext, entries) -> {
                         entries.add(ModFluids.BUCKET_OF_MOLTEN_DELETERIUM);
+                        entries.add(ModBlocks.ALLOY_FURNACE);
                     })
                     .build());
 

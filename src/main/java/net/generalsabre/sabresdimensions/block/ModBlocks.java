@@ -1,5 +1,6 @@
 package net.generalsabre.sabresdimensions.block;
 
+import net.generalsabre.sabresdimensions.block.custom.AlloyFurnaceBlock;
 import net.minecraft.block.*;
 import net.generalsabre.sabresdimensions.SabresDimensions;
 import net.minecraft.item.BlockItem;
@@ -125,6 +126,8 @@ public class ModBlocks {
             new TranslucentBlock(AbstractBlock.Settings.create().strength(3f,3f).sounds(BlockSoundGroup.METAL).requiresTool()));
     public static final Block LUPAMOONE_ORE = registerBlock("lupamoone_ore",
             new TranslucentBlock(AbstractBlock.Settings.create().strength(2.5f,2.5f).sounds(BlockSoundGroup.DEEPSLATE).requiresTool()));
+    public static final Block ALLOY_FURNACE = registerBlock("alloy_furnace",
+            new AlloyFurnaceBlock(AbstractBlock.Settings.create()));
 
     // Deleterium / Oraxium
     public static final Block ORAXIUM_ORE = registerBlock("oraxium_ore",
