@@ -99,6 +99,24 @@ public class AlloyFurnaceBlockEntity extends BlockEntity implements ExtendedScre
         }
     }
 
+    private void craftItem() {
+        this.removeStack(INPUT_SLOT_1, 1);
+        this.removeStack(INPUT_SLOT_2, 1);
+
+        ItemStack output = new ItemStack(ModItems.PENKAZINE_ALLOY_INGOT, 1);
+        this.setStack(OUTPUT_SLOT, new ItemStack(output.getItem(),
+                this.getStack(OUTPUT_SLOT).getCount() + output.getCount()));
+    }
+
+    private void resetProgress() {
+        this.progress = 0;
+        this.maxProgress = 300;
+    }
+
+    private boolean hasCraftingFinished() {
+        return this.progress >= this.maxProgress;
+    }
+
     private void incrementProgress() {
         this.progress++;
     }
