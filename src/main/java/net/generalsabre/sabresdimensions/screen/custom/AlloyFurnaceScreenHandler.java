@@ -22,7 +22,7 @@ public class AlloyFurnaceScreenHandler extends ScreenHandler {
     private final PropertyDelegate propertyDelegate;
     private final AlloyFurnaceBlockEntity blockEntity;
 
-    protected AlloyFurnaceScreenHandler(int syncId, PlayerInventory inventory, BlockPos pos) {
+    public AlloyFurnaceScreenHandler(int syncId, PlayerInventory inventory, BlockPos pos) {
         this(syncId, inventory, inventory.player.getWorld().getBlockEntity(pos), new ArrayPropertyDelegate(2));
     }
 

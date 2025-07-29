@@ -16,10 +16,10 @@ import net.minecraft.util.math.BlockPos;
 
 public class ModScreenHandlers {
 
-    /* public static final ScreenHandlerType<AlloyFurnaceScreenHandler> ALLOY_FURNACE_SCREEN_HANDLER =
-     *       Registry.register(Registries.SCREEN_HANDLER, Identifier.of(SabresDimensions.MOD_ID, "alloy_furnace_screen_handler"),
-     *              new ExtendedScreenHandlerType<>(AlloyFurnaceScreenHandler::new, BlockPos.PACKET_CODEC));
-    */
+     public static final ScreenHandlerType<AlloyFurnaceScreenHandler> ALLOY_FURNACE_SCREEN_HANDLER =
+            Registry.register(Registries.SCREEN_HANDLER, Identifier.of(SabresDimensions.MOD_ID, "alloy_furnace_screen_handler"),
+                   new ExtendedScreenHandlerType<>(AlloyFurnaceScreenHandler::new, BlockPos.PACKET_CODEC));
+
     public static void registerScreenHandlers(){
         SabresDimensions.LOGGER.info("Registering Screen Handlers for " + SabresDimensions.MOD_ID);
     }
