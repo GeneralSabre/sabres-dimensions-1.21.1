@@ -83,6 +83,8 @@
   "item.sabresdimensions.cooled_slag": "Cooled Slag",
   "item.sabresdimensions.deleterium_ingot": "Deleterium Ingot",
 
+  "block.sabresdimensions.alloy_furnace": "Alloy Furnace",
+
   "itemgroup.sabresdimensions.sabres_dimensions_blocks": "Sabre's Dimensions Blocks",
   "itemgroup.sabresdimensions.sabres_dimensions_items": "Sabre's Dimensions Items",
   "itemgroup.sabresdimensions.sabres_dimensions_misc": "Sabre's Dimensions Misc."

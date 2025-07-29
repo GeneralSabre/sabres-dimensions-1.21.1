@@ -2,6 +2,7 @@ package net.generalsabre.sabresdimensions.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
+import net.generalsabre.sabresdimensions.SabresDimensions;
 import net.generalsabre.sabresdimensions.block.ModBlocks;
 import net.generalsabre.sabresdimensions.fluid.ModFluids;
 import net.generalsabre.sabresdimensions.item.custom.ModItems;
@@ -9,6 +10,7 @@ import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
 import net.minecraft.data.client.Models;
 import net.minecraft.item.ArmorItem;
+import net.minecraft.util.Identifier;
 
 public class ModModelProvider extends FabricModelProvider {
     public ModModelProvider(FabricDataOutput output) {
@@ -64,6 +66,9 @@ public class ModModelProvider extends FabricModelProvider {
 
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ORAXIUM_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DELETERIUM_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ALLOY_FURNACE);
+
+
     }
 
     @Override

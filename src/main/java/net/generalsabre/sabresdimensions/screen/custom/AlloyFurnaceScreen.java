@@ -22,6 +22,13 @@ public class AlloyFurnaceScreen extends HandledScreen<AlloyFurnaceScreenHandler>
         super(handler, inventory, title);
     }
 
+    private void renderProgressArrow(DrawContext context, int x, int y) {
+        if(handler.isCrafting()) {
+            context.drawTexture(ARROW_TEXTURE, x + 79, y + 35, 0, 0,
+                    handler.getScaledArrowProgress(), 16, 24, 16);
+        }
+    }
+
     @Override
     protected void drawBackground(DrawContext context, float delta, int mouseX, int mouseY) {
         RenderSystem.setShader(GameRenderer::getPositionTexProgram);
@@ -32,6 +39,8 @@ public class AlloyFurnaceScreen extends HandledScreen<AlloyFurnaceScreenHandler>
         int y = (height - backgroundHeight) / 2;
 
         context.drawTexture(GUI_TEXTURE, x, y, 0, 0, backgroundWidth, backgroundHeight);
+
+        renderProgressArrow(context, x, y);
     }
 
     @Override

@@ -164,6 +164,14 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('A', ModBlocks.ARAKITE)
                 .criterion(hasItem(ModBlocks.ARAKITE), conditionsFromItem(ModBlocks.ARAKITE))
                 .offerTo(recipeExporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.ALLOY_FURNACE)
+                .pattern("AAA")
+                .pattern("Z Z")
+                .pattern("AAA")
+                .input('A', ModBlocks.ARAKITE_BRICKS)
+                .input('Z', ModItems.ZALANT_INGOT)
+                .criterion(hasItem(ModBlocks.ARAKITE), conditionsFromItem(ModBlocks.ARAKITE))
+                .offerTo(recipeExporter);
 
 
         // Zalant
