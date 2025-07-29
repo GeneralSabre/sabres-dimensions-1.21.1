@@ -1,5 +1,6 @@
 package net.generalsabre.sabresdimensions.block.entity.custom;
 
+import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.fabricmc.fabric.api.screenhandler.v1.ExtendedScreenHandlerFactory;
 import net.generalsabre.sabresdimensions.block.entity.ImplementedInventory;
 import net.generalsabre.sabresdimensions.block.entity.ModBlockEntities;
