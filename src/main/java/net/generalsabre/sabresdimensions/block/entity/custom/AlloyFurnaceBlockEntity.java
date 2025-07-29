@@ -30,11 +30,16 @@ import org.jetbrains.annotations.Nullable;
 
 public class AlloyFurnaceBlockEntity extends BlockEntity implements ExtendedScreenHandlerFactory<BlockPos>, ImplementedInventory {
 
-    private final DefaultedList<ItemStack> inventory = DefaultedList.ofSize(3, ItemStack.EMPTY);
+    private int burnTime;
+    private int burnProgress = 0;
+    private int maxBurnProgress = 0;
+
+    private final DefaultedList<ItemStack> inventory = DefaultedList.ofSize(4, ItemStack.EMPTY);
 
     private static final int INPUT_SLOT_1 = 0;
     private static final int INPUT_SLOT_2 = 1;
     private static final int OUTPUT_SLOT = 2;
+    private static final int FUEL_SLOT = 3;
 
     protected final PropertyDelegate propertyDelegate;
     private int progress = 0;
@@ -89,7 +94,20 @@ public class AlloyFurnaceBlockEntity extends BlockEntity implements ExtendedScre
     }
 
     public void tick(World world1, BlockPos pos, BlockState state1) {
-        if (hasRecipe()){
+
+        boolean isBurning = burnTime > 0;
+
+        if (isBurning){
+            incrementBurn();
+        }
+
+        if (hasRecipe() && isBurningFinished() && hasFuel()){
+            takeFuel();
+            burnTime = getBurnTime(getStack(FUEL_SLOT));
+        }
+
+
+        if (hasRecipe() && isBurning){
             incrementProgress();
             markDirty(world, pos, state1);
             if (hasCraftingFinished()){
@@ -111,6 +129,27 @@ public class AlloyFurnaceBlockEntity extends BlockEntity implements ExtendedScre
         * hasBurningFinished() -> check if burnTime >= maxBurnTime
          */
 
+    }
+
+    private int getBurnTime(ItemStack stack) {
+        maxBurnProgress = FuelRegistry.INSTANCE.get(stack.getItem());
+        return maxBurnProgress;
+    }
+
+    private boolean hasFuel() {
+        return this.getStack(FUEL_SLOT).getCount()>0;
+    }
+
+    private boolean isBurningFinished() {
+        return this.burnProgress >= this.maxBurnProgress;
+    }
+
+    private void takeFuel() {
+        this.removeStack(FUEL_SLOT, 1);
+    }
+
+    private void incrementBurn() {
+        burnTime--;
     }
 
     private void craftItem() {
