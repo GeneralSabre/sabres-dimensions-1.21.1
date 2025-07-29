@@ -127,7 +127,7 @@ public class ModBlocks {
     public static final Block LUPAMOONE_ORE = registerBlock("lupamoone_ore",
             new TranslucentBlock(AbstractBlock.Settings.create().strength(2.5f,2.5f).sounds(BlockSoundGroup.DEEPSLATE).requiresTool()));
     public static final Block ALLOY_FURNACE = registerBlock("alloy_furnace",
-            new AlloyFurnaceBlock(AbstractBlock.Settings.create()));
+            new AlloyFurnaceBlock(AbstractBlock.Settings.create().strength(1.0f).hardness(1.0f).requiresTool()));
 
     // Deleterium / Oraxium
     public static final Block ORAXIUM_ORE = registerBlock("oraxium_ore",

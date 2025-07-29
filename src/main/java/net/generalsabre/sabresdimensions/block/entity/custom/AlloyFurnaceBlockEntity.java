@@ -32,8 +32,8 @@ public class AlloyFurnaceBlockEntity extends BlockEntity implements ExtendedScre
     private final DefaultedList<ItemStack> inventory = DefaultedList.ofSize(3, ItemStack.EMPTY);
 
     private static final int INPUT_SLOT_1 = 0;
-    private static final int INPUT_SLOT_2 = 0;
-    private static final int OUTPUT_SLOT = 0;
+    private static final int INPUT_SLOT_2 = 1;
+    private static final int OUTPUT_SLOT = 2;
 
     protected final PropertyDelegate propertyDelegate;
     private int progress = 0;
@@ -90,7 +90,7 @@ public class AlloyFurnaceBlockEntity extends BlockEntity implements ExtendedScre
     public void tick(World world1, BlockPos pos, BlockState state1) {
         if (hasRecipe()){
             incrementProgress();
-            markDirty();
+            markDirty(world, pos, state1);
             if (hasCraftingFinished()){
                 craftItem();
                 resetProgress();
@@ -129,6 +129,7 @@ public class AlloyFurnaceBlockEntity extends BlockEntity implements ExtendedScre
 
         return this.getStack(INPUT_SLOT_1).isOf(input1) && this.getStack(INPUT_SLOT_2).isOf(input2)
                 && canInsertItemIntoOutputSlot(output) && canInsertAmountIntoOutputSlot(output.getCount());
+
     }
 
     private boolean canInsertAmountIntoOutputSlot(int count) {

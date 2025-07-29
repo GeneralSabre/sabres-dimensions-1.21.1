@@ -34,9 +34,9 @@ public class AlloyFurnaceScreenHandler extends ScreenHandler {
         this.blockEntity = ((AlloyFurnaceBlockEntity) blockEntity);
         this.propertyDelegate = arrayPropertyDelegate;
 
-        this.addSlot(new Slot (inventory,0,0,0));
-        this.addSlot(new Slot (inventory,0,0,0));
-        this.addSlot(new Slot (inventory,0,0,0));
+        this.addSlot(new Slot (inventory,0,43,17));
+        this.addSlot(new Slot (inventory,1,68,17));
+        this.addSlot(new Slot (inventory,2,116,35));
 
         addPlayerInventory(playerInventory);
         addPlayerHotbar(playerInventory);
