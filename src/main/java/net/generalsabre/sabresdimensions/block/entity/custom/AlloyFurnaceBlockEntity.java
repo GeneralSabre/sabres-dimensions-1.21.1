@@ -98,6 +98,18 @@ public class AlloyFurnaceBlockEntity extends BlockEntity implements ExtendedScre
         } else {
             resetProgress();
         }
+
+        /*
+        * if (burning == true) then incrementBurn()
+        *
+        * if (hasFuel() && hasRecipe()) then burnFuel()
+        *
+        * if (hasBurningFinished()) then resetBurn(), takeFuel()
+        *
+        * hasFuel() -> check if there's fuel
+        * hasBurningFinished() -> check if burnTime >= maxBurnTime
+         */
+
     }
 
     private void craftItem() {
