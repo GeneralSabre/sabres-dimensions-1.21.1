@@ -30,9 +30,9 @@ import org.jetbrains.annotations.Nullable;
 
 public class AlloyFurnaceBlockEntity extends BlockEntity implements ExtendedScreenHandlerFactory<BlockPos>, ImplementedInventory {
 
-    private int burnTime;
     private int burnProgress = 0;
     private Integer maxBurnProgress = 0;
+    boolean isBurning = false;
 
     private final DefaultedList<ItemStack> inventory = DefaultedList.ofSize(4, ItemStack.EMPTY);
 
@@ -95,18 +95,21 @@ public class AlloyFurnaceBlockEntity extends BlockEntity implements ExtendedScre
 
     public void tick(World world1, BlockPos pos, BlockState state1) {
 
-        boolean isBurning = burnTime > 0;
-
         if (isBurning){
             incrementBurn();
         }
 
         if (hasRecipe() && isBurningFinished() && hasFuel()){
             takeFuel();
-            burnTime = getBurnTime(getStack(FUEL_SLOT));
+            maxBurnProgress = getBurnTime(getStack(FUEL_SLOT));
+            resetBurnProgress();
             isBurning = true;
-        }
+            burnProgress++;
 
+        } else if (hasRecipe() && isBurningFinished() && !hasFuel()){
+            resetBurnProgress();
+            isBurning = false;
+        }
 
         if (hasRecipe() && isBurning){
             incrementProgress();
@@ -121,6 +124,10 @@ public class AlloyFurnaceBlockEntity extends BlockEntity implements ExtendedScre
 
     }
 
+    private void resetBurnProgress() {
+        this.burnProgress = 0;
+    }
+
     private int getBurnTime(ItemStack stack) {
         maxBurnProgress = FuelRegistry.INSTANCE.get(stack.getItem());
         return maxBurnProgress != null ? maxBurnProgress : 0;
@@ -131,7 +138,6 @@ public class AlloyFurnaceBlockEntity extends BlockEntity implements ExtendedScre
     }
 
     private boolean isBurningFinished() {
-        burnProgress = 0;
         return this.burnProgress >= this.maxBurnProgress;
     }
 
@@ -140,7 +146,7 @@ public class AlloyFurnaceBlockEntity extends BlockEntity implements ExtendedScre
     }
 
     private void incrementBurn() {
-        burnTime--;
+        burnProgress++;
     }
 
     private void craftItem() {
