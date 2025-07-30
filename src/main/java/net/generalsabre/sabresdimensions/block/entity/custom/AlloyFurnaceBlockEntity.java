@@ -32,7 +32,7 @@ public class AlloyFurnaceBlockEntity extends BlockEntity implements ExtendedScre
 
     private int burnTime;
     private int burnProgress = 0;
-    private int maxBurnProgress = 0;
+    private Integer maxBurnProgress = 0;
 
     private final DefaultedList<ItemStack> inventory = DefaultedList.ofSize(4, ItemStack.EMPTY);
 
@@ -104,6 +104,7 @@ public class AlloyFurnaceBlockEntity extends BlockEntity implements ExtendedScre
         if (hasRecipe() && isBurningFinished() && hasFuel()){
             takeFuel();
             burnTime = getBurnTime(getStack(FUEL_SLOT));
+            isBurning = true;
         }
 
 
@@ -118,22 +119,11 @@ public class AlloyFurnaceBlockEntity extends BlockEntity implements ExtendedScre
             resetProgress();
         }
 
-        /*
-        * if (burning == true) then incrementBurn()
-        *
-        * if (hasFuel() && hasRecipe()) then burnFuel()
-        *
-        * if (hasBurningFinished()) then resetBurn(), takeFuel()
-        *
-        * hasFuel() -> check if there's fuel
-        * hasBurningFinished() -> check if burnTime >= maxBurnTime
-         */
-
     }
 
     private int getBurnTime(ItemStack stack) {
         maxBurnProgress = FuelRegistry.INSTANCE.get(stack.getItem());
-        return maxBurnProgress;
+        return maxBurnProgress != null ? maxBurnProgress : 0;
     }
 
     private boolean hasFuel() {
@@ -141,6 +131,7 @@ public class AlloyFurnaceBlockEntity extends BlockEntity implements ExtendedScre
     }
 
     private boolean isBurningFinished() {
+        burnProgress = 0;
         return this.burnProgress >= this.maxBurnProgress;
     }
 
