@@ -54,6 +54,8 @@ public class AlloyFurnaceBlockEntity extends BlockEntity implements ExtendedScre
                 return switch (index){
                     case 0 -> AlloyFurnaceBlockEntity.this.progress;
                     case 1 -> AlloyFurnaceBlockEntity.this.maxProgress;
+                    case 2 -> AlloyFurnaceBlockEntity.this.burnProgress;
+                    case 3 -> AlloyFurnaceBlockEntity.this.maxBurnProgress;
                     default -> 0;
                 };
             }
@@ -63,12 +65,14 @@ public class AlloyFurnaceBlockEntity extends BlockEntity implements ExtendedScre
                 switch (index){
                     case 0: AlloyFurnaceBlockEntity.this.progress = value;
                     case 1: AlloyFurnaceBlockEntity.this.maxProgress = value;
+                    case 2: AlloyFurnaceBlockEntity.this.burnProgress = value;
+                    case 3: AlloyFurnaceBlockEntity.this.maxBurnProgress = value;
                 }
             }
 
             @Override
             public int size() {
-                return 2;
+                return 4;
             }
         };
     }
@@ -198,6 +202,8 @@ public class AlloyFurnaceBlockEntity extends BlockEntity implements ExtendedScre
         Inventories.writeNbt(nbt, inventory, registryLookup);
         nbt.putInt("alloy_furnace.progress", progress);
         nbt.putInt("alloy_furnace.max_progress", maxProgress);
+        nbt.putInt("alloy_furnace.burn_progress", burnProgress);
+        nbt.putInt("alloy_furnace.max_burn_progress", maxBurnProgress);
     }
 
     @Override
@@ -206,6 +212,8 @@ public class AlloyFurnaceBlockEntity extends BlockEntity implements ExtendedScre
         Inventories.readNbt(nbt, inventory, registryLookup);
         progress = nbt.getInt("alloy_furnace.progress");
         maxProgress = nbt.getInt("alloy_furnace.max_progress");
+        burnProgress = nbt.getInt("alloy_furnace.burn_progress");
+        maxBurnProgress = nbt.getInt("alloy_furnace.max_burn_progress");
     }
 
     @Override

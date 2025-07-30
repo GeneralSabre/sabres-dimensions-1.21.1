@@ -45,6 +45,18 @@ public class AlloyFurnaceScreenHandler extends ScreenHandler {
         addProperties(arrayPropertyDelegate);
     }
 
+    public boolean isBurning(){
+        return propertyDelegate.get(3)>0;
+    }
+
+    public int getBurnProgress(){
+        int burnProgress = propertyDelegate.get(3);
+        int maxBurnProgress = propertyDelegate.get(4);
+        int burnPixelSize = 13; // height of fire
+
+        return maxBurnProgress != 0 && burnProgress != 0 ? burnProgress * burnPixelSize / maxBurnProgress : 0;
+    }
+
     public boolean isCrafting(){
         return propertyDelegate.get(0) > 0;
     }
