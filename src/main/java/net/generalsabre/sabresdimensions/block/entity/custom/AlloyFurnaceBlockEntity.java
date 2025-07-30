@@ -110,12 +110,10 @@ public class AlloyFurnaceBlockEntity extends BlockEntity implements ExtendedScre
             takeFuel();
             maxBurnProgress = getMaxBurnTime(getStack(FUEL_SLOT));
             burnProgress = getBurnTime(getStack(FUEL_SLOT));
-            resetBurnProgress();
             isBurning = true;
             burnProgress--;
 
         } else if (hasRecipe() && isBurningFinished() && !hasFuel()){
-            resetBurnProgress();
             isBurning = false;
         }
 
@@ -135,10 +133,6 @@ public class AlloyFurnaceBlockEntity extends BlockEntity implements ExtendedScre
     private Integer getBurnTime(ItemStack stack) {
         burnProgress = FuelRegistry.INSTANCE.get(stack.getItem());
         return burnProgress != null ? burnProgress : 0;
-    }
-
-    private void resetBurnProgress() {
-        this.burnProgress = 0;
     }
 
     private int getMaxBurnTime(ItemStack stack) {
