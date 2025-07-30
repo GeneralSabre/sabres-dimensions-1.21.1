@@ -29,6 +29,13 @@ public class AlloyFurnaceScreen extends HandledScreen<AlloyFurnaceScreenHandler>
         }
     }
 
+    private void renderFlameProgress(DrawContext context, int x, int y){
+        if(handler.isBurning()){
+            context.drawTexture(BURN_TEXTURE, 57, 37,0,0,
+                    handler.getBurnProgress(), 13, 13, 13);
+        }
+    }
+
     @Override
     protected void drawBackground(DrawContext context, float delta, int mouseX, int mouseY) {
         RenderSystem.setShader(GameRenderer::getPositionTexProgram);
@@ -41,6 +48,8 @@ public class AlloyFurnaceScreen extends HandledScreen<AlloyFurnaceScreenHandler>
         context.drawTexture(GUI_TEXTURE, x, y, 0, 0, backgroundWidth, backgroundHeight);
 
         renderProgressArrow(context, x, y);
+        renderFlameProgress(context, x, y);
+
     }
 
     @Override
