@@ -31,7 +31,7 @@ public class AlloyFurnaceScreen extends HandledScreen<AlloyFurnaceScreenHandler>
 
     private void renderFlameProgress(DrawContext context, int x, int y){
         if(handler.isBurning()){
-            context.drawTexture(BURN_TEXTURE, 57, 37,0,0,
+            context.drawTexture(BURN_TEXTURE, x+57, y+37,0,0,
                     handler.getBurnProgress(), 13, 13, 13);
         }
     }

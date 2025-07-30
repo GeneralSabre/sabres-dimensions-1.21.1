@@ -23,7 +23,7 @@ public class AlloyFurnaceScreenHandler extends ScreenHandler {
     private final AlloyFurnaceBlockEntity blockEntity;
 
     public AlloyFurnaceScreenHandler(int syncId, PlayerInventory inventory, BlockPos pos) {
-        this(syncId, inventory, inventory.player.getWorld().getBlockEntity(pos), new ArrayPropertyDelegate(2));
+        this(syncId, inventory, inventory.player.getWorld().getBlockEntity(pos), new ArrayPropertyDelegate(4));
     }
 
     public AlloyFurnaceScreenHandler(int syncId, PlayerInventory playerInventory,
@@ -46,12 +46,12 @@ public class AlloyFurnaceScreenHandler extends ScreenHandler {
     }
 
     public boolean isBurning(){
-        return propertyDelegate.get(3)>0;
+        return propertyDelegate.get(2)>0;
     }
 
     public int getBurnProgress(){
-        int burnProgress = propertyDelegate.get(3);
-        int maxBurnProgress = propertyDelegate.get(4);
+        int burnProgress = propertyDelegate.get(2);
+        int maxBurnProgress = propertyDelegate.get(3);
         int burnPixelSize = 13; // height of fire
 
         return maxBurnProgress != 0 && burnProgress != 0 ? burnProgress * burnPixelSize / maxBurnProgress : 0;
