@@ -52,7 +52,7 @@ public class AlloyFurnaceScreenHandler extends ScreenHandler {
     public int getBurnProgress(){
         int burnProgress = propertyDelegate.get(2);
         int maxBurnProgress = propertyDelegate.get(3);
-        int burnPixelSize = 13; // height of fire
+        int burnPixelSize = 14; // height of fire
 
         return maxBurnProgress != 0 && burnProgress != 0 ? burnProgress * burnPixelSize / maxBurnProgress : 0;
     }

@@ -16,7 +16,7 @@ public class AlloyFurnaceScreen extends HandledScreen<AlloyFurnaceScreenHandler>
     private static final Identifier ARROW_TEXTURE =
             Identifier.of(SabresDimensions.MOD_ID,"textures/gui/alloy_furnace/burn_progress.png");
     private static final Identifier BURN_TEXTURE =
-            Identifier.of(SabresDimensions.MOD_ID, "textures/gui/alloy_furnace/lit_progress.png");
+            Identifier.of(SabresDimensions.MOD_ID, "textures/gui/alloy_furnace/lit_progress");
 
     public AlloyFurnaceScreen(AlloyFurnaceScreenHandler handler, PlayerInventory inventory, Text title) {
         super(handler, inventory, title);
@@ -30,11 +30,12 @@ public class AlloyFurnaceScreen extends HandledScreen<AlloyFurnaceScreenHandler>
     }
 
     private void renderFlameProgress(DrawContext context, int x, int y){
+        int i = handler.getBurnProgress() + 1;
         if(handler.isBurning()){
-            context.drawGuiTexture(BURN_TEXTURE,0,0,14,14,
-                    x+57,y+36+14-handler.getBurnProgress(),14, handler.getBurnProgress());
+            //context.drawGuiTexture(BURN_TEXTURE, 14, 14, 0, 14 - i, x + 56, y + 36 + 14 - i, 14, i);
+            context.drawGuiTexture(BURN_TEXTURE, 16, 16, 0, 16 - i , x + 56, y + 36 + 14 - i, 14, i);
 
-        } // x=57 y=37 texture=13x13
+        }
     }
 
     @Override

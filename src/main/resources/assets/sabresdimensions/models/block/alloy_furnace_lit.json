@@ -1,0 +1,11 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "north": "sabresdimensions:block/alloy_furnace_front_lit",
+    "south": "sabresdimensions:block/alloy_furnace_side",
+    "east": "sabresdimensions:block/alloy_furnace_side",
+    "west": "sabresdimensions:block/alloy_furnace_side",
+    "up": "sabresdimensions:block/alloy_furnace_side",
+    "down": "sabresdimensions:block/alloy_furnace_side"
+  }
+}
