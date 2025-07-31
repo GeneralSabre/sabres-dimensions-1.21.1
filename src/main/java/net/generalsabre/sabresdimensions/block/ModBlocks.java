@@ -8,6 +8,7 @@ import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
+import net.minecraft.util.ColorCode;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
 
@@ -105,7 +106,8 @@ public class ModBlocks {
             new ExperienceDroppingBlock(UniformIntProvider.create(2,5), (AbstractBlock.Settings.create().strength(2.5f,5f).requiresTool().sounds(BlockSoundGroup.DEEPSLATE))));
 
     public static final Block CHORAZINE_POWDER_BLOCK = registerBlock("chorazine_powder_block",
-            new Block(AbstractBlock.Settings.create().strength(0.25f,0.25f).sounds(BlockSoundGroup.SAND)));
+            new ColoredFallingBlock(new ColorCode(14406560),
+                    AbstractBlock.Settings.create().strength(0.5F).sounds(BlockSoundGroup.SAND)));
 
     public static final Block PENKAZ_BLOCK = registerBlock("penkaz_block",
             new Block(AbstractBlock.Settings.create().strength(5f,6f).requiresTool().sounds(BlockSoundGroup.METAL)));

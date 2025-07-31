@@ -102,7 +102,7 @@ public class AlloyFurnaceBlockEntity extends BlockEntity implements ExtendedScre
         return inventory;
     }
 
-    public void tick(World world1, BlockPos pos, BlockState state) {
+    public void tick(World world, BlockPos pos, BlockState state) {
 
         if (isBurning){
             incrementBurn();
@@ -212,6 +212,7 @@ public class AlloyFurnaceBlockEntity extends BlockEntity implements ExtendedScre
         nbt.putInt("alloy_furnace.max_progress", maxProgress);
         nbt.putInt("alloy_furnace.burn_progress", burnProgress);
         nbt.putInt("alloy_furnace.max_burn_progress", maxBurnProgress);
+        nbt.putBoolean("isBurning", isBurning);
     }
 
     @Override
@@ -222,6 +223,7 @@ public class AlloyFurnaceBlockEntity extends BlockEntity implements ExtendedScre
         maxProgress = nbt.getInt("alloy_furnace.max_progress");
         burnProgress = nbt.getInt("alloy_furnace.burn_progress");
         maxBurnProgress = nbt.getInt("alloy_furnace.max_burn_progress");
+        isBurning = nbt.getBoolean("isBurning");
     }
 
     @Override
