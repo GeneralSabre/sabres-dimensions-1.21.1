@@ -42,7 +42,7 @@ public class AlloyFurnaceBlock extends BlockWithEntity implements BlockEntityPro
     @Override
     public BlockState getPlacementState(ItemPlacementContext ctx) {
         return this.getDefaultState()
-                .with(FACING, ctx.getHorizontalPlayerFacing().getOpposite())
+                .with(FACING, ctx.getHorizontalPlayerFacing())
                 .with(ACTIVE, false); // or default to false/inactive
     }
 

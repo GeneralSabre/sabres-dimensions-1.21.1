@@ -27,6 +27,8 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 
+import static net.generalsabre.sabresdimensions.block.custom.AlloyFurnaceBlock.ACTIVE;
+
 public class AlloyFurnaceBlockEntity extends BlockEntity implements ExtendedScreenHandlerFactory<BlockPos>, ImplementedInventory {
 
     private Integer burnProgress = 0;
@@ -100,10 +102,13 @@ public class AlloyFurnaceBlockEntity extends BlockEntity implements ExtendedScre
         return inventory;
     }
 
-    public void tick(World world1, BlockPos pos, BlockState state1) {
+    public void tick(World world1, BlockPos pos, BlockState state) {
 
         if (isBurning){
             incrementBurn();
+            world.setBlockState(pos, state.with(ACTIVE, true));
+        } else {
+            world.setBlockState(pos, state.with(ACTIVE, false));
         }
 
         if (hasRecipe() && isBurningFinished() && hasFuel()){
@@ -119,7 +124,7 @@ public class AlloyFurnaceBlockEntity extends BlockEntity implements ExtendedScre
 
         if (hasRecipe() && isBurning){
             incrementProgress();
-            markDirty(world, pos, state1);
+            markDirty(world, pos, state);
             if (hasCraftingFinished()){
                 craftItem();
                 resetProgress();
