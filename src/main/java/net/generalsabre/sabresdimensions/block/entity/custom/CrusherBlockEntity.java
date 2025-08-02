@@ -5,6 +5,8 @@ import net.generalsabre.sabresdimensions.block.entity.ImplementedInventory;
 import net.generalsabre.sabresdimensions.block.entity.ModBlockEntities;
 import net.generalsabre.sabresdimensions.item.custom.ModItems;
 import net.generalsabre.sabresdimensions.screen.custom.AlloyFurnaceScreenHandler;
+import net.generalsabre.sabresdimensions.screen.custom.CrusherScreenHandler;
+import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.block.entity.BlockEntityType;
@@ -35,13 +37,14 @@ public class CrusherBlockEntity extends BlockEntity implements ExtendedScreenHan
     private final DefaultedList<ItemStack> inventory = DefaultedList.ofSize(2, ItemStack.EMPTY);
 
     private static final int INPUT_SLOT = 0;
-    private static final int OUTPUT_SLOT = 0;
+    private static final int OUTPUT_SLOT = 1;
 
     private int progress = 0;
     private int maxProgress = 80;
 
     private int power = 0;
     public boolean canCraft = false;
+    public boolean isCrafting = false;
 
     protected final PropertyDelegate propertyDelegate;
 
@@ -95,28 +98,34 @@ public class CrusherBlockEntity extends BlockEntity implements ExtendedScreenHan
 
     @Override
     public @Nullable ScreenHandler createMenu(int syncId, PlayerInventory playerInventory, PlayerEntity player) {
-        return new AlloyFurnaceScreenHandler(syncId, playerInventory, this, this.propertyDelegate);
+        return new CrusherScreenHandler(syncId, playerInventory, this, this.propertyDelegate);
     }
 
     public void tick(World world, BlockPos pos, BlockState state){
 
         if (isPowered()){
-            world.setBlockState(pos, state.with(POWERED, true));
+            world.setBlockState(pos, state.with(POWERED, true), Block.NOTIFY_ALL);
             power = 1;
             canCraft = true;
         } else {
-            world.setBlockState(pos, state.with(POWERED, false));
+            world.setBlockState(pos, state.with(POWERED, false), Block.NOTIFY_ALL);
             power = 0;
             canCraft = false;
         }
 
-        if (canCraft && hasRecipe()){
+        if (isCrafting){
             incrementProgress();
             markDirty(world, pos, state);
-            world.setBlockState(pos, state.with(ACTIVE, true));
-        } else if (canCraft && !hasRecipe()){
+            world.setBlockState(pos, state.with(ACTIVE, true), Block.NOTIFY_ALL);
+        } else {
+            world.setBlockState(pos, state.with(ACTIVE, false), Block.NOTIFY_ALL);
+        }
+
+        if (canCraft && hasRecipe()){
+            isCrafting = true;
+        } else if (!canCraft || !hasRecipe()){
             resetProgress();
-            world.setBlockState(pos, state.with(ACTIVE, false));
+            isCrafting = false;
         }
 
         if (isCraftingFinished()){
@@ -176,6 +185,7 @@ public class CrusherBlockEntity extends BlockEntity implements ExtendedScreenHan
         Inventories.writeNbt(nbt, inventory, registryLookup);
         nbt.putInt("crusher.progress", progress);
         nbt.putInt("crusher.max_progress", maxProgress);
+        nbt.putBoolean("crusher.isCrafting", isCrafting);
 
     }
 
@@ -185,6 +195,7 @@ public class CrusherBlockEntity extends BlockEntity implements ExtendedScreenHan
         Inventories.readNbt(nbt, inventory, registryLookup);
         progress = nbt.getInt("crusher.progress");
         maxProgress = nbt.getInt("crusher.max_progress");
+        isCrafting = nbt.getBoolean("crusher.isCrafting");
 
     }
 

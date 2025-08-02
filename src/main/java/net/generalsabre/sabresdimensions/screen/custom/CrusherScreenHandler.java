@@ -17,7 +17,7 @@ public class CrusherScreenHandler extends ScreenHandler {
 
     private final Inventory inventory;
     private final PropertyDelegate propertyDelegate;
-    private final BlockEntity blockEntity;
+    private final CrusherBlockEntity blockEntity;
 
     public CrusherScreenHandler(int syncId, PlayerInventory inventory, BlockPos pos) {
         this(syncId, inventory, inventory.player.getWorld().getBlockEntity(pos), new ArrayPropertyDelegate(3));
@@ -41,7 +41,7 @@ public class CrusherScreenHandler extends ScreenHandler {
     }
 
     public boolean isPowered(){
-        return propertyDelegate.get(2) == 1;
+        return propertyDelegate.get(2) > 0;
     }
 
     public boolean isCrafting(){

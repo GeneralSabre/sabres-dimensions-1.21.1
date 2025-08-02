@@ -3,6 +3,7 @@ package net.generalsabre.sabresdimensions.block.custom;
 import com.mojang.serialization.MapCodec;
 import net.generalsabre.sabresdimensions.block.entity.ModBlockEntities;
 import net.generalsabre.sabresdimensions.block.entity.custom.AlloyFurnaceBlockEntity;
+import net.generalsabre.sabresdimensions.block.entity.custom.CrusherBlockEntity;
 import net.minecraft.block.*;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.block.entity.BlockEntityTicker;

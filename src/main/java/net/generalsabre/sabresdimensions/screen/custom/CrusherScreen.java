@@ -16,7 +16,7 @@ public class CrusherScreen extends HandledScreen<CrusherScreenHandler> {
     private static final Identifier ARROW_TEXTURE =
             Identifier.of(SabresDimensions.MOD_ID,"textures/gui/crusher/burn_progress.png");
     private static final Identifier LIGHT_TEXTURE =
-            Identifier.of(SabresDimensions.MOD_ID, "textures/gui/crusher/light_on");
+            Identifier.of(SabresDimensions.MOD_ID, "textures/gui/crusher/light_on.png");
 
     public CrusherScreen(CrusherScreenHandler handler, PlayerInventory inventory, Text title) {
         super(handler, inventory, title);
@@ -26,6 +26,15 @@ public class CrusherScreen extends HandledScreen<CrusherScreenHandler> {
         if(handler.isCrafting()) {
             context.drawTexture(ARROW_TEXTURE, x + 79, y + 35, 0, 0,
                     handler.getScaledArrowProgress(), 16, 24, 16);
+        }
+    }
+
+    private void renderLightFlashing(DrawContext context, int x, int y) {
+        if(handler.isPowered()){
+            context.drawTexture(LIGHT_TEXTURE,x+88,y+23,0,0,
+                    10,10,10,10);
+            context.drawTexture(LIGHT_TEXTURE,x+88,y+52,0,0,
+                    10,10,10,10);
         }
     }
 
@@ -43,15 +52,6 @@ public class CrusherScreen extends HandledScreen<CrusherScreenHandler> {
         renderProgressArrow(context, x, y);
         renderLightFlashing(context, x, y);
 
-    }
-
-    private void renderLightFlashing(DrawContext context, int x, int y) {
-        if(handler.isPowered()){
-            context.drawTexture(LIGHT_TEXTURE,x+88,y+23,0,0,
-                    9,9,9,9);
-            context.drawTexture(LIGHT_TEXTURE,x+88,y+52,0,0,
-                    9,9,9,9);
-        }
     }
 
     @Override

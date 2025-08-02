@@ -13,6 +13,11 @@
     "facing=north,powered=true,active=true": { "model": "sabresdimensions:block/crusher_on", "y": 180 },
     "facing=south,powered=true,active=true": { "model": "sabresdimensions:block/crusher_on", "y": 0 },
     "facing=east,powered=true,active=true":  { "model": "sabresdimensions:block/crusher_on", "y": 270 },
-    "facing=west,powered=true,active=true":  { "model": "sabresdimensions:block/crusher_on", "y": 90 }
+    "facing=west,powered=true,active=true":  { "model": "sabresdimensions:block/crusher_on", "y": 90 },
+
+    "facing=north,powered=false,active=true": { "model": "sabresdimensions:block/crusher", "y": 180 },
+    "facing=south,powered=false,active=true": { "model": "sabresdimensions:block/crusher", "y": 0 },
+    "facing=east,powered=false,active=true":  { "model": "sabresdimensions:block/crusher", "y": 270 },
+    "facing=west,powered=false,active=true":  { "model": "sabresdimensions:block/crusher", "y": 90 }
   }
 }

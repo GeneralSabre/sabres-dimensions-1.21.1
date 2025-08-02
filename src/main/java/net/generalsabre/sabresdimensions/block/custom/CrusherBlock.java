@@ -31,7 +31,7 @@ public class CrusherBlock extends BlockWithEntity implements BlockEntityProvider
     public static final DirectionProperty FACING = Properties.HORIZONTAL_FACING;
     public static final BooleanProperty POWERED = BooleanProperty.of("powered");
 
-    public static final MapCodec<CrusherBlock> CRUSHER_CODEC = AlloyFurnaceBlock.createCodec(CrusherBlock::new);
+    public static final MapCodec<CrusherBlock> CRUSHER_CODEC = CrusherBlock.createCodec(CrusherBlock::new);
 
     public CrusherBlock(Settings settings) {
         super(settings);
@@ -48,7 +48,7 @@ public class CrusherBlock extends BlockWithEntity implements BlockEntityProvider
 
     @Override
     protected void appendProperties(StateManager.Builder<Block, BlockState> builder) {
-        builder.add(FACING, ACTIVE, POWERED);
+        builder.add(FACING, POWERED, ACTIVE);
     }
 
     @Override
@@ -70,8 +70,8 @@ public class CrusherBlock extends BlockWithEntity implements BlockEntityProvider
     protected void onStateReplaced(BlockState state, World world, BlockPos pos, BlockState newState, boolean moved) {
         if (state.getBlock() != newState.getBlock()) {
             BlockEntity blockEntity = world.getBlockEntity(pos);
-            if (blockEntity instanceof AlloyFurnaceBlockEntity) {
-                ItemScatterer.spawn(world, pos, ((AlloyFurnaceBlockEntity) blockEntity));
+            if (blockEntity instanceof CrusherBlockEntity) {
+                ItemScatterer.spawn(world, pos, ((CrusherBlockEntity) blockEntity));
                 world.updateComparators(pos, this);
             }
             super.onStateReplaced(state, world, pos, newState, moved);
@@ -82,7 +82,7 @@ public class CrusherBlock extends BlockWithEntity implements BlockEntityProvider
     protected ItemActionResult onUseWithItem(ItemStack stack, BlockState state, World world, BlockPos pos,
                                              PlayerEntity player, Hand hand, BlockHitResult hit) {
         if (!world.isClient) {
-            NamedScreenHandlerFactory screenHandlerFactory = ((AlloyFurnaceBlockEntity) world.getBlockEntity(pos));
+            NamedScreenHandlerFactory screenHandlerFactory = ((CrusherBlockEntity) world.getBlockEntity(pos));
             if (screenHandlerFactory != null) {
                 player.openHandledScreen(screenHandlerFactory);
             }
