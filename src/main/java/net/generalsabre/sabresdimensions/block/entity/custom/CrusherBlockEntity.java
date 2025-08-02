@@ -107,18 +107,25 @@ public class CrusherBlockEntity extends BlockEntity implements ExtendedScreenHan
             world.setBlockState(pos, state.with(POWERED, true), Block.NOTIFY_ALL);
             power = 1;
             canCraft = true;
+
+            if (isCrafting){
+                incrementProgress();
+                markDirty(world, pos, state);
+                world.setBlockState(pos, state.with(ACTIVE, true), Block.NOTIFY_ALL);
+            } else {
+                world.setBlockState(pos, state.with(ACTIVE, false), Block.NOTIFY_ALL);
+            }
+
+            if (isCraftingFinished()){
+                resetProgress();
+                craftItem();
+            }
+
+
         } else {
             world.setBlockState(pos, state.with(POWERED, false), Block.NOTIFY_ALL);
             power = 0;
             canCraft = false;
-        }
-
-        if (isCrafting){
-            incrementProgress();
-            markDirty(world, pos, state);
-            world.setBlockState(pos, state.with(ACTIVE, true), Block.NOTIFY_ALL);
-        } else {
-            world.setBlockState(pos, state.with(ACTIVE, false), Block.NOTIFY_ALL);
         }
 
         if (canCraft && hasRecipe()){
@@ -126,11 +133,6 @@ public class CrusherBlockEntity extends BlockEntity implements ExtendedScreenHan
         } else if (!canCraft || !hasRecipe()){
             resetProgress();
             isCrafting = false;
-        }
-
-        if (isCraftingFinished()){
-            resetProgress();
-            craftItem();
         }
     }
 
