@@ -39,7 +39,7 @@ public class CrusherBlockEntity extends BlockEntity implements ExtendedScreenHan
     private int progress = 0;
     private int maxProgress = 80;
 
-    public boolean isPowered = false;
+    private int power = 0;
     public boolean canCraft = false;
 
     protected final PropertyDelegate propertyDelegate;
@@ -53,6 +53,7 @@ public class CrusherBlockEntity extends BlockEntity implements ExtendedScreenHan
                 return switch (index){
                   case 0 -> CrusherBlockEntity.this.progress;
                   case 1 -> CrusherBlockEntity.this.maxProgress;
+                  case 2 -> CrusherBlockEntity.this.power;
                     default -> 0;
                 };
             }
@@ -64,12 +65,14 @@ public class CrusherBlockEntity extends BlockEntity implements ExtendedScreenHan
                         break;
                     case 1: CrusherBlockEntity.this.maxProgress = value;
                         break;
+                    case 2: CrusherBlockEntity.this.power = value;
+                        break;
                 }
             }
 
             @Override
             public int size() {
-                return 2;
+                return 3;
             }
         };
     }
@@ -96,11 +99,13 @@ public class CrusherBlockEntity extends BlockEntity implements ExtendedScreenHan
 
     public void tick(World world, BlockPos pos, BlockState state){
 
-        if (isPowered){
+        if (isPowered()){
             world.setBlockState(pos, state.with(POWERED, true));
+            power = 1;
             canCraft = true;
         } else {
             world.setBlockState(pos, state.with(POWERED, false));
+            power = 0;
             canCraft = false;
         }
 
@@ -116,6 +121,11 @@ public class CrusherBlockEntity extends BlockEntity implements ExtendedScreenHan
             resetProgress();
             craftItem();
         }
+    }
+
+    private boolean isPowered() {
+        assert world != null;
+        return world.isReceivingRedstonePower(pos);
     }
 
     private void craftItem() {

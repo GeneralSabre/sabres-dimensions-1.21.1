@@ -7,6 +7,7 @@ import net.fabricmc.fabric.api.client.render.fluid.v1.SimpleFluidRenderHandler;
 import net.generalsabre.sabresdimensions.fluid.ModFluids;
 import net.generalsabre.sabresdimensions.screen.ModScreenHandlers;
 import net.generalsabre.sabresdimensions.screen.custom.AlloyFurnaceScreenHandler;
+import net.generalsabre.sabresdimensions.screen.custom.CrusherScreen;
 import net.minecraft.client.gui.screen.ingame.HandledScreen;
 import net.minecraft.client.gui.screen.ingame.HandledScreens;
 import net.minecraft.client.render.RenderLayer;
@@ -29,7 +30,7 @@ public class SabresDimensionsClient implements ClientModInitializer {
                 ModFluids.STILL_MOLTEN_DELETERIUM, ModFluids.FLOWING_MOLTEN_DELETERIUM);
 
         HandledScreens.register(ModScreenHandlers.ALLOY_FURNACE_SCREEN_HANDLER, AlloyFurnaceScreen::new);
-        HandledScreens.register(ModScreenHandlers.ALLOY_FURNACE_SCREEN_HANDLER, ::new);
+        HandledScreens.register(ModScreenHandlers.CRUSHER_SCREEN_HANDLER, CrusherScreen::new);
     }
 }
 

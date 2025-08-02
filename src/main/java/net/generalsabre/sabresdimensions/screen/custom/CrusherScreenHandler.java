@@ -1,6 +1,5 @@
 package net.generalsabre.sabresdimensions.screen.custom;
 
-import net.generalsabre.sabresdimensions.block.entity.custom.AlloyFurnaceBlockEntity;
 import net.generalsabre.sabresdimensions.block.entity.custom.CrusherBlockEntity;
 import net.generalsabre.sabresdimensions.screen.ModScreenHandlers;
 import net.minecraft.block.entity.BlockEntity;
@@ -11,10 +10,8 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.screen.ArrayPropertyDelegate;
 import net.minecraft.screen.PropertyDelegate;
 import net.minecraft.screen.ScreenHandler;
-import net.minecraft.screen.ScreenHandlerType;
 import net.minecraft.screen.slot.Slot;
 import net.minecraft.util.math.BlockPos;
-import org.jetbrains.annotations.Nullable;
 
 public class CrusherScreenHandler extends ScreenHandler {
 
@@ -23,7 +20,7 @@ public class CrusherScreenHandler extends ScreenHandler {
     private final BlockEntity blockEntity;
 
     public CrusherScreenHandler(int syncId, PlayerInventory inventory, BlockPos pos) {
-        this(syncId, inventory, inventory.player.getWorld().getBlockEntity(pos), new ArrayPropertyDelegate(2));
+        this(syncId, inventory, inventory.player.getWorld().getBlockEntity(pos), new ArrayPropertyDelegate(3));
     }
 
     public CrusherScreenHandler(int syncId, PlayerInventory playerInventory,
@@ -41,6 +38,22 @@ public class CrusherScreenHandler extends ScreenHandler {
         addPlayerHotbar(playerInventory);
 
         addProperties(arrayPropertyDelegate);
+    }
+
+    public boolean isPowered(){
+        return propertyDelegate.get(2) == 1;
+    }
+
+    public boolean isCrafting(){
+        return propertyDelegate.get(0) > 0;
+    }
+
+    public int getScaledArrowProgress(){
+        int progress = propertyDelegate.get(0);
+        int maxProgress = propertyDelegate.get(1);
+        int arrowPixelSize = 24; // width of arrow
+
+        return maxProgress != 0 && progress != 0 ? progress * arrowPixelSize / maxProgress : 0;
     }
 
     @Override
