@@ -4,6 +4,7 @@ import net.fabricmc.fabric.api.screenhandler.v1.ExtendedScreenHandlerFactory;
 import net.generalsabre.sabresdimensions.block.entity.ImplementedInventory;
 import net.generalsabre.sabresdimensions.block.entity.ModBlockEntities;
 import net.generalsabre.sabresdimensions.item.custom.ModItems;
+import net.generalsabre.sabresdimensions.screen.custom.AlloyFurnaceScreenHandler;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.block.entity.BlockEntityType;
@@ -94,7 +95,7 @@ public class CrusherBlockEntity extends BlockEntity implements ExtendedScreenHan
 
     @Override
     public @Nullable ScreenHandler createMenu(int syncId, PlayerInventory playerInventory, PlayerEntity player) {
-        return X;
+        return new AlloyFurnaceScreenHandler(syncId, playerInventory, this, this.propertyDelegate);
     }
 
     public void tick(World world, BlockPos pos, BlockState state){
