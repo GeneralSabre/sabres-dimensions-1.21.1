@@ -60,7 +60,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
                 .add(ModBlocks.ORAXIUM_ORE)
                 .add(ModBlocks.DELETERIUM_BLOCK)
-                .add(ModBlocks.ALLOY_FURNACE);
+                .add(ModBlocks.ALLOY_FURNACE)
+                .add(ModBlocks.CRUSHER);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.PENKAZ_ORE)

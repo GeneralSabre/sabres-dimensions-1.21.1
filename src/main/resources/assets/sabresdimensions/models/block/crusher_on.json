@@ -1,0 +1,11 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "north": "sabresdimensions:block/crusher_front_on",
+    "south": "sabresdimensions:block/crusher_back",
+    "east": "sabresdimensions:block/crusher_side",
+    "west": "sabresdimensions:block/crusher_side",
+    "up": "sabresdimensions:block/crusher_top",
+    "down": "sabresdimensions:block/crusher_side"
+  }
+}

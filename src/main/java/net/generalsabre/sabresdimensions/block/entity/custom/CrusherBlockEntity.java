@@ -112,6 +112,7 @@ public class CrusherBlockEntity extends BlockEntity implements ExtendedScreenHan
 
         if (canCraft && hasRecipe()){
             incrementProgress();
+            markDirty(world, pos, state);
             world.setBlockState(pos, state.with(ACTIVE, true));
         } else if (canCraft && !hasRecipe()){
             resetProgress();
