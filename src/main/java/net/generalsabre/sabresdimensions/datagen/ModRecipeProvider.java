@@ -251,8 +251,8 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.ZALANT_INGOT), conditionsFromItem(ModItems.ZALANT_INGOT))
                 .offerTo(recipeExporter);
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.CRUSHER)
-                .pattern("RAL")
-                .pattern("Z Z")
+                .pattern("RZL")
+                .pattern("ZAZ")
                 .pattern("ZZZ")
                 .input('Z', ModItems.ZALANT_INGOT)
                 .input('A', ModItems.ARAKITE_ROD)
