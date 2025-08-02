@@ -29,6 +29,7 @@ public class SabresDimensionsClient implements ClientModInitializer {
                 ModFluids.STILL_MOLTEN_DELETERIUM, ModFluids.FLOWING_MOLTEN_DELETERIUM);
 
         HandledScreens.register(ModScreenHandlers.ALLOY_FURNACE_SCREEN_HANDLER, AlloyFurnaceScreen::new);
+        HandledScreens.register(ModScreenHandlers.ALLOY_FURNACE_SCREEN_HANDLER, ::new);
     }
 }
 
