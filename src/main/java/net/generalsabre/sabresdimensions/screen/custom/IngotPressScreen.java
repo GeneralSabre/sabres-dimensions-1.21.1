@@ -24,8 +24,8 @@ public class IngotPressScreen extends HandledScreen<IngotPressScreenHandler> {
 
     private void renderProgressArrow(DrawContext context, int x, int y) {
         if(handler.isCrafting()) {
-            context.drawTexture(ARROW_TEXTURE, x + 79, y + 35, 0, 0,
-                    handler.getScaledArrowProgress(), 16, 24, 16);
+            context.drawTexture(ARROW_TEXTURE, x + 67, y + 37, 0, 0,
+                    handler.getScaledArrowProgress(), 12, 38, 12);
         }
     }
 

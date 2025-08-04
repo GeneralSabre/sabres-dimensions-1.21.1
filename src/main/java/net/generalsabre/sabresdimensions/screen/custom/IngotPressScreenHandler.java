@@ -33,8 +33,8 @@ public class IngotPressScreenHandler extends ScreenHandler {
         this.propertyDelegate = arrayPropertyDelegate;
 
         this.addSlot(new Slot(inventory,0,41,34));
-        this.addSlot(new Slot (inventory,1,119,19));
-        this.addSlot(new Slot (inventory,2,119,51));
+        this.addSlot(new Slot (inventory,1,118,18));
+        this.addSlot(new Slot (inventory,2,118,50));
 
         addPlayerInventory(playerInventory);
         addPlayerHotbar(playerInventory);
@@ -53,7 +53,7 @@ public class IngotPressScreenHandler extends ScreenHandler {
     public int getScaledArrowProgress(){
         int progress = propertyDelegate.get(0);
         int maxProgress = propertyDelegate.get(1);
-        int arrowPixelSize = 24; // width of arrow
+        int arrowPixelSize = 38; // width of arrow
 
         return maxProgress != 0 && progress != 0 ? progress * arrowPixelSize / maxProgress : 0;
     }

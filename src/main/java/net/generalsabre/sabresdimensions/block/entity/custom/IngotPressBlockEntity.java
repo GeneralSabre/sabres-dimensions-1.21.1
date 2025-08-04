@@ -30,9 +30,6 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 
-import static net.generalsabre.sabresdimensions.block.custom.IngotPressBlock.ACTIVE;
-import static net.generalsabre.sabresdimensions.block.custom.IngotPressBlock.POWERED;
-
 public class IngotPressBlockEntity extends BlockEntity implements ExtendedScreenHandlerFactory<BlockPos>, ImplementedInventory {
 
     private final DefaultedList<ItemStack> inventory = DefaultedList.ofSize(3, ItemStack.EMPTY);
@@ -106,16 +103,15 @@ public class IngotPressBlockEntity extends BlockEntity implements ExtendedScreen
     public void tick(World world, BlockPos pos, BlockState state){
 
         if (isPowered()){
-            world.setBlockState(pos, state.with(POWERED, true), Block.NOTIFY_ALL);
             power = 1;
             canCraft = true;
 
             if (isCrafting){
                 incrementProgress();
                 markDirty(world, pos, state);
-                world.setBlockState(pos, state.with(ACTIVE, true), Block.NOTIFY_ALL);
+
             } else {
-                world.setBlockState(pos, state.with(ACTIVE, false), Block.NOTIFY_ALL);
+
             }
 
             if (isCraftingFinished()){
@@ -125,7 +121,7 @@ public class IngotPressBlockEntity extends BlockEntity implements ExtendedScreen
 
 
         } else {
-            world.setBlockState(pos, state.with(POWERED, false), Block.NOTIFY_ALL);
+
             power = 0;
             canCraft = false;
         }

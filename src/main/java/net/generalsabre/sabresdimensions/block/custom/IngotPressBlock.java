@@ -26,29 +26,13 @@ import org.jetbrains.annotations.Nullable;
 
 public class IngotPressBlock extends BlockWithEntity implements BlockEntityProvider {
 
-    public static final BooleanProperty ACTIVE = BooleanProperty.of("active");
-    public static final BooleanProperty POWERED = BooleanProperty.of("powered");
-    public static final DirectionProperty FACING = Properties.HORIZONTAL_FACING;
+
 
 
     public static final MapCodec<IngotPressBlock> IP_CODEC = IngotPressBlock.createCodec(IngotPressBlock::new);
 
     public IngotPressBlock(Settings settings) {
         super(settings);
-        this.setDefaultState(this.stateManager.getDefaultState().with(FACING, Direction.NORTH).with(ACTIVE, false).with(POWERED,false));
-    }
-
-    @Override
-    public BlockState getPlacementState(ItemPlacementContext ctx) {
-        return this.getDefaultState()
-                .with(FACING, ctx.getHorizontalPlayerFacing())
-                .with(POWERED, false)
-                .with(ACTIVE, false); // or default to false/inactive
-    }
-
-    @Override
-    protected void appendProperties(StateManager.Builder<Block, BlockState> builder) {
-        builder.add(FACING, ACTIVE, POWERED);
     }
 
     @Override
