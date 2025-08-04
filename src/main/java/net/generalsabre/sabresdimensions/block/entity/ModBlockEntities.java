@@ -5,6 +5,7 @@ import net.generalsabre.sabresdimensions.SabresDimensions;
 import net.generalsabre.sabresdimensions.block.ModBlocks;
 import net.generalsabre.sabresdimensions.block.entity.custom.AlloyFurnaceBlockEntity;
 import net.generalsabre.sabresdimensions.block.entity.custom.CrusherBlockEntity;
+import net.generalsabre.sabresdimensions.block.entity.custom.IngotPressBlockEntity;
 import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.block.entity.BlockEntityType.Builder;
 import net.minecraft.registry.Registries;
@@ -19,6 +20,9 @@ public class ModBlockEntities {
     public static final BlockEntityType<CrusherBlockEntity> CRUSHER_BE =
             Registry.register(Registries.BLOCK_ENTITY_TYPE, Identifier.of(SabresDimensions.MOD_ID, "crusher_be"),
                     BlockEntityType.Builder.create(CrusherBlockEntity::new, ModBlocks.CRUSHER).build(null));
+    public static final BlockEntityType<IngotPressBlockEntity> INGOT_PRESS_BE =
+            Registry.register(Registries.BLOCK_ENTITY_TYPE, Identifier.of(SabresDimensions.MOD_ID,"ingot_press_be"),
+                    BlockEntityType.Builder.create(IngotPressBlockEntity::new, ModBlocks.INGOT_PRESS).build(null));
 
 
     public static void registerBlockEntities(){
