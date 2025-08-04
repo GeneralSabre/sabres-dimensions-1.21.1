@@ -172,6 +172,15 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('Z', ModItems.ZALANT_INGOT)
                 .criterion(hasItem(ModBlocks.ARAKITE), conditionsFromItem(ModBlocks.ARAKITE))
                 .offerTo(recipeExporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.INGOT_PRESS)
+                .pattern("III")
+                .pattern("I I")
+                .pattern("PIR")
+                .input('R', Items.REDSTONE)
+                .input('I', Items.IRON_INGOT)
+                .input('P', ModItems.LUPAMOONE_PROCESSOR)
+                .criterion(hasItem(ModItems.LUPAMOONE), conditionsFromItem(ModItems.LUPAMOONE))
+                .offerTo(recipeExporter);
 
 
         // Zalant

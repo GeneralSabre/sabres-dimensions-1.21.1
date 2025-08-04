@@ -6,6 +6,7 @@ import net.generalsabre.sabresdimensions.block.entity.ModBlockEntities;
 import net.generalsabre.sabresdimensions.fluid.ModFluids;
 import net.generalsabre.sabresdimensions.item.custom.ModItems;
 import net.generalsabre.sabresdimensions.screen.custom.CrusherScreenHandler;
+import net.generalsabre.sabresdimensions.screen.custom.IngotPressScreenHandler;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.entity.BlockEntity;
@@ -99,7 +100,7 @@ public class IngotPressBlockEntity extends BlockEntity implements ExtendedScreen
 
     @Override
     public @Nullable ScreenHandler createMenu(int syncId, PlayerInventory playerInventory, PlayerEntity player) {
-        return new X(syncId, playerInventory, this, this.propertyDelegate);
+        return new IngotPressScreenHandler(syncId, playerInventory, this, this.propertyDelegate);
     }
 
     public void tick(World world, BlockPos pos, BlockState state){

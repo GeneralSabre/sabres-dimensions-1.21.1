@@ -62,6 +62,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.ORAXIUM_ORE, oreDrops(ModBlocks.ORAXIUM_ORE, ModItems.RAW_ORAXIUM));
         addDrop(ModBlocks.DELETERIUM_BLOCK);
         addDrop(ModBlocks.ALLOY_FURNACE);
+        addDrop(ModBlocks.INGOT_PRESS);
         addDrop(ModBlocks.CRUSHER);
 
     }
