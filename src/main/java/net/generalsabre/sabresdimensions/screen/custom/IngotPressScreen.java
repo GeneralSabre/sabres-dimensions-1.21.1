@@ -12,9 +12,9 @@ import net.minecraft.util.Identifier;
 public class IngotPressScreen extends HandledScreen<IngotPressScreenHandler> {
 
     private static final Identifier GUI_TEXTURE =
-            Identifier.of(SabresDimensions.MOD_ID, "textures/gui/ingot_press/ingot_press_gui.png");
+            Identifier.of(SabresDimensions.MOD_ID, "textures/gui/ingot_press/molding_machine_gui.png");
     private static final Identifier ARROW_TEXTURE =
-            Identifier.of(SabresDimensions.MOD_ID,"textures/gui/ingot_press/burn_progress.png");
+            Identifier.of(SabresDimensions.MOD_ID,"textures/gui/ingot_press/mm_progress_arrow.png");
     private static final Identifier LIGHT_TEXTURE =
             Identifier.of(SabresDimensions.MOD_ID, "textures/gui/ingot_press/light_on.png");
 
