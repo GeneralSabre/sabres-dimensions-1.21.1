@@ -67,6 +67,8 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ORAXIUM_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DELETERIUM_BLOCK);
 
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.INGOT_PRESS);
+
 
     }
 
