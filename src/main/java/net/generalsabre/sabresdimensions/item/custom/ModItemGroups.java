@@ -123,6 +123,7 @@ public class ModItemGroups {
                         entries.add(ModFluids.BUCKET_OF_MOLTEN_DELETERIUM);
                         entries.add(ModBlocks.ALLOY_FURNACE);
                         entries.add(ModBlocks.CRUSHER);
+                        entries.add(ModBlocks.INGOT_PRESS);
                     })
                     .build());
 
