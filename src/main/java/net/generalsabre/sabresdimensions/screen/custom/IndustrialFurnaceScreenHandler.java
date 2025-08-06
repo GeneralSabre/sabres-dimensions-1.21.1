@@ -33,10 +33,10 @@ public class IndustrialFurnaceScreenHandler extends ScreenHandler {
         this.blockEntity = ((IndustrialFurnaceBlockEntity) blockEntity);
         this.propertyDelegate = arrayPropertyDelegate;
 
-        this.addSlot(new Slot (inventory,0,43,17));
-        this.addSlot(new Slot (inventory,1,68,17));
-        this.addSlot(new Slot (inventory,2,116,35));
-        this.addSlot(new Slot (inventory,3,56,53));
+        this.addSlot(new Slot (inventory,0,56,17));
+        this.addSlot(new Slot (inventory,1,32,34));
+        this.addSlot(new Slot (inventory,2,116,19));
+        this.addSlot(new Slot (inventory,3,116,49));
         this.addSlot(new Slot (inventory,4,56,53));
 
         addPlayerInventory(playerInventory);

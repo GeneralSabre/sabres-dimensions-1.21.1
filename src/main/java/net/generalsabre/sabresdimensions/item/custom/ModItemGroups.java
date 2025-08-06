@@ -124,6 +124,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.ALLOY_FURNACE);
                         entries.add(ModBlocks.CRUSHER);
                         entries.add(ModBlocks.INGOT_PRESS);
+                        entries.add(ModBlocks.INDUSTRIAL_FURNACE);
                     })
                     .build());
 

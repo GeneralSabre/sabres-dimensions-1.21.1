@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "facing=north,active=false": { "model": "sabresdimensions:block/industrial_furnace", "y": 180 },
+    "facing=south,active=false": { "model": "sabresdimensions:block/industrial_furnace", "y": 0 },
+    "facing=east,active=false":  { "model": "sabresdimensions:block/industrial_furnace", "y": 270 },
+    "facing=west,active=false":  { "model": "sabresdimensions:block/industrial_furnace", "y": 90 },
+
+    "facing=north,active=true": { "model": "sabresdimensions:block/industrial_furnace_on", "y": 180 },
+    "facing=south,active=true": { "model": "sabresdimensions:block/industrial_furnace_on", "y": 0 },
+    "facing=east,active=true":  { "model": "sabresdimensions:block/industrial_furnace_on", "y": 270 },
+    "facing=west,active=true":  { "model": "sabresdimensions:block/industrial_furnace_on", "y": 90 }
+  }
+}

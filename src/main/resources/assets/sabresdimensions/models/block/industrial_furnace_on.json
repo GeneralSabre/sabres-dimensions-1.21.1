@@ -1,0 +1,11 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "north": "sabresdimensions:block/industrial_furnace_front_on",
+    "south": "sabresdimensions:block/arakite_bricks",
+    "east": "sabresdimensions:block/arakite_bricks",
+    "west": "sabresdimensions:block/arakite_bricks",
+    "up": "sabresdimensions:block/arakite_bricks",
+    "down": "sabresdimensions:block/arakite_bricks"
+  }
+}

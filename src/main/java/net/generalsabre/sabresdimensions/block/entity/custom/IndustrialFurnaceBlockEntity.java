@@ -30,7 +30,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 
-import static net.generalsabre.sabresdimensions.block.custom.AlloyFurnaceBlock.ACTIVE;
+import static net.generalsabre.sabresdimensions.block.custom.IndustrialFurnaceBlock.ACTIVE;
 
 public class IndustrialFurnaceBlockEntity extends BlockEntity implements ExtendedScreenHandlerFactory<BlockPos>, ImplementedInventory {
 
@@ -38,7 +38,7 @@ public class IndustrialFurnaceBlockEntity extends BlockEntity implements Extende
     private Integer maxBurnProgress = 0;
     boolean isBurning = false;
 
-    private final DefaultedList<ItemStack> inventory = DefaultedList.ofSize(4, ItemStack.EMPTY);
+    private final DefaultedList<ItemStack> inventory = DefaultedList.ofSize(5, ItemStack.EMPTY);
 
     private static final int INPUT_SLOT_1 = 0;
     private static final int INPUT_SLOT_2 = 1;
@@ -51,7 +51,7 @@ public class IndustrialFurnaceBlockEntity extends BlockEntity implements Extende
     private int maxProgress = 1200;
 
     public IndustrialFurnaceBlockEntity(BlockPos pos, BlockState state) {
-        super(ModBlockEntities.ALLOY_FURNACE_BE, pos, state);
+        super(ModBlockEntities.INDUSTRIAL_FURNACE_BE, pos, state);
 
         this.propertyDelegate = new PropertyDelegate() {
             @Override
@@ -180,7 +180,7 @@ public class IndustrialFurnaceBlockEntity extends BlockEntity implements Extende
 
     private void resetProgress() {
         this.progress = 0;
-        this.maxProgress = 300;
+        this.maxProgress = 1200;
     }
 
     private boolean hasCraftingFinished() {
@@ -208,7 +208,7 @@ public class IndustrialFurnaceBlockEntity extends BlockEntity implements Extende
         int currentCount1 = this.getStack(OUTPUT_SLOT_1).getCount();
         int currentCount2 = this.getStack(OUTPUT_SLOT_2).getCount();
 
-        return (maxCount1 >=  currentCount1 + count1) && (currentCount2 > maxCount2);
+        return (maxCount1 >=  currentCount1 + count1) && (currentCount2 < maxCount2);
     }
 
     private boolean canInsertItemIntoOutputSlot(ItemStack output1, ItemStack output2) {
