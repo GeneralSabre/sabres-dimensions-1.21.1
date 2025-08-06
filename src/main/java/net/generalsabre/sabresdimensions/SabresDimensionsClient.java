@@ -7,6 +7,7 @@ import net.fabricmc.fabric.api.client.render.fluid.v1.SimpleFluidRenderHandler;
 import net.generalsabre.sabresdimensions.fluid.ModFluids;
 import net.generalsabre.sabresdimensions.screen.ModScreenHandlers;
 import net.generalsabre.sabresdimensions.screen.custom.CrusherScreen;
+import net.generalsabre.sabresdimensions.screen.custom.IndustrialFurnaceScreen;
 import net.generalsabre.sabresdimensions.screen.custom.IngotPressScreen;
 import net.minecraft.client.gui.screen.ingame.HandledScreens;
 import net.minecraft.client.render.RenderLayer;
@@ -31,6 +32,7 @@ public class SabresDimensionsClient implements ClientModInitializer {
         HandledScreens.register(ModScreenHandlers.ALLOY_FURNACE_SCREEN_HANDLER, AlloyFurnaceScreen::new);
         HandledScreens.register(ModScreenHandlers.CRUSHER_SCREEN_HANDLER, CrusherScreen::new);
         HandledScreens.register(ModScreenHandlers.INGOT_PRESS_SCREEN_HANDLER, IngotPressScreen::new);
+        HandledScreens.register(ModScreenHandlers.INDUSTRIAL_FURNACE_SCREEN_HANDLER, IndustrialFurnaceScreen::new);
     }
 }
 

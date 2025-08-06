@@ -7,6 +7,7 @@ import net.generalsabre.sabresdimensions.block.entity.ModBlockEntities;
 import net.generalsabre.sabresdimensions.fluid.ModFluids;
 import net.generalsabre.sabresdimensions.item.custom.ModItems;
 import net.generalsabre.sabresdimensions.screen.custom.AlloyFurnaceScreenHandler;
+import net.generalsabre.sabresdimensions.screen.custom.IndustrialFurnaceScreenHandler;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.entity.player.PlayerEntity;
@@ -97,7 +98,7 @@ public class IndustrialFurnaceBlockEntity extends BlockEntity implements Extende
 
     @Override
     public @Nullable ScreenHandler createMenu(int syncId, PlayerInventory playerInventory, PlayerEntity player) {
-        return new XSCHANDLER(syncId, playerInventory, this, this.propertyDelegate);
+        return new IndustrialFurnaceScreenHandler(syncId, playerInventory, this, this.propertyDelegate);
     }
 
     @Override
