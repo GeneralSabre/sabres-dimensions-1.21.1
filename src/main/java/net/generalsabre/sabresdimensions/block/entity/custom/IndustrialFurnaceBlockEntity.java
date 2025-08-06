@@ -113,36 +113,36 @@ public class IndustrialFurnaceBlockEntity extends BlockEntity implements Extende
 
     public void tick(World world, BlockPos pos, BlockState state) {
 
+        if (isMultiblockCompleted()){
+            if (isBurning){
+                incrementBurn();
+                world.setBlockState(pos, state.with(ACTIVE, true));
+            } else {
+                world.setBlockState(pos, state.with(ACTIVE, false));
+            }
 
-        if (isBurning){
-            incrementBurn();
-            world.setBlockState(pos, state.with(ACTIVE, true));
-        } else {
-            world.setBlockState(pos, state.with(ACTIVE, false));
-        }
+            if (hasRecipe() && isBurningFinished() && hasFuel()){
+                takeFuel();
+                maxBurnProgress = getMaxBurnTime(getStack(FUEL_SLOT));
+                burnProgress = getBurnTime(getStack(FUEL_SLOT));
+                isBurning = true;
+                burnProgress--;
 
-        if (hasRecipe() && isBurningFinished() && hasFuel()){
-            takeFuel();
-            maxBurnProgress = getMaxBurnTime(getStack(FUEL_SLOT));
-            burnProgress = getBurnTime(getStack(FUEL_SLOT));
-            isBurning = true;
-            burnProgress--;
+            } else if (hasRecipe() && isBurningFinished() && !hasFuel()){
+                isBurning = false;
+            }
 
-        } else if (hasRecipe() && isBurningFinished() && !hasFuel()){
-            isBurning = false;
-        }
-
-        if (hasRecipe() && isBurning){
-            incrementProgress();
-            markDirty(world, pos, state);
-            if (hasCraftingFinished()){
-                craftItem();
+            if (hasRecipe() && isBurning){
+                incrementProgress();
+                markDirty(world, pos, state);
+                if (hasCraftingFinished()){
+                    craftItem();
+                    resetProgress();
+                }
+            } else {
                 resetProgress();
             }
-        } else {
-            resetProgress();
         }
-
     }
 
     public final Map<BlockPos, Block> MULTIBLOCK_STRUCTURE = Map.ofEntries(
@@ -205,11 +205,33 @@ public class IndustrialFurnaceBlockEntity extends BlockEntity implements Extende
         };
     }
 
-    private boolean isCompleted(int x, int y) {
-        boolean isCompleted = false;
+    private boolean isMultiblockCompleted() {
 
+        BlockPos origin = this.pos;
+        World world = this.world;
 
-        return isCompleted;
+        for (Direction facing : Direction.Type.HORIZONTAL){
+            boolean isCompleted = true;
+            for (Map.Entry<BlockPos, Block> entry : MULTIBLOCK_STRUCTURE.entrySet()){
+
+                BlockPos rotatedOffset = rotateOffset(entry.getKey(), facing);
+                BlockPos worldPos = origin.add(rotatedOffset);
+
+                BlockState actual = world.getBlockState(worldPos);
+                Block expected = entry.getValue();
+
+                if (!actual.isOf(expected)) {
+                    isCompleted = false;
+                    break;
+                }
+            }
+
+            if (isCompleted){
+                return true;
+            }
+        }
+
+        return false;
     }
 
     private Integer getBurnTime(ItemStack stack) {
