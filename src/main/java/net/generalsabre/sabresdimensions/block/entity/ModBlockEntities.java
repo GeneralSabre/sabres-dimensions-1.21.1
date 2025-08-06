@@ -3,8 +3,10 @@ package net.generalsabre.sabresdimensions.block.entity;
 import net.fabricmc.fabric.api.object.builder.v1.block.entity.FabricBlockEntityType;
 import net.generalsabre.sabresdimensions.SabresDimensions;
 import net.generalsabre.sabresdimensions.block.ModBlocks;
+import net.generalsabre.sabresdimensions.block.custom.IndustrialFurnaceBlock;
 import net.generalsabre.sabresdimensions.block.entity.custom.AlloyFurnaceBlockEntity;
 import net.generalsabre.sabresdimensions.block.entity.custom.CrusherBlockEntity;
+import net.generalsabre.sabresdimensions.block.entity.custom.IndustrialFurnaceBlockEntity;
 import net.generalsabre.sabresdimensions.block.entity.custom.IngotPressBlockEntity;
 import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.block.entity.BlockEntityType.Builder;
@@ -23,6 +25,9 @@ public class ModBlockEntities {
     public static final BlockEntityType<IngotPressBlockEntity> INGOT_PRESS_BE =
             Registry.register(Registries.BLOCK_ENTITY_TYPE, Identifier.of(SabresDimensions.MOD_ID,"ingot_press_be"),
                     BlockEntityType.Builder.create(IngotPressBlockEntity::new, ModBlocks.INGOT_PRESS).build(null));
+    public static final BlockEntityType<IndustrialFurnaceBlockEntity> INDUSTRIAL_FURNACE_BE =
+            Registry.register(Registries.BLOCK_ENTITY_TYPE, Identifier.of(SabresDimensions.MOD_ID,"industrial_furnace_be"),
+                    BlockEntityType.Builder.create(IndustrialFurnaceBlockEntity::new, ModBlocks.INDUSTRIAL_FURNACE).build(null));
 
 
     public static void registerBlockEntities(){

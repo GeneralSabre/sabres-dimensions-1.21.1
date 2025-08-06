@@ -2,6 +2,7 @@ package net.generalsabre.sabresdimensions.block;
 
 import net.generalsabre.sabresdimensions.block.custom.AlloyFurnaceBlock;
 import net.generalsabre.sabresdimensions.block.custom.CrusherBlock;
+import net.generalsabre.sabresdimensions.block.custom.IndustrialFurnaceBlock;
 import net.generalsabre.sabresdimensions.block.custom.IngotPressBlock;
 import net.minecraft.block.*;
 import net.generalsabre.sabresdimensions.SabresDimensions;
@@ -138,6 +139,8 @@ public class ModBlocks {
             new CrusherBlock(AbstractBlock.Settings.create().strength(1.0f,1.0f).requiresTool()));
     public static final Block INGOT_PRESS = registerBlock("ingot_press",
             new IngotPressBlock(AbstractBlock.Settings.create().strength(1.0f).hardness(1.0f).requiresTool()));
+    public static final Block INDUSTRIAL_FURNACE = registerBlock("industrial_furnace",
+            new IndustrialFurnaceBlock(AbstractBlock.Settings.create().strength(1.0f).hardness(1.0f).requiresTool()));
 
     // Deleterium / Oraxium
     public static final Block ORAXIUM_ORE = registerBlock("oraxium_ore",
