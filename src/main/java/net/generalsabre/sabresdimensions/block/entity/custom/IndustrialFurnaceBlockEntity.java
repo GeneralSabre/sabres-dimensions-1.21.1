@@ -2,13 +2,15 @@ package net.generalsabre.sabresdimensions.block.entity.custom;
 
 import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.fabricmc.fabric.api.screenhandler.v1.ExtendedScreenHandlerFactory;
+import net.generalsabre.sabresdimensions.block.ModBlocks;
 import net.generalsabre.sabresdimensions.block.entity.ImplementedInventory;
 import net.generalsabre.sabresdimensions.block.entity.ModBlockEntities;
 import net.generalsabre.sabresdimensions.fluid.ModFluids;
 import net.generalsabre.sabresdimensions.item.custom.ModItems;
-import net.generalsabre.sabresdimensions.screen.custom.AlloyFurnaceScreenHandler;
 import net.generalsabre.sabresdimensions.screen.custom.IndustrialFurnaceScreenHandler;
+import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
+import net.minecraft.block.Blocks;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
@@ -27,8 +29,11 @@ import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.text.Text;
 import net.minecraft.util.collection.DefaultedList;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.Direction;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
+
+import java.util.Map;
 
 import static net.generalsabre.sabresdimensions.block.custom.IndustrialFurnaceBlock.ACTIVE;
 
@@ -108,6 +113,7 @@ public class IndustrialFurnaceBlockEntity extends BlockEntity implements Extende
 
     public void tick(World world, BlockPos pos, BlockState state) {
 
+
         if (isBurning){
             incrementBurn();
             world.setBlockState(pos, state.with(ACTIVE, true));
@@ -137,6 +143,73 @@ public class IndustrialFurnaceBlockEntity extends BlockEntity implements Extende
             resetProgress();
         }
 
+    }
+
+    public final Map<BlockPos, Block> MULTIBLOCK_STRUCTURE = Map.ofEntries(
+            // Bottom Layer
+
+            // Left, Middle, Right
+            Map.entry(new BlockPos(1,-1,0), ModBlocks.ARAKITE_BRICKS),
+            Map.entry(new BlockPos(1,-1,-1), ModBlocks.ARAKITE_BRICKS),
+            Map.entry(new BlockPos(1,-1,-2), ModBlocks.ARAKITE_BRICKS),
+
+            Map.entry(new BlockPos(0,-1,0), ModBlocks.ARAKITE_BRICKS),
+            Map.entry(new BlockPos(0,-1,-1), ModBlocks.ARAKITE_BRICKS),
+            Map.entry(new BlockPos(0,-1,-2), ModBlocks.ARAKITE_BRICKS),
+
+            Map.entry(new BlockPos(-1,-1,0), ModBlocks.ARAKITE_BRICKS),
+            Map.entry(new BlockPos(-1,-1,-1), ModBlocks.ARAKITE_BRICKS),
+            Map.entry(new BlockPos(-1,-1,-2), ModBlocks.ARAKITE_BRICKS),
+
+
+            // Middle Layer
+            Map.entry(new BlockPos(1,0,0), ModBlocks.ARAKITE_BRICKS),
+            Map.entry(new BlockPos(1,0,-1), ModBlocks.ARAKITE_BRICKS),
+            Map.entry(new BlockPos(1,0,-2), ModBlocks.ARAKITE_BRICKS),
+
+            // Origin Pt
+            Map.entry(new BlockPos(0,0,-1), Blocks.AIR),
+            Map.entry(new BlockPos(0,0,-2), ModBlocks.ARAKITE_BRICKS),
+
+            Map.entry(new BlockPos(-1,0,0), ModBlocks.ARAKITE_BRICKS),
+            Map.entry(new BlockPos(-1,0,-1), ModBlocks.ARAKITE_BRICKS),
+            Map.entry(new BlockPos(-1,0,-2), ModBlocks.ARAKITE_BRICKS),
+
+
+            // Top Layer
+            Map.entry(new BlockPos(1,1,0), ModBlocks.ARAKITE_BRICKS),
+            Map.entry(new BlockPos(1,1,-1), ModBlocks.ARAKITE_BRICKS),
+            Map.entry(new BlockPos(1,1,-2), ModBlocks.ARAKITE_BRICKS),
+
+            Map.entry(new BlockPos(0,1,0), ModBlocks.ARAKITE_BRICKS),
+            Map.entry(new BlockPos(0,1,-1), ModBlocks.ARAKITE_BRICKS),
+            Map.entry(new BlockPos(0,1,-2), ModBlocks.ARAKITE_BRICKS),
+
+            Map.entry(new BlockPos(-1,1,0), ModBlocks.ARAKITE_BRICKS),
+            Map.entry(new BlockPos(-1,1,-1), ModBlocks.ARAKITE_BRICKS),
+            Map.entry(new BlockPos(-1,1,-2), ModBlocks.ARAKITE_BRICKS)
+
+    );
+
+    private BlockPos rotateOffset(BlockPos offset, Direction facing) {
+        int x = offset.getX();
+        int y = offset.getY();
+        int z = offset.getZ();
+
+        return switch (facing) {
+            case NORTH -> new BlockPos(x, y, z);         // no change
+            case SOUTH -> new BlockPos(-x, y, -z);       // 180°
+            case WEST  -> new BlockPos(z, y, -x);        // 90° left
+            case EAST  -> new BlockPos(-z, y, x);        // 90° right
+            default -> offset;
+        };
+    }
+
+    private boolean isCompleted(int x, int y) {
+        boolean isCompleted = false;
+
+
+        return isCompleted;
     }
 
     private Integer getBurnTime(ItemStack stack) {
