@@ -142,6 +142,8 @@ public class IndustrialFurnaceBlockEntity extends BlockEntity implements Extende
             } else {
                 resetProgress();
             }
+        } else {
+            resetProgress();
         }
     }
 
@@ -150,21 +152,21 @@ public class IndustrialFurnaceBlockEntity extends BlockEntity implements Extende
 
             // Left, Middle, Right
             Map.entry(new BlockPos(1,-1,0), ModBlocks.ARAKITE_BRICKS),
-            Map.entry(new BlockPos(1,-1,-1), ModBlocks.ARAKITE_BRICKS),
+            Map.entry(new BlockPos(1,-1,-1), Blocks.IRON_BLOCK),
             Map.entry(new BlockPos(1,-1,-2), ModBlocks.ARAKITE_BRICKS),
 
             Map.entry(new BlockPos(0,-1,0), ModBlocks.ARAKITE_BRICKS),
-            Map.entry(new BlockPos(0,-1,-1), ModBlocks.ARAKITE_BRICKS),
+            Map.entry(new BlockPos(0,-1,-1), Blocks.IRON_BLOCK),
             Map.entry(new BlockPos(0,-1,-2), ModBlocks.ARAKITE_BRICKS),
 
             Map.entry(new BlockPos(-1,-1,0), ModBlocks.ARAKITE_BRICKS),
-            Map.entry(new BlockPos(-1,-1,-1), ModBlocks.ARAKITE_BRICKS),
+            Map.entry(new BlockPos(-1,-1,-1), Blocks.IRON_BLOCK),
             Map.entry(new BlockPos(-1,-1,-2), ModBlocks.ARAKITE_BRICKS),
 
 
             // Middle Layer
             Map.entry(new BlockPos(1,0,0), ModBlocks.ARAKITE_BRICKS),
-            Map.entry(new BlockPos(1,0,-1), ModBlocks.ARAKITE_BRICKS),
+            Map.entry(new BlockPos(1,0,-1), Blocks.IRON_BLOCK),
             Map.entry(new BlockPos(1,0,-2), ModBlocks.ARAKITE_BRICKS),
 
             // Origin Pt
@@ -172,21 +174,21 @@ public class IndustrialFurnaceBlockEntity extends BlockEntity implements Extende
             Map.entry(new BlockPos(0,0,-2), ModBlocks.ARAKITE_BRICKS),
 
             Map.entry(new BlockPos(-1,0,0), ModBlocks.ARAKITE_BRICKS),
-            Map.entry(new BlockPos(-1,0,-1), ModBlocks.ARAKITE_BRICKS),
+            Map.entry(new BlockPos(-1,0,-1), Blocks.IRON_BLOCK),
             Map.entry(new BlockPos(-1,0,-2), ModBlocks.ARAKITE_BRICKS),
 
 
             // Top Layer
             Map.entry(new BlockPos(1,1,0), ModBlocks.ARAKITE_BRICKS),
-            Map.entry(new BlockPos(1,1,-1), ModBlocks.ARAKITE_BRICKS),
+            Map.entry(new BlockPos(1,1,-1), Blocks.IRON_BLOCK),
             Map.entry(new BlockPos(1,1,-2), ModBlocks.ARAKITE_BRICKS),
 
             Map.entry(new BlockPos(0,1,0), ModBlocks.ARAKITE_BRICKS),
-            Map.entry(new BlockPos(0,1,-1), ModBlocks.ARAKITE_BRICKS),
+            Map.entry(new BlockPos(0,1,-1), Blocks.IRON_BLOCK),
             Map.entry(new BlockPos(0,1,-2), ModBlocks.ARAKITE_BRICKS),
 
             Map.entry(new BlockPos(-1,1,0), ModBlocks.ARAKITE_BRICKS),
-            Map.entry(new BlockPos(-1,1,-1), ModBlocks.ARAKITE_BRICKS),
+            Map.entry(new BlockPos(-1,1,-1), Blocks.IRON_BLOCK),
             Map.entry(new BlockPos(-1,1,-2), ModBlocks.ARAKITE_BRICKS)
 
     );
@@ -217,6 +219,7 @@ public class IndustrialFurnaceBlockEntity extends BlockEntity implements Extende
                 BlockPos rotatedOffset = rotateOffset(entry.getKey(), facing);
                 BlockPos worldPos = origin.add(rotatedOffset);
 
+                assert world != null;
                 BlockState actual = world.getBlockState(worldPos);
                 Block expected = entry.getValue();
 
@@ -296,6 +299,7 @@ public class IndustrialFurnaceBlockEntity extends BlockEntity implements Extende
                 && canInsertItemIntoOutputSlot(output1, output2) && canInsertAmountIntoOutputSlot(output1.getCount(), output2.getCount());
 
     }
+
 
     private boolean canInsertAmountIntoOutputSlot(int count1, int count2) {
         int maxCount1 = this.getStack(OUTPUT_SLOT_1).isEmpty() ? 64 : this.getStack(OUTPUT_SLOT_1).getMaxCount();

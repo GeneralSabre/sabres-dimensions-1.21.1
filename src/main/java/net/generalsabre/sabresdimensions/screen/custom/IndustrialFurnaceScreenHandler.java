@@ -34,7 +34,7 @@ public class IndustrialFurnaceScreenHandler extends ScreenHandler {
         this.propertyDelegate = arrayPropertyDelegate;
 
         this.addSlot(new Slot (inventory,0,56,17));
-        this.addSlot(new Slot (inventory,1,32,34));
+        this.addSlot(new Slot (inventory,1,32,35));
         this.addSlot(new Slot (inventory,2,116,19));
         this.addSlot(new Slot (inventory,3,116,49));
         this.addSlot(new Slot (inventory,4,56,53));
