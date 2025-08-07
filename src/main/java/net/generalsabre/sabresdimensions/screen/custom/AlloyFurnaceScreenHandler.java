@@ -2,7 +2,6 @@ package net.generalsabre.sabresdimensions.screen.custom;
 
 import net.generalsabre.sabresdimensions.block.entity.custom.AlloyFurnaceBlockEntity;
 import net.generalsabre.sabresdimensions.screen.ModScreenHandlers;
-import net.minecraft.MinecraftVersion;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
@@ -11,10 +10,9 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.screen.ArrayPropertyDelegate;
 import net.minecraft.screen.PropertyDelegate;
 import net.minecraft.screen.ScreenHandler;
-import net.minecraft.screen.ScreenHandlerType;
 import net.minecraft.screen.slot.Slot;
 import net.minecraft.util.math.BlockPos;
-import org.jetbrains.annotations.Nullable;
+
 
 public class AlloyFurnaceScreenHandler extends ScreenHandler {
 
