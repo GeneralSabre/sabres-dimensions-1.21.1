@@ -16,7 +16,7 @@ public class IndustrialFurnaceScreen extends HandledScreen<IndustrialFurnaceScre
     private static final Identifier ARROW_TEXTURE =
             Identifier.of(SabresDimensions.MOD_ID,"textures/gui/industrial_furnace/burn_progress.png");
     private static final Identifier BURN_TEXTURE =
-            Identifier.of(SabresDimensions.MOD_ID, "textures/gui/industrial_furnace/lit_progress");
+            Identifier.of(SabresDimensions.MOD_ID, "textures/gui/industrial_furnace/lit_progress.png");
 
     public IndustrialFurnaceScreen(IndustrialFurnaceScreenHandler handler, PlayerInventory inventory, Text title) {
         super(handler, inventory, title);
@@ -33,8 +33,8 @@ public class IndustrialFurnaceScreen extends HandledScreen<IndustrialFurnaceScre
         int i = handler.getBurnProgress() + 1;
         if(handler.isBurning()){
             //context.drawGuiTexture(BURN_TEXTURE, 14, 14, 0, 14 - i, x + 56, y + 36 + 14 - i, 14, i);
-            context.drawGuiTexture(BURN_TEXTURE, 16, 16, 0, 16 - i , x + 56, y + 36 + 14 - i, 14, i);
-
+            //context.drawGuiTexture(BURN_TEXTURE, 16, 16, 0, 16 - i , x + 56, y + 36 + 14 - i, 14, i);
+            context.drawTexture(BURN_TEXTURE, x + 56, y + 36 + 14 - i, 0, 14 - i, 14, i, 14, 14);
         }
     }
 

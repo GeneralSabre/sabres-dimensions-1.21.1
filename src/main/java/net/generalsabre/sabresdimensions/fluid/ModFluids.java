@@ -2,6 +2,7 @@ package net.generalsabre.sabresdimensions.fluid;
 
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.generalsabre.sabresdimensions.SabresDimensions;
+import net.generalsabre.sabresdimensions.block.custom.MoltenDeleteriumBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
@@ -41,7 +42,7 @@ public abstract class ModFluids extends FlowableFluid{
                 Identifier.of(SabresDimensions.MOD_ID, "flowing_molten_deleterium"), new MoltenDeleteriumFluid.Flowing());
         MOLTEN_DELETERIUM_BLOCK = Registry.register(Registries.BLOCK,
                 Identifier.of(SabresDimensions.MOD_ID, "molten_deleterium_block"),
-                new FluidBlock(ModFluids.STILL_MOLTEN_DELETERIUM, FabricBlockSettings.copyOf(Blocks.LAVA)){});
+                new MoltenDeleteriumBlock(ModFluids.STILL_MOLTEN_DELETERIUM, FabricBlockSettings.copyOf(Blocks.LAVA)){});
         BUCKET_OF_MOLTEN_DELETERIUM = Registry.register(Registries.ITEM,
                 Identifier.of(SabresDimensions.MOD_ID, "bucket_of_molten_deleterium"),
                 new BucketItem(ModFluids.STILL_MOLTEN_DELETERIUM, new Item.Settings().maxCount(1).recipeRemainder(Items.BUCKET)));
