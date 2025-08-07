@@ -1,6 +1,7 @@
 package net.generalsabre.sabresdimensions.block.entity.custom;
 
 import net.fabricmc.fabric.api.screenhandler.v1.ExtendedScreenHandlerFactory;
+import net.generalsabre.sabresdimensions.block.custom.CrusherBlock;
 import net.generalsabre.sabresdimensions.block.entity.ImplementedInventory;
 import net.generalsabre.sabresdimensions.block.entity.ModBlockEntities;
 import net.generalsabre.sabresdimensions.item.custom.ModItems;
@@ -31,6 +32,7 @@ import org.jetbrains.annotations.Nullable;
 
 import static net.generalsabre.sabresdimensions.block.custom.CrusherBlock.ACTIVE;
 import static net.generalsabre.sabresdimensions.block.custom.CrusherBlock.POWERED;
+import static net.minecraft.block.Block.NOTIFY_ALL;
 
 public class CrusherBlockEntity extends BlockEntity implements ExtendedScreenHandlerFactory<BlockPos>, ImplementedInventory {
 
@@ -103,17 +105,21 @@ public class CrusherBlockEntity extends BlockEntity implements ExtendedScreenHan
 
     public void tick(World world, BlockPos pos, BlockState state){
 
+        System.out.println(world.getBlockState(pos));
+
+
+
         if (isPowered()){
-            world.setBlockState(pos, state.with(POWERED, true), Block.NOTIFY_ALL);
             power = 1;
             canCraft = true;
+
 
             if (isCrafting){
                 incrementProgress();
                 markDirty(world, pos, state);
-                world.setBlockState(pos, state.with(ACTIVE, true), Block.NOTIFY_ALL);
+
             } else {
-                world.setBlockState(pos, state.with(ACTIVE, false), Block.NOTIFY_ALL);
+                markDirty(world, pos, state);
             }
 
             if (isCraftingFinished()){
@@ -123,7 +129,6 @@ public class CrusherBlockEntity extends BlockEntity implements ExtendedScreenHan
 
 
         } else {
-            world.setBlockState(pos, state.with(POWERED, false), Block.NOTIFY_ALL);
             power = 0;
             canCraft = false;
         }
@@ -134,6 +139,10 @@ public class CrusherBlockEntity extends BlockEntity implements ExtendedScreenHan
             resetProgress();
             isCrafting = false;
         }
+
+        state = state.with(ACTIVE, isCrafting);
+        state = state.with(POWERED, isPowered());
+        world.setBlockState(pos, state, NOTIFY_ALL);
     }
 
     private boolean isPowered() {
