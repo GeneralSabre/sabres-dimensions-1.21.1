@@ -10,7 +10,10 @@ import net.generalsabre.sabresdimensions.fluid.ModFluids;
 import net.generalsabre.sabresdimensions.item.custom.ModItemGroups;
 import net.generalsabre.sabresdimensions.item.custom.ModItems;
 import net.generalsabre.sabresdimensions.screen.ModScreenHandlers;
+import net.generalsabre.sabresdimensions.util.ModKeyBindings;
+import net.generalsabre.sabresdimensions.util.ModKeyHandler;
 import net.minecraft.registry.Registry;
+import net.minecraft.world.tick.Tick;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -33,6 +36,9 @@ public class SabresDimensions implements ModInitializer {
 		ModFluids.register();
 		ModScreenHandlers.registerScreenHandlers();
 		ModBlockEntities.registerBlockEntities();
+
+		ModKeyBindings.registerModKeyBindings();
+		ModKeyHandler.registerKeyHandler();
 
 		ModEnchantmentEffects.registerModEnchantmentEffects();
 
