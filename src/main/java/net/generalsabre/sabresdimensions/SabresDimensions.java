@@ -49,6 +49,7 @@ public class SabresDimensions implements ModInitializer {
 		ServerTickEvents.END_SERVER_TICK.register(server -> {
 			for (ServerPlayerEntity player : server.getPlayerManager().getPlayerList()) {
 				JumpJetEffectHandler.ApplyEffect(player);
+
 			}
 		});
 

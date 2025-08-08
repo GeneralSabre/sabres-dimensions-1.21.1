@@ -7,11 +7,7 @@ import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.entry.RegistryEntry;
 
 public class EnchantmentUtil{
-    public static RegistryEntry<Enchantment> getJumpJetEntry(DynamicRegistryManager registryManager) {
-        return registryManager.get(RegistryKeys.ENCHANTMENT)
-                .getEntry(ModEnchantments.JUMP_JET)
-                .orElseThrow();
-    }
+
 }
 
 
