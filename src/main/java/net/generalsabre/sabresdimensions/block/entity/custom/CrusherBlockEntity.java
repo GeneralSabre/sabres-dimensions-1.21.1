@@ -105,9 +105,6 @@ public class CrusherBlockEntity extends BlockEntity implements ExtendedScreenHan
 
     public void tick(World world, BlockPos pos, BlockState state){
 
-        System.out.println(world.getBlockState(pos));
-
-
 
         if (isPowered()){
             power = 1;
