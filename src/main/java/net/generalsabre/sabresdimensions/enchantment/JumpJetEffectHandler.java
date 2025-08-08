@@ -10,12 +10,6 @@ import net.minecraft.server.network.ServerPlayerEntity;
 
 public class JumpJetEffectHandler {
 
-    public static void tickEffectHandler(ServerPlayerEntity player){
-        ClientTickEvents.END_CLIENT_TICK.register(minecraftClient -> {
-            JumpJetEffectHandler.ApplyEffect(player);
-        });
-    }
-
     public boolean hasJumpJet(ServerPlayerEntity player){
         int x = 0;
         x = EnchantmentHelper.getEquipmentLevel(EnchantmentUtil.getJumpJetEntry(DynamicRegistryManager.EMPTY), player);

@@ -5,6 +5,7 @@ import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.client.render.fluid.v1.FluidRenderHandlerRegistry;
 import net.fabricmc.fabric.api.client.render.fluid.v1.SimpleFluidRenderHandler;
 import net.generalsabre.sabresdimensions.block.ModBlocks;
+import net.generalsabre.sabresdimensions.enchantment.JumpJetEffectHandler;
 import net.generalsabre.sabresdimensions.fluid.ModFluids;
 import net.generalsabre.sabresdimensions.screen.ModScreenHandlers;
 import net.generalsabre.sabresdimensions.screen.custom.CrusherScreen;

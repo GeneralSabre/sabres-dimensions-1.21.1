@@ -10,7 +10,7 @@ public class EnchantmentUtil{
     public static RegistryEntry<Enchantment> getJumpJetEntry(DynamicRegistryManager registryManager) {
         return registryManager.get(RegistryKeys.ENCHANTMENT)
                 .getEntry(ModEnchantments.JUMP_JET)
-                .orElseThrow(() -> new IllegalStateException("Jump Jet enchantment not registered!"));
+                .orElseThrow();
     }
 }
 
