@@ -1,8 +1,13 @@
 package net.generalsabre.sabresdimensions.item.custom;
 
+import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
+import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.generalsabre.sabresdimensions.SabresDimensions;
+import net.generalsabre.sabresdimensions.datagen.ModEnchantmentTagProvider;
 import net.generalsabre.sabresdimensions.fluid.ModFluids;
 import net.generalsabre.sabresdimensions.fluid.MoltenDeleteriumFluid;
+import net.minecraft.enchantment.EnchantmentLevelEntry;
+import net.minecraft.enchantment.Enchantments;
 import net.minecraft.fluid.FlowableFluid;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;

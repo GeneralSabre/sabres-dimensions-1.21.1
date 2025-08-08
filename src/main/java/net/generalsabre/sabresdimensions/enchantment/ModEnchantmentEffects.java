@@ -10,11 +10,12 @@ import net.minecraft.util.Identifier;
 
 public class ModEnchantmentEffects {
 
-    public static final MapCodec<? extends  EnchantmentEntityEffect> JUMP_JET =
+    public static final MapCodec<? extends EnchantmentEntityEffect> JUMP_JET =
             registerEntityEffect("jump_jet", JumpJetEnchantmentEffect.CODEC);
 
     private static MapCodec<? extends EnchantmentEntityEffect> registerEntityEffect(String name,
                                                                                     MapCodec<? extends EnchantmentEntityEffect> codec){
+
         return Registry.register(Registries.ENCHANTMENT_ENTITY_EFFECT_TYPE, Identifier.of(SabresDimensions.MOD_ID, name), codec);
     }
 

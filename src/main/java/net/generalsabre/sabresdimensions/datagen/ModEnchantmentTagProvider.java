@@ -3,14 +3,18 @@ package net.generalsabre.sabresdimensions.datagen;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.generalsabre.sabresdimensions.enchantment.ModEnchantments;
+import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.Enchantments;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.RegistryWrapper;
 import net.generalsabre.sabresdimensions.util.ModTags;
+import net.minecraft.registry.entry.RegistryEntry;
 
 import java.util.concurrent.CompletableFuture;
 
 public class ModEnchantmentTagProvider extends FabricTagProvider.EnchantmentTagProvider {
+
+
 
     public ModEnchantmentTagProvider(FabricDataOutput output, CompletableFuture<RegistryWrapper.WrapperLookup> completableFuture) {
         super(output, completableFuture);
@@ -18,6 +22,10 @@ public class ModEnchantmentTagProvider extends FabricTagProvider.EnchantmentTagP
 
     @Override
     protected void configure(RegistryWrapper.WrapperLookup registryLookup) {
+
+        var enchantmentRegistry = registryLookup.getWrapperOrThrow(RegistryKeys.ENCHANTMENT);
+        RegistryEntry<Enchantment> featherFallingEntry = enchantmentRegistry.getOrThrow(Enchantments.FEATHER_FALLING);
+
 
         getOrCreateTagBuilder(ModTags.Enchantments.BOOTS_EXCLUSIVE_SET_2)
                 .add(ModEnchantments.JUMP_JET)

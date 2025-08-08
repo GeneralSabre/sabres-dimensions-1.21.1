@@ -10,6 +10,7 @@ import net.generalsabre.sabresdimensions.fluid.ModFluids;
 import net.generalsabre.sabresdimensions.item.custom.ModItemGroups;
 import net.generalsabre.sabresdimensions.item.custom.ModItems;
 import net.generalsabre.sabresdimensions.screen.ModScreenHandlers;
+import net.minecraft.registry.Registry;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -34,5 +35,6 @@ public class SabresDimensions implements ModInitializer {
 		ModBlockEntities.registerBlockEntities();
 
 		ModEnchantmentEffects.registerModEnchantmentEffects();
+
 	}
 }

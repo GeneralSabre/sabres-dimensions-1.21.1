@@ -3,7 +3,10 @@ package net.generalsabre.sabresdimensions.item.custom;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.generalsabre.sabresdimensions.SabresDimensions;
 import net.generalsabre.sabresdimensions.block.ModBlocks;
+import net.generalsabre.sabresdimensions.enchantment.ModEnchantments;
 import net.generalsabre.sabresdimensions.fluid.ModFluids;
+import net.minecraft.item.EnchantedBookItem;
+import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.registry.Registries;
@@ -125,6 +128,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.CRUSHER);
                         entries.add(ModBlocks.INGOT_PRESS);
                         entries.add(ModBlocks.INDUSTRIAL_FURNACE);
+
                     })
                     .build());
 

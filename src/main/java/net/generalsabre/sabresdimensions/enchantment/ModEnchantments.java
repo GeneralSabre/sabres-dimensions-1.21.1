@@ -24,13 +24,12 @@ public class ModEnchantments {
         register(registerable, JUMP_JET, Enchantment.builder(Enchantment.definition(
                 items.getOrThrow(ItemTags.ARMOR_ENCHANTABLE),
                 items.getOrThrow(ItemTags.FOOT_ARMOR),
-                0,
+                5,
                 3,
                 Enchantment.leveledCost(5, 7),
                 Enchantment.leveledCost(25, 9),
                 5,
-                AttributeModifierSlot.FEET
-        ))
+                AttributeModifierSlot.FEET))
                 .exclusiveSet(enchantments.getOrThrow(ModTags.Enchantments.BOOTS_EXCLUSIVE_SET_2))
                 .addEffect(EnchantmentEffectComponentTypes.LOCATION_CHANGED,
                         new JumpJetEnchantmentEffect()));

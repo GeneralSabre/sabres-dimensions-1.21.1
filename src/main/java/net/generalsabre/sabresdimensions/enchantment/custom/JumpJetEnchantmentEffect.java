@@ -17,6 +17,7 @@ import java.util.UUID;
 public record JumpJetEnchantmentEffect() implements EnchantmentEntityEffect {
 
     public static final MapCodec<JumpJetEnchantmentEffect> CODEC = MapCodec.unit(JumpJetEnchantmentEffect::new);
+
     private static final Map<UUID, Boolean> lastOnGroundMap = new HashMap<>();
 
     @Override
