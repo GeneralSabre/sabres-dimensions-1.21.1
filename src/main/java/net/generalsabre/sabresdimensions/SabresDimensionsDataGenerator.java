@@ -3,7 +3,10 @@ package net.generalsabre.sabresdimensions;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.generalsabre.sabresdimensions.datagen.*;
+import net.generalsabre.sabresdimensions.enchantment.ModEnchantments;
 import net.minecraft.data.DataGenerator;
+import net.minecraft.registry.RegistryBuilder;
+import net.minecraft.registry.RegistryKeys;
 
 public class SabresDimensionsDataGenerator implements DataGeneratorEntrypoint {
 	@Override
@@ -15,5 +18,10 @@ public class SabresDimensionsDataGenerator implements DataGeneratorEntrypoint {
 		pack.addProvider(ModLootTableProvider::new);
 		pack.addProvider(ModModelProvider::new);
 		pack.addProvider(ModRecipeProvider::new);
+	}
+
+	@Override
+	public void buildRegistry(RegistryBuilder registryBuilder) {
+		registryBuilder.addRegistry(RegistryKeys.ENCHANTMENT, ModEnchantments::bootstrap);
 	}
 }

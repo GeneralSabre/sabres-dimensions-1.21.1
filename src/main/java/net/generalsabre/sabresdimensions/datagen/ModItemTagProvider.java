@@ -2,8 +2,13 @@ package net.generalsabre.sabresdimensions.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
+import net.generalsabre.sabresdimensions.enchantment.ModEnchantments;
 import net.generalsabre.sabresdimensions.item.custom.ModItems;
+import net.generalsabre.sabresdimensions.util.ModTags;
+import net.minecraft.enchantment.Enchantment;
+import net.minecraft.enchantment.Enchantments;
 import net.minecraft.registry.RegistryWrapper;
+import net.minecraft.registry.tag.EnchantmentTags;
 import net.minecraft.registry.tag.ItemTags;
 import org.jetbrains.annotations.Nullable;
 
@@ -47,7 +52,6 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.PENKAZINE_ALLOY_CHESTPLATE)
                 .add(ModItems.PENKAZINE_ALLOY_LEGGINGS)
                 .add(ModItems.PENKAZINE_ALLOY_BOOTS);
-
 
     }
 }

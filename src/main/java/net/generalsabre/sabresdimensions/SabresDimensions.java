@@ -5,6 +5,7 @@ import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.generalsabre.sabresdimensions.block.ModBlocks;
 import net.generalsabre.sabresdimensions.block.entity.ModBlockEntities;
+import net.generalsabre.sabresdimensions.enchantment.ModEnchantmentEffects;
 import net.generalsabre.sabresdimensions.fluid.ModFluids;
 import net.generalsabre.sabresdimensions.item.custom.ModItemGroups;
 import net.generalsabre.sabresdimensions.item.custom.ModItems;
@@ -31,5 +32,7 @@ public class SabresDimensions implements ModInitializer {
 		ModFluids.register();
 		ModScreenHandlers.registerScreenHandlers();
 		ModBlockEntities.registerBlockEntities();
+
+		ModEnchantmentEffects.registerModEnchantmentEffects();
 	}
 }

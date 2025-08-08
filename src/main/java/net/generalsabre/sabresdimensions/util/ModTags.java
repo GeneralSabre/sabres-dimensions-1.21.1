@@ -2,6 +2,7 @@ package net.generalsabre.sabresdimensions.util;
 
 import net.generalsabre.sabresdimensions.SabresDimensions;
 import net.minecraft.block.Block;
+import net.minecraft.enchantment.Enchantment;
 import net.minecraft.item.Item;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
@@ -25,6 +26,15 @@ public class ModTags {
             return TagKey.of(RegistryKeys.ITEM, Identifier.of(SabresDimensions.MOD_ID, name));
         }
 
+    }
+
+    public static class Enchantments{
+
+        public static final TagKey<Enchantment> BOOTS_EXCLUSIVE_SET_2 = createTag("boots_exclusive_set_2");
+
+        private static TagKey<Enchantment> createTag(String name){
+            return TagKey.of(RegistryKeys.ENCHANTMENT, Identifier.of(SabresDimensions.MOD_ID, name));
+        }
     }
 
 }
