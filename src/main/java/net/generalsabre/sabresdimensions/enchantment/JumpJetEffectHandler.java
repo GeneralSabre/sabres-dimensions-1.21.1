@@ -37,7 +37,7 @@ public class JumpJetEffectHandler {
         if (isJumpJetOn){
             if (JumpJetLevel(player) == 1){
                 if(client.options.jumpKey.isPressed() && chargeList[1]>0){
-                    player.addVelocity(0, 0.25, 0);
+                    player.addVelocity(0, 0.5, 0);
                     player.velocityModified = true;
                     chargeList[1]--;
                 }
@@ -49,7 +49,7 @@ public class JumpJetEffectHandler {
                 }
             } else if (JumpJetLevel(player) == 3){
                 if(client.options.jumpKey.isPressed() && chargeList[1]>0){
-                    player.addVelocity(0, 0.75, 0);
+                    player.addVelocity(0, 0.5, 0);
                     player.velocityModified = true;
                     chargeList[1]--;
                     System.out.println("i see the inputs!");

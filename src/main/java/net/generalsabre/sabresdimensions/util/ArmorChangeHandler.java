@@ -33,11 +33,11 @@ public class ArmorChangeHandler {
         level = EnchantmentHelper.getEquipmentLevel(JumpJetEffectHandler.getJumpJetEntry(DynamicRegistryManager.EMPTY, player), player);
 
         if (level == 1){
-            maxCharge = 100;
+            maxCharge = 25;
         } else if (level == 2){
-            maxCharge = 200;
+            maxCharge = 50;
         } else if (level ==3){
-            maxCharge = 300;
+            maxCharge = 100;
         }
         return maxCharge;
     }
