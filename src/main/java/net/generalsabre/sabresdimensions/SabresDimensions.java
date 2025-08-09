@@ -13,6 +13,7 @@ import net.generalsabre.sabresdimensions.fluid.ModFluids;
 import net.generalsabre.sabresdimensions.item.custom.ModItemGroups;
 import net.generalsabre.sabresdimensions.item.custom.ModItems;
 import net.generalsabre.sabresdimensions.screen.ModScreenHandlers;
+import net.generalsabre.sabresdimensions.util.ArmorChangeHandler;
 import net.generalsabre.sabresdimensions.util.ModKeyBindings;
 import net.generalsabre.sabresdimensions.util.ModKeyHandler;
 import net.minecraft.registry.Registry;
@@ -48,8 +49,12 @@ public class SabresDimensions implements ModInitializer {
 		ModEnchantmentEffects.registerModEnchantmentEffects();
 
 		ServerTickEvents.END_SERVER_TICK.register(server -> {
+			int maxCharge = 0;
+			int currentCharge = 0;
+
 			for (ServerPlayerEntity player : server.getPlayerManager().getPlayerList()) {
-				JumpJetEffectHandler.ApplyEffect(player, new Vec3d(0, 0,0));
+				ArmorChangeHandler.register(player, currentCharge, maxCharge);
+				JumpJetEffectHandler.ApplyEffect(player, new Vec3d(0, 0,0), currentCharge, maxCharge);
 
 			}
 		});
