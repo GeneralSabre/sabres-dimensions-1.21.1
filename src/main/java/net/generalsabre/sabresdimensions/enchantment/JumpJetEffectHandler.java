@@ -13,6 +13,7 @@ import net.minecraft.util.math.Vec3d;
 public class JumpJetEffectHandler {
 
     public static boolean isJumpJetOn = false;
+    public static int i = 0;
 
     public static RegistryEntry<Enchantment> getJumpJetEntry(DynamicRegistryManager registryManager, ServerPlayerEntity player) {
         ServerWorld world = player.getServerWorld(); // safer than player.getWorld()
@@ -37,19 +38,19 @@ public class JumpJetEffectHandler {
         if (isJumpJetOn){
             if (JumpJetLevel(player) == 1){
                 if(client.options.jumpKey.isPressed() && chargeList[1]>0){
-                    player.addVelocity(0, 0.5, 0);
+                    player.addVelocity(0, 0.25, 0);
                     player.velocityModified = true;
                     chargeList[1]--;
                 }
             } else if (JumpJetLevel(player) == 2){
                 if(client.options.jumpKey.isPressed() && chargeList[1]>0){
-                    player.addVelocity(0, 0.5, 0);
+                    player.addVelocity(0, 0.25, 0);
                     player.velocityModified = true;
                     chargeList[1]--;
                 }
             } else if (JumpJetLevel(player) == 3){
                 if(client.options.jumpKey.isPressed() && chargeList[1]>0){
-                    player.addVelocity(0, 0.5, 0);
+                    player.addVelocity(0, 0.25, 0);
                     player.velocityModified = true;
                     chargeList[1]--;
                     System.out.println("i see the inputs!");
@@ -60,7 +61,12 @@ public class JumpJetEffectHandler {
 
     private static Integer getCurrentCharge(ServerPlayerEntity player, int[] chargeList) {
         if (player.isOnGround() && chargeList[1]<chargeList[0]){
-            chargeList[1]++;
+            //chargeList[1]++;
+            i++;
+            if (i==4){
+                chargeList[1]++;
+                i=0;
+            }
         }
 
         return chargeList[1];
