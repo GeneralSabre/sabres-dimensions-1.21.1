@@ -17,6 +17,7 @@ import net.generalsabre.sabresdimensions.util.ModKeyBindings;
 import net.generalsabre.sabresdimensions.util.ModKeyHandler;
 import net.minecraft.registry.Registry;
 import net.minecraft.server.network.ServerPlayerEntity;
+import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.tick.Tick;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -48,7 +49,7 @@ public class SabresDimensions implements ModInitializer {
 
 		ServerTickEvents.END_SERVER_TICK.register(server -> {
 			for (ServerPlayerEntity player : server.getPlayerManager().getPlayerList()) {
-				JumpJetEffectHandler.ApplyEffect(player);
+				JumpJetEffectHandler.ApplyEffect(player, new Vec3d(0, 0,0));
 
 			}
 		});
