@@ -48,13 +48,22 @@ public class SabresDimensions implements ModInitializer {
 
 		ModEnchantmentEffects.registerModEnchantmentEffects();
 
-		ServerTickEvents.END_SERVER_TICK.register(server -> {
-			int maxCharge = 0;
-			int currentCharge = 0;
+		final int maxCharge = 0;
+		final int currentCharge = 0;
 
+		int[] chargeList = new int[2];
+		chargeList[0] = 0; // max
+		chargeList[1] = 1; // current
+
+		ServerTickEvents.END_SERVER_TICK.register(server -> {
 			for (ServerPlayerEntity player : server.getPlayerManager().getPlayerList()) {
-				ArmorChangeHandler.register(player, currentCharge, maxCharge);
-				JumpJetEffectHandler.ApplyEffect(player, new Vec3d(0, 0,0), currentCharge, maxCharge);
+
+				ArmorChangeHandler.register(player, chargeList);
+
+				System.out.println("charge, max: " + chargeList[0]);
+				System.out.println("charge, current: " + chargeList[1]);
+
+				JumpJetEffectHandler.ApplyEffect(player, new Vec3d(0, 0,0), chargeList);
 
 			}
 		});
