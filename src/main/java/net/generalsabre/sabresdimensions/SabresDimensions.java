@@ -7,6 +7,7 @@ import net.fabricmc.fabric.api.event.lifecycle.v1.ServerTickEvents;
 import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.generalsabre.sabresdimensions.block.ModBlocks;
 import net.generalsabre.sabresdimensions.block.entity.ModBlockEntities;
+import net.generalsabre.sabresdimensions.effect.ModEffects;
 import net.generalsabre.sabresdimensions.enchantment.JumpJetEffectHandler;
 import net.generalsabre.sabresdimensions.enchantment.ModEnchantmentEffects;
 import net.generalsabre.sabresdimensions.fluid.ModFluids;
@@ -42,6 +43,7 @@ public class SabresDimensions implements ModInitializer {
 		ModFluids.register();
 		ModScreenHandlers.registerScreenHandlers();
 		ModBlockEntities.registerBlockEntities();
+		ModEffects.registerEffects();
 
 		ModKeyBindings.registerModKeyBindings();
 		ModKeyHandler.registerKeyHandler();
@@ -60,8 +62,8 @@ public class SabresDimensions implements ModInitializer {
 
 				ArmorChangeHandler.register(player, chargeList);
 
-				System.out.println("charge, max: " + chargeList[0]);
-				System.out.println("charge, current: " + chargeList[1]);
+				//System.out.println("charge, max: " + chargeList[0]);
+				//System.out.println("charge, current: " + chargeList[1]);
 
 				JumpJetEffectHandler.ApplyEffect(player, new Vec3d(0, 0,0), chargeList);
 

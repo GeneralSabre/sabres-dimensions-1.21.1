@@ -32,7 +32,7 @@ public class JumpJetEffectHandler {
 
     public static void ApplyEffect(ServerPlayerEntity player, Vec3d vec3d, int[] chargeList){
         MinecraftClient client = MinecraftClient.getInstance();
-        System.out.println("is jump jet on? " + isJumpJetOn);
+        //System.out.println("is jump jet on? " + isJumpJetOn);
         chargeList[1] = getCurrentCharge(player, chargeList);
 
         if (isJumpJetOn){
@@ -53,7 +53,7 @@ public class JumpJetEffectHandler {
                     player.addVelocity(0, 0.25, 0);
                     player.velocityModified = true;
                     chargeList[1]--;
-                    System.out.println("i see the inputs!");
+                    //System.out.println("i see the inputs!");
                 }
             }
         }
