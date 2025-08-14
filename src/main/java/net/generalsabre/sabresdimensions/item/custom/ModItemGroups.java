@@ -83,6 +83,7 @@ public class ModItemGroups {
                         entries.add(ModItems.ZALANT_PICKAXE);
                         entries.add(ModItems.ZALANT_AXE);
                         entries.add(ModItems.ZALANT_HOE);
+                        entries.add(ModItems.HZC);
 
                         entries.add(ModItems.ZALANT_HELMET);
                         entries.add(ModItems.ZALANT_CHESTPLATE);

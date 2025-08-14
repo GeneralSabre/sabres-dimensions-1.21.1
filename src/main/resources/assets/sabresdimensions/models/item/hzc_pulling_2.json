@@ -1,0 +1,6 @@
+{
+  "parent": "sabresdimensions:item/hzc",
+  "textures": {
+    "layer0": "sabresdimensions:item/hzc_pulling_2"
+  }
+}
