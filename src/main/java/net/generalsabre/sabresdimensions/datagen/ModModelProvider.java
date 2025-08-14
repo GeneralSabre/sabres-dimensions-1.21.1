@@ -110,6 +110,7 @@ public class ModModelProvider extends FabricModelProvider {
 
         itemModelGenerator.register(ModItems.ZALANT_ROD, Models.GENERATED);
         itemModelGenerator.register(ModItems.ULAU_CLUMP, Models.GENERATED);
+        itemModelGenerator.register(ModItems.COATED_STRING, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.LUPAMOONE, Models.GENERATED);
         itemModelGenerator.register(ModItems.LUPAMOONE_PROCESSOR, Models.GENERATED);

@@ -49,6 +49,14 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('S', Items.STICK)
                 .criterion(hasItem(ModItems.ULAU_CLUMP), conditionsFromItem(ModItems.ULAU_CLUMP))
                 .offerTo(recipeExporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.COATED_STRING, 8)
+                .pattern("SSS")
+                .pattern("SNS")
+                .pattern("SSS")
+                .input('S', Items.STRING)
+                .input('N', Items.NETHERITE_INGOT)
+                .criterion(hasItem(Items.NETHERITE_INGOT), conditionsFromItem(Items.NETHERITE_INGOT))
+                .offerTo(recipeExporter);
 
         offerSlabRecipe(recipeExporter, RecipeCategory.MISC, ModBlocks.ARAKITE_SLAB, ModBlocks.ARAKITE);
         offerSlabRecipe(recipeExporter, RecipeCategory.MISC, ModBlocks.ARAKITE_BRICK_SLAB, ModBlocks.ARAKITE_BRICKS);

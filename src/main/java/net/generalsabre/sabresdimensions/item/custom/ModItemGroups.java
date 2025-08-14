@@ -107,6 +107,7 @@ public class ModItemGroups {
 
                         entries.add(ModItems.CHORAZINE_DUST);
                         entries.add(ModItems.ULAU_CLUMP);
+                        entries.add(ModItems.COATED_STRING);
                         entries.add(ModItems.LUPAMOONE);
                         entries.add(ModItems.LUPAMOONE_PROCESSOR);
                         entries.add(ModItems.LOGIC_CHIP);

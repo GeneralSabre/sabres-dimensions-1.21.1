@@ -84,6 +84,7 @@ public class ModItems {
                     .maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(40))));
     // MISC
     public static final Item ULAU_CLUMP = registerItem("ulau_clump", new Item(new Item.Settings()));
+    public static final Item COATED_STRING = registerItem("coated_string", new Item(new Item.Settings()));
 
     // LUPAMOONE
     public static final Item LUPAMOONE = registerItem("lupamoone", new Item(new Item.Settings()));
