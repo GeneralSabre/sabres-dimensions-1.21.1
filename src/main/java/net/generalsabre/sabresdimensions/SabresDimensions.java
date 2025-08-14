@@ -50,9 +50,6 @@ public class SabresDimensions implements ModInitializer {
 
 		ModEnchantmentEffects.registerModEnchantmentEffects();
 
-		final int maxCharge = 0;
-		final int currentCharge = 0;
-
 		int[] chargeList = new int[2];
 		chargeList[0] = 0; // max
 		chargeList[1] = 1; // current
