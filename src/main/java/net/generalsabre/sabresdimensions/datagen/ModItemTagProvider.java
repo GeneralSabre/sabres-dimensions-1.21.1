@@ -47,6 +47,9 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.ZALANT_SWORD)
                 .add(ModItems.PENKAZINE_ALLOY_SWORD);
 
+        getOrCreateTagBuilder(ItemTags.CROSSBOW_ENCHANTABLE)
+                .add(ModItems.HZC);
+
         getOrCreateTagBuilder(ItemTags.DURABILITY_ENCHANTABLE)
                 .add(ModItems.ZALANT_AXE)
                 .add(ModItems.PENKAZINE_ALLOY_AXE)
@@ -65,6 +68,7 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.PENKAZINE_ALLOY_HELMET)
                 .add(ModItems.PENKAZINE_ALLOY_CHESTPLATE)
                 .add(ModItems.PENKAZINE_ALLOY_LEGGINGS)
+                .add(ModItems.HZC)
                 .add(ModItems.PENKAZINE_ALLOY_BOOTS);
 
         getOrCreateTagBuilder(ItemTags.EQUIPPABLE_ENCHANTABLE)
@@ -98,6 +102,7 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.PENKAZINE_ALLOY_HOE)
                 .add(ModItems.ZALANT_SWORD)
                 .add(ModItems.PENKAZINE_ALLOY_SWORD)
+                .add(ModItems.HZC)
                 .add(ModItems.ZALANT_PICKAXE)
                 .add(ModItems.PENKAZINE_ALLOY_PICKAXE)
                 .add(ModItems.ZALANT_SHOVEL)
@@ -163,6 +168,5 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.PENKAZINE_ALLOY_CHESTPLATE)
                 .add(ModItems.PENKAZINE_ALLOY_LEGGINGS)
                 .add(ModItems.PENKAZINE_ALLOY_BOOTS);
-
     }
 }

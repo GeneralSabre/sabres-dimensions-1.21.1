@@ -11,10 +11,10 @@ import net.minecraft.util.Identifier;
 
 public class ModModelPredicates {
     public static void registerModelPredicates(){
-        registerBowItem(ModItems.HZC);
+        registerCrossbowItem(ModItems.HZC);
     }
 
-    private static void registerBowItem(Item item){
+    private static void registerCrossbowItem(Item item){
         ModelPredicateProviderRegistry.register(item, Identifier.ofVanilla("pull"), (stack, world, entity, seed) -> {
             if (entity == null) {
                 return 0.0F;

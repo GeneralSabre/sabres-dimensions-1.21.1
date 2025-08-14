@@ -17,6 +17,7 @@ import net.generalsabre.sabresdimensions.screen.ModScreenHandlers;
 import net.generalsabre.sabresdimensions.util.ArmorChangeHandler;
 import net.generalsabre.sabresdimensions.util.ModKeyBindings;
 import net.generalsabre.sabresdimensions.util.ModKeyHandler;
+import net.generalsabre.sabresdimensions.util.ModModelPredicates;
 import net.minecraft.registry.Registry;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.util.math.Vec3d;
@@ -44,6 +45,7 @@ public class SabresDimensions implements ModInitializer {
 		ModScreenHandlers.registerScreenHandlers();
 		ModBlockEntities.registerBlockEntities();
 		ModEffects.registerEffects();
+		ModModelPredicates.registerModelPredicates();
 
 		ModKeyBindings.registerModKeyBindings();
 		ModKeyHandler.registerKeyHandler();

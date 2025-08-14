@@ -1,6 +1,7 @@
 package net.generalsabre.sabresdimensions.item.custom;
 
-import net.minecraft.advancement.criterion.Criteria;
+import com.mojang.serialization.Codec;
+import com.mojang.serialization.codecs.RecordCodecBuilder;
 import net.minecraft.component.DataComponentTypes;
 import net.minecraft.component.EnchantmentEffectComponentTypes;
 import net.minecraft.component.type.ChargedProjectilesComponent;
@@ -14,14 +15,13 @@ import net.minecraft.item.CrossbowItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
-import net.minecraft.server.network.ServerPlayerEntity;
-import net.minecraft.server.world.ServerWorld;
+import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
-import net.minecraft.stat.Stats;
 import net.minecraft.util.Hand;
 import net.minecraft.util.TypedActionResult;
+import net.minecraft.util.UseAction;
 import net.minecraft.util.math.MathHelper;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.util.math.random.Random;
@@ -34,15 +34,8 @@ import java.util.Optional;
 
 
 public class ZalantCrossbowItem extends CrossbowItem {
-    private static final float DEFAULT_PULL_TIME = 1.25F;
-    public static final int RANGE = 8;
     private boolean charged = false;
     private boolean loaded = false;
-    private static final float CHARGE_PROGRESS = 0.2F;
-    private static final float LOAD_PROGRESS = 0.5F;
-    private static final float DEFAULT_SPEED = 9.45F;
-    private static final float FIREWORK_ROCKET_SPEED = 1.6F;
-    public static final float field_49258 = 1.6F;
     private static final CrossbowItem.LoadingSounds DEFAULT_LOADING_SOUNDS = new CrossbowItem.LoadingSounds(
             Optional.of(SoundEvents.ITEM_CROSSBOW_LOADING_START),
             Optional.of(SoundEvents.ITEM_CROSSBOW_LOADING_MIDDLE),
@@ -55,6 +48,7 @@ public class ZalantCrossbowItem extends CrossbowItem {
     @Override
     public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
         ItemStack itemStack = user.getStackInHand(hand);
+        super.use(world, user, hand);
         ChargedProjectilesComponent chargedProjectilesComponent = itemStack.get(DataComponentTypes.CHARGED_PROJECTILES);
         if (chargedProjectilesComponent != null && !chargedProjectilesComponent.isEmpty()) {
             this.shootAll(world, user, hand, itemStack, getSpeed(chargedProjectilesComponent), 1.0F, null);
@@ -64,6 +58,7 @@ public class ZalantCrossbowItem extends CrossbowItem {
             this.loaded = false;
             user.setCurrentHand(hand);
             return TypedActionResult.consume(itemStack);
+
         } else {
             return TypedActionResult.fail(itemStack);
         }
@@ -113,6 +108,7 @@ public class ZalantCrossbowItem extends CrossbowItem {
     @Override
     protected void shoot(LivingEntity shooter, ProjectileEntity projectile, int index, float speed, float divergence, float yaw, @Nullable LivingEntity target) {
         Vector3f vector3f;
+        float newVelocity = speed * 1.75f; // Adjust arrow exit velocity
         if (target != null) {
             double d = target.getX() - shooter.getX();
             double e = target.getZ() - shooter.getZ();
@@ -126,7 +122,7 @@ public class ZalantCrossbowItem extends CrossbowItem {
             vector3f = vec3d2.toVector3f().rotate(quaternionf);
         }
 
-        projectile.setVelocity(vector3f.x(), vector3f.y(), vector3f.z(), speed, divergence);
+        projectile.setVelocity(vector3f.x(), vector3f.y(), vector3f.z(), newVelocity, divergence);
         float h = getSoundPitch(shooter.getRandom(), index);
         shooter.getWorld().playSound(null, shooter.getX(), shooter.getY(), shooter.getZ(), SoundEvents.ITEM_CROSSBOW_SHOOT, shooter.getSoundCategory(), 1.0F, h);
     }
@@ -220,7 +216,18 @@ public class ZalantCrossbowItem extends CrossbowItem {
     }
 
     @Override
-    public int getRange() {
-        return 24;
+    public UseAction getUseAction(ItemStack stack) {
+        return UseAction.CROSSBOW;
+    }
+
+    public record LoadingSounds(Optional<RegistryEntry<SoundEvent>> start, Optional<RegistryEntry<SoundEvent>> mid, Optional<RegistryEntry<SoundEvent>> end) {
+        public static final Codec<CrossbowItem.LoadingSounds> CODEC = RecordCodecBuilder.create(
+                instance -> instance.group(
+                                SoundEvent.ENTRY_CODEC.optionalFieldOf("start").forGetter(CrossbowItem.LoadingSounds::start),
+                                SoundEvent.ENTRY_CODEC.optionalFieldOf("mid").forGetter(CrossbowItem.LoadingSounds::mid),
+                                SoundEvent.ENTRY_CODEC.optionalFieldOf("end").forGetter(CrossbowItem.LoadingSounds::end)
+                        )
+                        .apply(instance, CrossbowItem.LoadingSounds::new)
+        );
     }
 }

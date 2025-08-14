@@ -49,7 +49,7 @@ public class ModItems {
             new ArmorItem(ModArmorMaterials.ZALANT_ARMOR_MATERIAL, ArmorItem.Type.BOOTS, new Item.Settings()
                     .maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(15))));
     public static final Item HZC = registerItem("hzc",
-            new CrossbowItem(new Item.Settings().maxDamage(10)));
+            new ZalantCrossbowItem(new Item.Settings().maxDamage(266).maxCount(1)));
 
     // DALAMINE
     public static final Item DALAMINE_CRYSTAL = registerItem("dalamine_crystal", new Item(new Item.Settings()));

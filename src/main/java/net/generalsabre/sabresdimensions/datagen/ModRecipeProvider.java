@@ -277,6 +277,16 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('L', Blocks.LEVER)
                 .criterion(hasItem(ModItems.ZALANT_INGOT), conditionsFromItem(ModItems.ZALANT_INGOT))
                 .offerTo(recipeExporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.HZC)
+                .pattern("IRI")
+                .pattern("CTC")
+                .pattern(" R ")
+                .input('C', ModItems.COATED_STRING)
+                .input('R', ModItems.ZALANT_ROD)
+                .input('I', ModItems.ZALANT_INGOT)
+                .input('T', Items.TRIPWIRE_HOOK)
+                .criterion(hasItem(ModItems.COATED_STRING), conditionsFromItem(ModItems.COATED_STRING))
+                .offerTo(recipeExporter);
 
 
         // Penkazine Alloy
