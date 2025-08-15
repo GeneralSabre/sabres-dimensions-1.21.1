@@ -5,6 +5,7 @@ import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerTickEvents;
 import net.fabricmc.fabric.api.registry.FuelRegistry;
+import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
 import net.generalsabre.sabresdimensions.block.ModBlocks;
 import net.generalsabre.sabresdimensions.block.entity.ModBlockEntities;
 import net.generalsabre.sabresdimensions.effect.ModEffects;
@@ -51,6 +52,9 @@ public class SabresDimensions implements ModInitializer {
 		ModKeyHandler.registerKeyHandler();
 
 		ModEnchantmentEffects.registerModEnchantmentEffects();
+
+		StrippableBlockRegistry.register(ModBlocks.ELASTAU_LOG, ModBlocks.STRIPPED_ELASTAU_LOG);
+		StrippableBlockRegistry.register(ModBlocks.ELASTAU_WOOD, ModBlocks.STRIPPED_ELASTAU_WOOD);
 
 		int[] chargeList = new int[2];
 		chargeList[0] = 0; // max
