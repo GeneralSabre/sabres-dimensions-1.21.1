@@ -9,6 +9,7 @@ import net.generalsabre.sabresdimensions.item.custom.ModItems;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
 import net.minecraft.data.client.Models;
+import net.minecraft.data.client.TexturedModel;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.util.Identifier;
 
@@ -69,6 +70,19 @@ public class ModModelProvider extends FabricModelProvider {
 
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.INGOT_PRESS);
 
+        blockStateModelGenerator.registerLog(ModBlocks.ELASTAU_LOG).log(ModBlocks.ELASTAU_LOG).wood(ModBlocks.ELASTAU_WOOD);
+        blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_ELASTAU_LOG).log(ModBlocks.STRIPPED_ELASTAU_LOG).wood(ModBlocks.STRIPPED_ELASTAU_WOOD);
+
+        BlockStateModelGenerator.BlockTexturePool elastauPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.ELASTAU_PLANKS);
+        elastauPool.slab(ModBlocks.ELASTAU_SLAB);
+        elastauPool.stairs(ModBlocks.ELASTAU_STAIRS);
+        elastauPool.button(ModBlocks.ELASTAU_BUTTON);
+        elastauPool.pressurePlate(ModBlocks.ELASTAU_PRESSURE_PLATE);
+        elastauPool.fence(ModBlocks.ELASTAU_FENCE);
+        elastauPool.fenceGate(ModBlocks.ELASTAU_FENCE_GATE);
+
+        blockStateModelGenerator.registerSingleton(ModBlocks.ELASTAU_LEAVES, TexturedModel.LEAVES);
+        blockStateModelGenerator.registerTintableCross(ModBlocks.ELASTAU_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
 
     }
 

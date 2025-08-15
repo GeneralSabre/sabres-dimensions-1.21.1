@@ -96,12 +96,6 @@ public class ModBlocks {
             new Block(AbstractBlock.Settings.create().strength(1.5f).requiresTool().sounds(BlockSoundGroup.AMETHYST_BLOCK)));
     public static final Block DALAMINE_ORE = registerBlock("dalamine_ore",
             new ExperienceDroppingBlock(UniformIntProvider.create(4,8), (AbstractBlock.Settings.create().strength(2.5f,5f).requiresTool().sounds(BlockSoundGroup.DEEPSLATE))));
-
-
-
-
-
-
     // Penkazine Blocks
     public static final Block CHORAZINE_ORE = registerBlock("chorazine_ore",
             new ExperienceDroppingBlock(UniformIntProvider.create(1,3), (AbstractBlock.Settings.create().strength(2.5f,5f).requiresTool().sounds(BlockSoundGroup.DEEPSLATE))));
@@ -148,6 +142,40 @@ public class ModBlocks {
     public static final Block DELETERIUM_BLOCK = registerBlock("deleterium_block",
             new TranslucentBlock(AbstractBlock.Settings.create().strength(2.5f,2.5f).sounds(BlockSoundGroup.METAL).requiresTool()));
 
+    // Elastau
+    public static final Block ELASTAU_LOG = registerBlock("elastau_log",
+            new PillarBlock(AbstractBlock.Settings.copy(Blocks.SPRUCE_LOG)));
+    public static final Block ELASTAU_WOOD = registerBlock("elastau_wood",
+            new PillarBlock(AbstractBlock.Settings.copy(Blocks.SPRUCE_WOOD)));
+    public static final Block STRIPPED_ELASTAU_LOG = registerBlock("stripped_elastau_log",
+            new PillarBlock(AbstractBlock.Settings.copy(Blocks.STRIPPED_SPRUCE_LOG)));
+    public static final Block STRIPPED_ELASTAU_WOOD = registerBlock("stripped_elastau_wood",
+            new PillarBlock(AbstractBlock.Settings.copy(Blocks.STRIPPED_SPRUCE_WOOD)));
+
+    public static final Block ELASTAU_PLANKS = registerBlock("elastau_planks",
+            new Block(AbstractBlock.Settings.copy(Blocks.SPRUCE_PLANKS)));
+    public static final Block ELASTAU_STAIRS = registerBlock("elastau_stairs",
+            new StairsBlock(ModBlocks.ELASTAU_PLANKS.getDefaultState(),
+                    AbstractBlock.Settings.create().strength(2f,0f).sounds(BlockSoundGroup.WOOD)));
+    public static final Block ELASTAU_SLAB = registerBlock("elastau_slab",
+            new SlabBlock(AbstractBlock.Settings.create().strength(2f,0f).sounds(BlockSoundGroup.WOOD)));
+    public static final Block ELASTAU_BUTTON = registerBlock("elastau_button",
+            new ButtonBlock(BlockSetType.SPRUCE,20,AbstractBlock.Settings.create().strength(2f,0f).sounds(BlockSoundGroup.WOOD).noCollision()));
+    public static final Block ELASTAU_PRESSURE_PLATE = registerBlock("elastau_pressure_plate",
+            new PressurePlateBlock(BlockSetType.SPRUCE, AbstractBlock.Settings.create().strength(2f,0f).sounds(BlockSoundGroup.WOOD)));
+    public static final Block ELASTAU_FENCE = registerBlock("elastau_fence",
+            new FenceBlock(AbstractBlock.Settings.create().strength(2f,0f).sounds(BlockSoundGroup.WOOD)));
+    public static final Block ELASTAU_FENCE_GATE = registerBlock("elastau_fence_gate",
+            new FenceGateBlock(WoodType.SPRUCE, AbstractBlock.Settings.create().strength(2f,0f).sounds(BlockSoundGroup.WOOD)));
+
+
+
+
+    public static final Block ELASTAU_LEAVES = registerBlock("elastau_leaves",
+            new LeavesBlock(AbstractBlock.Settings.copy(Blocks.SPRUCE_LEAVES)));
+
+    public static final Block ELASTAU_SAPLING = registerBlock("elastau_sapling",
+            new SaplingBlock(SaplingGenerator.OAK,AbstractBlock.Settings.copy(Blocks.SPRUCE_SAPLING)));
 
 
 

@@ -23,10 +23,10 @@ public class ModItemGroups {
                     .entries((displayContext, entries) -> {
                         entries.add(ModBlocks.ARAKITE);
                         entries.add(ModBlocks.ARAKITE_SLAB);
-                        entries.add(ModBlocks.ARAKITE_PRESSURE_PLATE);
-                        entries.add(ModBlocks.ARAKITE_BUTTON);
                         entries.add(ModBlocks.ARAKITE_STAIRS);
                         entries.add(ModBlocks.ARAKITE_WALL);
+                        entries.add(ModBlocks.ARAKITE_PRESSURE_PLATE);
+                        entries.add(ModBlocks.ARAKITE_BUTTON);
                         entries.add(ModBlocks.ARAKITE_BRICKS);
                         entries.add(ModBlocks.ARAKITE_BRICK_SLAB);
                         entries.add(ModBlocks.ARAKITE_BRICK_STAIRS);
@@ -59,6 +59,21 @@ public class ModItemGroups {
                         entries.add(ModBlocks.RAW_ZALANT_BLOCK);
                         entries.add(ModBlocks.ZALANT_ORE);
                         entries.add(ModBlocks.PENKAZINE_ALLOY_BLOCK);
+
+                        entries.add(ModBlocks.ELASTAU_LOG);
+                        entries.add(ModBlocks.ELASTAU_WOOD);
+                        entries.add(ModBlocks.STRIPPED_ELASTAU_LOG);
+                        entries.add(ModBlocks.STRIPPED_ELASTAU_WOOD);
+                        entries.add(ModBlocks.ELASTAU_LEAVES);
+                        entries.add(ModBlocks.ELASTAU_SAPLING);
+
+                        entries.add(ModBlocks.ELASTAU_PLANKS);
+                        entries.add(ModBlocks.ELASTAU_STAIRS);
+                        entries.add(ModBlocks.ELASTAU_SLAB);
+                        entries.add(ModBlocks.ELASTAU_FENCE);
+                        entries.add(ModBlocks.ELASTAU_FENCE_GATE);
+                        entries.add(ModBlocks.ELASTAU_BUTTON);
+                        entries.add(ModBlocks.ELASTAU_PRESSURE_PLATE);
 
                         entries.add(ModBlocks.ULAU_BLOCK);
                         entries.add(ModBlocks.LUPAMOONE_BLOCK);

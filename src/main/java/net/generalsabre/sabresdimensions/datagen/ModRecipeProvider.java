@@ -4,6 +4,7 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.generalsabre.sabresdimensions.block.ModBlocks;
 import net.generalsabre.sabresdimensions.item.custom.ModItems;
+import net.generalsabre.sabresdimensions.util.ModTags;
 import net.minecraft.block.Blocks;
 import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
@@ -12,6 +13,7 @@ import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.RegistryWrapper;
+import net.minecraft.registry.tag.TagKey;
 
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
@@ -388,5 +390,37 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('C', Items.COPPER_INGOT)
                 .criterion(hasItem(ModItems.LOGIC_CHIP), conditionsFromItem(ModItems.LOGIC_CHIP))
                 .offerTo(recipeExporter);
+
+        // Elastau Wood
+        //offerSingleOutputShapelessRecipe();
+        offerPlanksRecipe(recipeExporter, ModBlocks.ELASTAU_PLANKS, ModTags.Items.ELASTAU_PLANKS_POOL, 4);
+        offerBarkBlockRecipe(recipeExporter, ModBlocks.ELASTAU_WOOD, ModBlocks.ELASTAU_LOG);
+        offerBarkBlockRecipe(recipeExporter, ModBlocks.STRIPPED_ELASTAU_WOOD, ModBlocks.STRIPPED_ELASTAU_LOG);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.ELASTAU_STAIRS)
+                .pattern("A  ")
+                .pattern("AA ")
+                .pattern("AAA")
+                .input('A', ModBlocks.ELASTAU_PLANKS)
+                .criterion(hasItem(ModBlocks.ELASTAU_PLANKS), conditionsFromItem(ModBlocks.ELASTAU_PLANKS))
+                .offerTo(recipeExporter);
+        offerSlabRecipe(recipeExporter, RecipeCategory.MISC, ModBlocks.ELASTAU_SLAB, ModBlocks.ELASTAU_PLANKS);
+        offerPressurePlateRecipe(recipeExporter, ModBlocks.ELASTAU_PRESSURE_PLATE, ModBlocks.ELASTAU_PLANKS);
+        offerShapelessRecipe(recipeExporter, ModBlocks.ELASTAU_BUTTON, ModBlocks.ELASTAU_PLANKS, "elastau", 1);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.ELASTAU_FENCE)
+                .pattern("ASA")
+                .pattern("ASA")
+                .input('A', ModBlocks.ELASTAU_PLANKS)
+                .input('S', Items.STICK)
+                .criterion(hasItem(ModBlocks.ELASTAU_PLANKS), conditionsFromItem(ModBlocks.ELASTAU_PLANKS))
+                .offerTo(recipeExporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.ELASTAU_FENCE_GATE)
+                .pattern("SAS")
+                .pattern("SAS")
+                .input('A', ModBlocks.ELASTAU_PLANKS)
+                .input('S', Items.STICK)
+                .criterion(hasItem(ModBlocks.ELASTAU_PLANKS), conditionsFromItem(ModBlocks.ELASTAU_PLANKS))
+                .offerTo(recipeExporter);
+
+
     }
 }

@@ -4,6 +4,7 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.generalsabre.sabresdimensions.block.ModBlocks;
 import net.generalsabre.sabresdimensions.util.ModTags;
+import net.minecraft.block.Block;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.BlockTags;
 
@@ -92,5 +93,16 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         getOrCreateTagBuilder(ModTags.Blocks.NEEDS_PENKAZINE_TOOL)
                 .addTag(BlockTags.NEEDS_DIAMOND_TOOL);
 
+        getOrCreateTagBuilder(BlockTags.LOGS)
+                .add(ModBlocks.ELASTAU_LOG)
+                .add(ModBlocks.STRIPPED_ELASTAU_LOG)
+                .add(ModBlocks.ELASTAU_WOOD)
+                .add(ModBlocks.STRIPPED_ELASTAU_WOOD);
+
+        getOrCreateTagBuilder(BlockTags.WOODEN_FENCES)
+                .add(ModBlocks.ELASTAU_FENCE);
+
+        getOrCreateTagBuilder(BlockTags.FENCE_GATES)
+                .add(ModBlocks.ELASTAU_FENCE_GATE);
     }
 }

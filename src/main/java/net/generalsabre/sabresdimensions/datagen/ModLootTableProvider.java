@@ -65,5 +65,21 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.INGOT_PRESS);
         addDrop(ModBlocks.CRUSHER);
 
+        addDrop(ModBlocks.ELASTAU_LOG);
+        addDrop(ModBlocks.ELASTAU_WOOD);
+        addDrop(ModBlocks.STRIPPED_ELASTAU_LOG);
+        addDrop(ModBlocks.STRIPPED_ELASTAU_WOOD);
+
+        addDrop(ModBlocks.ELASTAU_PLANKS);
+        addDrop(ModBlocks.ELASTAU_STAIRS);
+        addDrop(ModBlocks.ELASTAU_FENCE);
+        addDrop(ModBlocks.ELASTAU_FENCE_GATE);
+        addDrop(ModBlocks.ELASTAU_BUTTON);
+        addDrop(ModBlocks.ELASTAU_PRESSURE_PLATE);
+        addDrop(ModBlocks.ELASTAU_SLAB, slabDrops(ModBlocks.ELASTAU_SLAB));
+
+        addDrop(ModBlocks.ELASTAU_SAPLING);
+        addDrop(ModBlocks.ELASTAU_LEAVES, leavesDrops(ModBlocks.ELASTAU_LEAVES,ModBlocks.ELASTAU_SAPLING, 0.0312f));
+
     }
 }

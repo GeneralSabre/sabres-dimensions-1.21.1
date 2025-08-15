@@ -2,12 +2,14 @@ package net.generalsabre.sabresdimensions.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
+import net.generalsabre.sabresdimensions.block.ModBlocks;
 import net.generalsabre.sabresdimensions.enchantment.ModEnchantments;
 import net.generalsabre.sabresdimensions.item.custom.ModItems;
 import net.generalsabre.sabresdimensions.util.ModTags;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.Enchantments;
 import net.minecraft.registry.RegistryWrapper;
+import net.minecraft.registry.tag.BlockTags;
 import net.minecraft.registry.tag.EnchantmentTags;
 import net.minecraft.registry.tag.ItemTags;
 import org.jetbrains.annotations.Nullable;
@@ -168,5 +170,21 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.PENKAZINE_ALLOY_CHESTPLATE)
                 .add(ModItems.PENKAZINE_ALLOY_LEGGINGS)
                 .add(ModItems.PENKAZINE_ALLOY_BOOTS);
+
+        getOrCreateTagBuilder(ItemTags.LOGS)
+                .add(ModBlocks.ELASTAU_LOG.asItem())
+                .add(ModBlocks.STRIPPED_ELASTAU_LOG.asItem())
+                .add(ModBlocks.ELASTAU_WOOD.asItem())
+                .add(ModBlocks.STRIPPED_ELASTAU_WOOD.asItem());
+        getOrCreateTagBuilder(ItemTags.PLANKS)
+                .add(ModBlocks.ELASTAU_PLANKS.asItem());
+        getOrCreateTagBuilder(ItemTags.SAPLINGS)
+                .add(ModBlocks.ELASTAU_SAPLING.asItem());
+
+        getOrCreateTagBuilder(ModTags.Items.ELASTAU_PLANKS_POOL)
+                .add(ModBlocks.ELASTAU_LOG.asItem())
+                .add(ModBlocks.STRIPPED_ELASTAU_LOG.asItem())
+                .add(ModBlocks.ELASTAU_WOOD.asItem())
+                .add(ModBlocks.STRIPPED_ELASTAU_WOOD.asItem());
     }
 }
