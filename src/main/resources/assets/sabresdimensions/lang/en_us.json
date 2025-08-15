@@ -84,6 +84,21 @@
   "item.sabresdimensions.cooled_slag": "Cooled Slag",
   "item.sabresdimensions.deleterium_ingot": "Deleterium Ingot",
 
+  "block.sabresdimensions.elastau_wood": "Elastau Wood",
+  "block.sabresdimensions.stripped_elastau_wood": "Stripped Elastau Wood",
+  "block.sabresdimensions.elastau_log": "Elastau Log",
+  "block.sabresdimensions.stripped_elastau_log": "Stripped Elastau Log",
+  "block.sabresdimensions.elastau_leaves": "Elastau Leaves",
+  "block.sabresdimensions.elastau_sapling": "Elastau Sapling",
+
+  "block.sabresdimensions.elastau_planks": "Elastau Planks",
+  "block.sabresdimensions.elastau_slab": "Elastau Slab",
+  "block.sabresdimensions.elastau_stairs": "Elastau Stairs",
+  "block.sabresdimensions.elastau_button": "Elastau Button",
+  "block.sabresdimensions.elastau_pressure_plate": "Elastau Pressure Plate",
+  "block.sabresdimensions.elastau_fence": "Elastau Fence",
+  "block.sabresdimensions.elastau_fence_gate": "Elastau Fence Gate",
+
   "enchantment.sabresdimensions.jump_jet": "Jump Jet",
   "effect.sabresdimensions.grounded": "Grounded",
   "item.sabresdimensions.hzc": "Heavy Zalant Crossbow",
