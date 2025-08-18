@@ -98,6 +98,8 @@
   "block.sabresdimensions.elastau_pressure_plate": "Elastau Pressure Plate",
   "block.sabresdimensions.elastau_fence": "Elastau Fence",
   "block.sabresdimensions.elastau_fence_gate": "Elastau Fence Gate",
+  "block.sabresdimensions.elastau_door": "Elastau Door",
+  "block.sabresdimensions.elastau_trapdoor": "Elastau Trapdoor",
 
   "enchantment.sabresdimensions.jump_jet": "Jump Jet",
   "effect.sabresdimensions.grounded": "Grounded",
