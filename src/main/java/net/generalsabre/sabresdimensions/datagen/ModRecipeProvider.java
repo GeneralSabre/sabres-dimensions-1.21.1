@@ -34,10 +34,33 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
         offerReversibleCompactingRecipes(recipeExporter, RecipeCategory.MISC, ModItems.RAW_ZALANT, RecipeCategory.MISC, ModBlocks.RAW_ZALANT_BLOCK);
         offerReversibleCompactingRecipes(recipeExporter, RecipeCategory.MISC, ModItems.ZALANT_INGOT, RecipeCategory.MISC, ModBlocks.ZALANT_BLOCK);
-        createDoorRecipe(ModBlocks.ZALANT_DOOR, Ingredient.ofItems(ModItems.ZALANT_INGOT));
-        createTrapdoorRecipe(ModBlocks.ZALANT_TRAPDOOR, Ingredient.ofItems(ModItems.ZALANT_INGOT));
         offerPressurePlateRecipe(recipeExporter, ModBlocks.ZALANT_PRESSURE_PLATE, ModItems.ZALANT_INGOT);
-
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.ZALANT_DOOR, 3)
+                .pattern("ZZ")
+                .pattern("ZZ")
+                .pattern("ZZ")
+                .input('Z', ModItems.ZALANT_INGOT)
+                .criterion(hasItem(ModItems.ZALANT_INGOT), conditionsFromItem(ModItems.ZALANT_INGOT))
+                .offerTo(recipeExporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.ZALANT_TRAPDOOR, 2)
+                .pattern("ZZZ")
+                .pattern("ZZZ")
+                .input('Z', ModItems.ZALANT_INGOT)
+                .criterion(hasItem(ModItems.ZALANT_INGOT), conditionsFromItem(ModItems.ZALANT_INGOT))
+                .offerTo(recipeExporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.ELASTAU_DOOR, 3)
+                .pattern("ZZ")
+                .pattern("ZZ")
+                .pattern("ZZ")
+                .input('Z', ModBlocks.ELASTAU_PLANKS)
+                .criterion(hasItem(ModBlocks.ELASTAU_PLANKS), conditionsFromItem(ModBlocks.ELASTAU_PLANKS))
+                .offerTo(recipeExporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.ELASTAU_TRAPDOOR, 2)
+                .pattern("ZZZ")
+                .pattern("ZZZ")
+                .input('Z', ModBlocks.ELASTAU_PLANKS)
+                .criterion(hasItem(ModBlocks.ELASTAU_PLANKS), conditionsFromItem(ModBlocks.ELASTAU_PLANKS))
+                .offerTo(recipeExporter);
 
         offerReversibleCompactingRecipes(recipeExporter, RecipeCategory.MISC, ModItems.CHORAZINE_DUST, RecipeCategory.MISC, ModBlocks.CHORAZINE_POWDER_BLOCK);
         offerReversibleCompactingRecipes(recipeExporter, RecipeCategory.MISC, ModItems.DALAMINE_CRYSTAL, RecipeCategory.MISC, ModBlocks.DALAMINE_BLOCK);
@@ -420,6 +443,9 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('S', Items.STICK)
                 .criterion(hasItem(ModBlocks.ELASTAU_PLANKS), conditionsFromItem(ModBlocks.ELASTAU_PLANKS))
                 .offerTo(recipeExporter);
+
+        createDoorRecipe(ModBlocks.ELASTAU_DOOR, Ingredient.ofItems(ModBlocks.ELASTAU_PLANKS));
+        createTrapdoorRecipe(ModBlocks.ELASTAU_TRAPDOOR, Ingredient.ofItems(ModBlocks.ELASTAU_PLANKS));
 
 
     }

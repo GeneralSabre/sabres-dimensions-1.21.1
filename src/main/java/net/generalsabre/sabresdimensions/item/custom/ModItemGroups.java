@@ -74,6 +74,8 @@ public class ModItemGroups {
                         entries.add(ModBlocks.ELASTAU_FENCE_GATE);
                         entries.add(ModBlocks.ELASTAU_BUTTON);
                         entries.add(ModBlocks.ELASTAU_PRESSURE_PLATE);
+                        entries.add(ModBlocks.ELASTAU_DOOR);
+                        entries.add(ModBlocks.ELASTAU_TRAPDOOR);
 
                         entries.add(ModBlocks.ULAU_BLOCK);
                         entries.add(ModBlocks.LUPAMOONE_BLOCK);

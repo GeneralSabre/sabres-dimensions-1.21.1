@@ -156,17 +156,21 @@ public class ModBlocks {
             new Block(AbstractBlock.Settings.copy(Blocks.SPRUCE_PLANKS)));
     public static final Block ELASTAU_STAIRS = registerBlock("elastau_stairs",
             new StairsBlock(ModBlocks.ELASTAU_PLANKS.getDefaultState(),
-                    AbstractBlock.Settings.create().strength(2f,0f).sounds(BlockSoundGroup.WOOD)));
+                    AbstractBlock.Settings.create().strength(2f,0f).sounds(BlockSoundGroup.WOOD).requiresTool()));
     public static final Block ELASTAU_SLAB = registerBlock("elastau_slab",
-            new SlabBlock(AbstractBlock.Settings.create().strength(2f,0f).sounds(BlockSoundGroup.WOOD)));
+            new SlabBlock(AbstractBlock.Settings.create().strength(2f,0f).sounds(BlockSoundGroup.WOOD).requiresTool()));
     public static final Block ELASTAU_BUTTON = registerBlock("elastau_button",
-            new ButtonBlock(BlockSetType.SPRUCE,20,AbstractBlock.Settings.create().strength(2f,0f).sounds(BlockSoundGroup.WOOD).noCollision()));
+            new ButtonBlock(BlockSetType.SPRUCE,20,AbstractBlock.Settings.create().strength(2f,0f).sounds(BlockSoundGroup.WOOD).requiresTool().noCollision()));
     public static final Block ELASTAU_PRESSURE_PLATE = registerBlock("elastau_pressure_plate",
-            new PressurePlateBlock(BlockSetType.SPRUCE, AbstractBlock.Settings.create().strength(2f,0f).sounds(BlockSoundGroup.WOOD)));
+            new PressurePlateBlock(BlockSetType.SPRUCE, AbstractBlock.Settings.create().strength(2f,0f).sounds(BlockSoundGroup.WOOD).requiresTool()));
     public static final Block ELASTAU_FENCE = registerBlock("elastau_fence",
-            new FenceBlock(AbstractBlock.Settings.create().strength(2f,0f).sounds(BlockSoundGroup.WOOD)));
+            new FenceBlock(AbstractBlock.Settings.create().strength(2f,0f).sounds(BlockSoundGroup.WOOD).requiresTool()));
     public static final Block ELASTAU_FENCE_GATE = registerBlock("elastau_fence_gate",
-            new FenceGateBlock(WoodType.SPRUCE, AbstractBlock.Settings.create().strength(2f,0f).sounds(BlockSoundGroup.WOOD)));
+            new FenceGateBlock(WoodType.SPRUCE, AbstractBlock.Settings.create().strength(2f,0f).sounds(BlockSoundGroup.WOOD).requiresTool()));
+    public static final Block ELASTAU_DOOR = registerBlock("elastau_door",
+            new DoorBlock(BlockSetType.SPRUCE,AbstractBlock.Settings.create().strength(2f,0f).sounds(BlockSoundGroup.WOOD).requiresTool().nonOpaque()));
+    public static final Block ELASTAU_TRAPDOOR = registerBlock("elastau_trapdoor",
+            new TrapdoorBlock(BlockSetType.SPRUCE,AbstractBlock.Settings.create().strength(2f,0f).sounds(BlockSoundGroup.WOOD).requiresTool().nonOpaque()));
 
 
 

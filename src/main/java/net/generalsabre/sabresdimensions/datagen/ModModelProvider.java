@@ -80,6 +80,8 @@ public class ModModelProvider extends FabricModelProvider {
         elastauPool.pressurePlate(ModBlocks.ELASTAU_PRESSURE_PLATE);
         elastauPool.fence(ModBlocks.ELASTAU_FENCE);
         elastauPool.fenceGate(ModBlocks.ELASTAU_FENCE_GATE);
+        blockStateModelGenerator.registerDoor(ModBlocks.ELASTAU_DOOR);
+        blockStateModelGenerator.registerTrapdoor(ModBlocks.ELASTAU_TRAPDOOR);
 
         blockStateModelGenerator.registerSingleton(ModBlocks.ELASTAU_LEAVES, TexturedModel.LEAVES);
         blockStateModelGenerator.registerTintableCross(ModBlocks.ELASTAU_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);

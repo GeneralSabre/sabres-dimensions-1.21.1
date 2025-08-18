@@ -65,6 +65,17 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.INGOT_PRESS)
                 .add(ModBlocks.CRUSHER);
 
+        getOrCreateTagBuilder(BlockTags.AXE_MINEABLE)
+                .add(ModBlocks.ELASTAU_FENCE_GATE)
+                .add(ModBlocks.ELASTAU_FENCE)
+                .add(ModBlocks.ELASTAU_SLAB)
+                .add(ModBlocks.ELASTAU_STAIRS)
+                .add(ModBlocks.ELASTAU_BUTTON)
+                .add(ModBlocks.ELASTAU_PRESSURE_PLATE)
+                .add(ModBlocks.ELASTAU_PLANKS)
+                .add(ModBlocks.ELASTAU_DOOR)
+                .add(ModBlocks.ELASTAU_TRAPDOOR);
+
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.PENKAZ_ORE)
                 .add(ModBlocks.PENKAZ_BLOCK)
@@ -78,6 +89,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.ZALANT_ORE)
                 .add(ModBlocks.LUPAMOONE_BLOCK)
                 .add(ModBlocks.LUPAMOONE_ORE);
+
 
         getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL)
                 .add((ModBlocks.ORAXIUM_ORE));
