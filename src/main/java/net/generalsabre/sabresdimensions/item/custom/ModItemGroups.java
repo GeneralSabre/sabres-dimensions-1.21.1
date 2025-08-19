@@ -77,6 +77,13 @@ public class ModItemGroups {
                         entries.add(ModBlocks.ELASTAU_DOOR);
                         entries.add(ModBlocks.ELASTAU_TRAPDOOR);
 
+                        entries.add(ModBlocks.KOGNOLI_LOG);
+                        entries.add(ModBlocks.KOGNOLI_WOOD);
+                        entries.add(ModBlocks.STRIPPED_KOGNOLI_LOG);
+                        entries.add(ModBlocks.STRIPPED_KOGNOLI_WOOD);
+                        entries.add(ModBlocks.KOGNOLI_LEAVES);
+                        entries.add(ModBlocks.KOGNOLI_SAPLING);
+
                         entries.add(ModBlocks.KOGNOLI_PLANKS);
                         entries.add(ModBlocks.KOGNOLI_STAIRS);
                         entries.add(ModBlocks.KOGNOLI_SLAB);

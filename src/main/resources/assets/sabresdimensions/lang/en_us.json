@@ -101,6 +101,13 @@
   "block.sabresdimensions.elastau_door": "Elastau Door",
   "block.sabresdimensions.elastau_trapdoor": "Elastau Trapdoor",
 
+  "block.sabresdimensions.kognoli_wood": "Kognoli Wood",
+  "block.sabresdimensions.stripped_kognoli_wood": "Stripped Kognoli Wood",
+  "block.sabresdimensions.kognoli_log": "Kognoli Log",
+  "block.sabresdimensions.stripped_kognoli_log": "Stripped Kognoli Log",
+  "block.sabresdimensions.kognoli_leaves": "Kognoli Leaves",
+  "block.sabresdimensions.kognoli_sapling": "Kognoli Sapling",
+
   "block.sabresdimensions.kognoli_planks": "Kognoli Planks",
   "block.sabresdimensions.kognoli_slab": "Kognoli Slab",
   "block.sabresdimensions.kognoli_stairs": "Kognoli Stairs",
