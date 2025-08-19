@@ -186,5 +186,11 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModBlocks.STRIPPED_ELASTAU_LOG.asItem())
                 .add(ModBlocks.ELASTAU_WOOD.asItem())
                 .add(ModBlocks.STRIPPED_ELASTAU_WOOD.asItem());
+
+        getOrCreateTagBuilder(ModTags.Items.KOGNOLI_PLANKS_POOL)
+                .add(ModBlocks.KOGNOLI_LOG.asItem())
+                .add(ModBlocks.STRIPPED_KOGNOLI_LOG.asItem())
+                .add(ModBlocks.KOGNOLI_WOOD.asItem())
+                .add(ModBlocks.STRIPPED_KOGNOLI_WOOD.asItem());
     }
 }

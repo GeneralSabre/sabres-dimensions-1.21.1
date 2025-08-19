@@ -23,6 +23,7 @@ public class ModTags {
     }
     public static class Items{
         public static final TagKey<Item> ELASTAU_PLANKS_POOL = createTag("elastau_planks_pool");
+        public static final TagKey<Item> KOGNOLI_PLANKS_POOL = createTag("kognoli_planks_pool");
 
         private static TagKey<Item> createTag(String name){
             return TagKey.of(RegistryKeys.ITEM, Identifier.of(SabresDimensions.MOD_ID, name));

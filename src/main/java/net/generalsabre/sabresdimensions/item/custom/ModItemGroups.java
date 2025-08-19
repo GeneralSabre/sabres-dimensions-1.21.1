@@ -77,6 +77,14 @@ public class ModItemGroups {
                         entries.add(ModBlocks.ELASTAU_DOOR);
                         entries.add(ModBlocks.ELASTAU_TRAPDOOR);
 
+                        entries.add(ModBlocks.KOGNOLI_PLANKS);
+                        entries.add(ModBlocks.KOGNOLI_STAIRS);
+                        entries.add(ModBlocks.KOGNOLI_SLAB);
+                        entries.add(ModBlocks.KOGNOLI_FENCE);
+                        entries.add(ModBlocks.KOGNOLI_FENCE_GATE);
+                        entries.add(ModBlocks.KOGNOLI_BUTTON);
+                        entries.add(ModBlocks.KOGNOLI_PRESSURE_PLATE);
+
                         entries.add(ModBlocks.ULAU_BLOCK);
                         entries.add(ModBlocks.LUPAMOONE_BLOCK);
                         entries.add(ModBlocks.LUPAMOONE_ORE);
@@ -84,6 +92,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.ORAXIUM_ORE);
                         entries.add(ModBlocks.DELETERIUM_BLOCK);
                     })
+
                     .build());
             public static final ItemGroup SABRES_DIMENSIONS_ITEMS = Registry.register(Registries.ITEM_GROUP,
             Identifier.of(SabresDimensions.MOD_ID, "sabres_dimensions_items"),

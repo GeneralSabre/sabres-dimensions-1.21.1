@@ -86,6 +86,20 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSingleton(ModBlocks.ELASTAU_LEAVES, TexturedModel.LEAVES);
         blockStateModelGenerator.registerTintableCross(ModBlocks.ELASTAU_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
 
+        blockStateModelGenerator.registerLog(ModBlocks.KOGNOLI_LOG).log(ModBlocks.KOGNOLI_LOG).wood(ModBlocks.KOGNOLI_WOOD);
+        blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_KOGNOLI_LOG).log(ModBlocks.STRIPPED_KOGNOLI_LOG).wood(ModBlocks.STRIPPED_KOGNOLI_WOOD);
+
+        BlockStateModelGenerator.BlockTexturePool kognoliPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.KOGNOLI_PLANKS);
+        kognoliPool.slab(ModBlocks.KOGNOLI_SLAB);
+        kognoliPool.stairs(ModBlocks.KOGNOLI_STAIRS);
+        kognoliPool.button(ModBlocks.KOGNOLI_BUTTON);
+        kognoliPool.pressurePlate(ModBlocks.KOGNOLI_PRESSURE_PLATE);
+        kognoliPool.fence(ModBlocks.KOGNOLI_FENCE);
+        kognoliPool.fenceGate(ModBlocks.KOGNOLI_FENCE_GATE);
+
+        blockStateModelGenerator.registerSingleton(ModBlocks.KOGNOLI_LEAVES, TexturedModel.LEAVES);
+        blockStateModelGenerator.registerTintableCross(ModBlocks.KOGNOLI_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
+
     }
 
     @Override

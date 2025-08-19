@@ -172,6 +172,33 @@ public class ModBlocks {
     public static final Block ELASTAU_TRAPDOOR = registerBlock("elastau_trapdoor",
             new TrapdoorBlock(BlockSetType.SPRUCE,AbstractBlock.Settings.create().strength(2f,0f).sounds(BlockSoundGroup.WOOD).requiresTool().nonOpaque()));
 
+    // Kognoli
+    public static final Block KOGNOLI_LOG = registerBlock("kognoli_log",
+            new PillarBlock(AbstractBlock.Settings.copy(Blocks.ACACIA_LOG)));
+    public static final Block KOGNOLI_WOOD = registerBlock("kognoli_wood",
+            new PillarBlock(AbstractBlock.Settings.copy(Blocks.ACACIA_WOOD)));
+    public static final Block STRIPPED_KOGNOLI_LOG = registerBlock("stripped_kognoli_log",
+            new PillarBlock(AbstractBlock.Settings.copy(Blocks.STRIPPED_ACACIA_LOG)));
+    public static final Block STRIPPED_KOGNOLI_WOOD = registerBlock("stripped_kognoli_wood",
+            new PillarBlock(AbstractBlock.Settings.copy(Blocks.STRIPPED_ACACIA_WOOD)));
+
+    public static final Block KOGNOLI_PLANKS = registerBlock("kognoli_planks",
+            new Block(AbstractBlock.Settings.copy(Blocks.ACACIA_PLANKS)));
+    public static final Block KOGNOLI_STAIRS = registerBlock("kognoli_stairs",
+            new StairsBlock(ModBlocks.KOGNOLI_PLANKS.getDefaultState(),
+                    AbstractBlock.Settings.create().strength(5f,1f).sounds(BlockSoundGroup.WOOD).requiresTool()));
+    public static final Block KOGNOLI_SLAB = registerBlock("kognoli_slab",
+            new SlabBlock(AbstractBlock.Settings.create().strength(5f,1f).sounds(BlockSoundGroup.WOOD).requiresTool()));
+    public static final Block KOGNOLI_BUTTON = registerBlock("kognoli_button",
+            new ButtonBlock(BlockSetType.SPRUCE,40,AbstractBlock.Settings.create().strength(5f,1f).sounds(BlockSoundGroup.WOOD).requiresTool().noCollision()));
+    public static final Block KOGNOLI_PRESSURE_PLATE = registerBlock("kognoli_pressure_plate",
+            new PressurePlateBlock(BlockSetType.SPRUCE, AbstractBlock.Settings.create().strength(5f,1f).sounds(BlockSoundGroup.WOOD).requiresTool()));
+    public static final Block KOGNOLI_FENCE = registerBlock("kognoli_fence",
+            new FenceBlock(AbstractBlock.Settings.create().strength(5f,1f).sounds(BlockSoundGroup.WOOD).requiresTool()));
+    public static final Block KOGNOLI_FENCE_GATE = registerBlock("kognoli_fence_gate",
+            new FenceGateBlock(WoodType.SPRUCE, AbstractBlock.Settings.create().strength(5f,1f).sounds(BlockSoundGroup.WOOD).requiresTool()));
+
+
 
 
 
@@ -179,7 +206,13 @@ public class ModBlocks {
             new LeavesBlock(AbstractBlock.Settings.copy(Blocks.SPRUCE_LEAVES)));
 
     public static final Block ELASTAU_SAPLING = registerBlock("elastau_sapling",
-            new SaplingBlock(SaplingGenerator.OAK,AbstractBlock.Settings.copy(Blocks.SPRUCE_SAPLING)));
+            new SaplingBlock(SaplingGenerator.SPRUCE,AbstractBlock.Settings.copy(Blocks.SPRUCE_SAPLING)));
+
+    public static final Block KOGNOLI_LEAVES = registerBlock("kognoli_leaves",
+            new LeavesBlock(AbstractBlock.Settings.copy(Blocks.SPRUCE_LEAVES)));
+
+    public static final Block KOGNOLI_SAPLING = registerBlock("kognoli_sapling",
+            new SaplingBlock(SaplingGenerator.ACACIA,AbstractBlock.Settings.copy(Blocks.ACACIA_SAPLING)));
 
 
 

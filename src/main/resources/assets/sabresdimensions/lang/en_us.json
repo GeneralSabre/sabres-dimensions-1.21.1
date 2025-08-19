@@ -101,6 +101,14 @@
   "block.sabresdimensions.elastau_door": "Elastau Door",
   "block.sabresdimensions.elastau_trapdoor": "Elastau Trapdoor",
 
+  "block.sabresdimensions.kognoli_planks": "Kognoli Planks",
+  "block.sabresdimensions.kognoli_slab": "Kognoli Slab",
+  "block.sabresdimensions.kognoli_stairs": "Kognoli Stairs",
+  "block.sabresdimensions.kognoli_button": "Kognoli Button",
+  "block.sabresdimensions.kognoli_pressure_plate": "Kognoli Pressure Plate",
+  "block.sabresdimensions.kognoli_fence": "Kognoli Fence",
+  "block.sabresdimensions.kognoli_fence_gate": "Kognoli Fence Gate",
+
   "enchantment.sabresdimensions.jump_jet": "Jump Jet",
   "effect.sabresdimensions.grounded": "Grounded",
   "item.sabresdimensions.hzc": "Heavy Zalant Crossbow",

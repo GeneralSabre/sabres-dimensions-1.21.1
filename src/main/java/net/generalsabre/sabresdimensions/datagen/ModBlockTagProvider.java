@@ -74,7 +74,14 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.ELASTAU_PRESSURE_PLATE)
                 .add(ModBlocks.ELASTAU_PLANKS)
                 .add(ModBlocks.ELASTAU_DOOR)
-                .add(ModBlocks.ELASTAU_TRAPDOOR);
+                .add(ModBlocks.ELASTAU_TRAPDOOR)
+                .add(ModBlocks.KOGNOLI_FENCE_GATE)
+                .add(ModBlocks.KOGNOLI_FENCE)
+                .add(ModBlocks.KOGNOLI_BUTTON)
+                .add(ModBlocks.KOGNOLI_PRESSURE_PLATE)
+                .add(ModBlocks.KOGNOLI_SLAB)
+                .add(ModBlocks.KOGNOLI_STAIRS)
+                .add(ModBlocks.KOGNOLI_PLANKS);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.PENKAZ_ORE)
@@ -109,12 +116,18 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.ELASTAU_LOG)
                 .add(ModBlocks.STRIPPED_ELASTAU_LOG)
                 .add(ModBlocks.ELASTAU_WOOD)
-                .add(ModBlocks.STRIPPED_ELASTAU_WOOD);
+                .add(ModBlocks.STRIPPED_ELASTAU_WOOD)
+                .add(ModBlocks.KOGNOLI_LOG)
+                .add(ModBlocks.STRIPPED_KOGNOLI_LOG)
+                .add(ModBlocks.KOGNOLI_WOOD)
+                .add(ModBlocks.STRIPPED_KOGNOLI_WOOD);
 
         getOrCreateTagBuilder(BlockTags.WOODEN_FENCES)
-                .add(ModBlocks.ELASTAU_FENCE);
+                .add(ModBlocks.ELASTAU_FENCE)
+                .add(ModBlocks.KOGNOLI_FENCE);
 
         getOrCreateTagBuilder(BlockTags.FENCE_GATES)
-                .add(ModBlocks.ELASTAU_FENCE_GATE);
+                .add(ModBlocks.ELASTAU_FENCE_GATE)
+                .add(ModBlocks.KOGNOLI_FENCE_GATE);
     }
 }

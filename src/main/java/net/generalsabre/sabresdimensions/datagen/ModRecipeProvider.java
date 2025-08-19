@@ -447,6 +447,34 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         createDoorRecipe(ModBlocks.ELASTAU_DOOR, Ingredient.ofItems(ModBlocks.ELASTAU_PLANKS));
         createTrapdoorRecipe(ModBlocks.ELASTAU_TRAPDOOR, Ingredient.ofItems(ModBlocks.ELASTAU_PLANKS));
 
+        // Kognoli Wood
+        offerPlanksRecipe(recipeExporter, ModBlocks.KOGNOLI_PLANKS, ModTags.Items.KOGNOLI_PLANKS_POOL, 4);
+        offerBarkBlockRecipe(recipeExporter, ModBlocks.KOGNOLI_WOOD, ModBlocks.KOGNOLI_LOG);
+        offerBarkBlockRecipe(recipeExporter, ModBlocks.STRIPPED_KOGNOLI_WOOD, ModBlocks.STRIPPED_KOGNOLI_LOG);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.KOGNOLI_STAIRS)
+                .pattern("A  ")
+                .pattern("AA ")
+                .pattern("AAA")
+                .input('A', ModBlocks.KOGNOLI_PLANKS)
+                .criterion(hasItem(ModBlocks.KOGNOLI_PLANKS), conditionsFromItem(ModBlocks.KOGNOLI_PLANKS))
+                .offerTo(recipeExporter);
+        offerSlabRecipe(recipeExporter, RecipeCategory.MISC, ModBlocks.KOGNOLI_SLAB, ModBlocks.KOGNOLI_PLANKS);
+        offerPressurePlateRecipe(recipeExporter, ModBlocks.KOGNOLI_PRESSURE_PLATE, ModBlocks.KOGNOLI_PLANKS);
+        offerShapelessRecipe(recipeExporter, ModBlocks.KOGNOLI_BUTTON, ModBlocks.KOGNOLI_PLANKS, "kognoli", 1);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.KOGNOLI_FENCE)
+                .pattern("ASA")
+                .pattern("ASA")
+                .input('A', ModBlocks.KOGNOLI_PLANKS)
+                .input('S', Items.STICK)
+                .criterion(hasItem(ModBlocks.KOGNOLI_PLANKS), conditionsFromItem(ModBlocks.KOGNOLI_PLANKS))
+                .offerTo(recipeExporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.KOGNOLI_FENCE_GATE)
+                .pattern("SAS")
+                .pattern("SAS")
+                .input('A', ModBlocks.KOGNOLI_PLANKS)
+                .input('S', Items.STICK)
+                .criterion(hasItem(ModBlocks.KOGNOLI_PLANKS), conditionsFromItem(ModBlocks.KOGNOLI_PLANKS))
+                .offerTo(recipeExporter);
 
     }
 }
