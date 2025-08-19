@@ -96,6 +96,8 @@ public class ModModelProvider extends FabricModelProvider {
         kognoliPool.pressurePlate(ModBlocks.KOGNOLI_PRESSURE_PLATE);
         kognoliPool.fence(ModBlocks.KOGNOLI_FENCE);
         kognoliPool.fenceGate(ModBlocks.KOGNOLI_FENCE_GATE);
+        blockStateModelGenerator.registerDoor(ModBlocks.KOGNOLI_DOOR);
+        blockStateModelGenerator.registerTrapdoor(ModBlocks.KOGNOLI_TRAPDOOR);
 
         blockStateModelGenerator.registerSingleton(ModBlocks.KOGNOLI_LEAVES, TexturedModel.LEAVES);
         blockStateModelGenerator.registerTintableCross(ModBlocks.KOGNOLI_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);

@@ -91,6 +91,8 @@ public class ModItemGroups {
                         entries.add(ModBlocks.KOGNOLI_FENCE_GATE);
                         entries.add(ModBlocks.KOGNOLI_BUTTON);
                         entries.add(ModBlocks.KOGNOLI_PRESSURE_PLATE);
+                        entries.add(ModBlocks.KOGNOLI_DOOR);
+                        entries.add(ModBlocks.KOGNOLI_TRAPDOOR);
 
                         entries.add(ModBlocks.ULAU_BLOCK);
                         entries.add(ModBlocks.LUPAMOONE_BLOCK);

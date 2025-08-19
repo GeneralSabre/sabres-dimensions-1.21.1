@@ -61,6 +61,19 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('Z', ModBlocks.ELASTAU_PLANKS)
                 .criterion(hasItem(ModBlocks.ELASTAU_PLANKS), conditionsFromItem(ModBlocks.ELASTAU_PLANKS))
                 .offerTo(recipeExporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.KOGNOLI_DOOR, 3)
+                .pattern("ZZ")
+                .pattern("ZZ")
+                .pattern("ZZ")
+                .input('Z', ModBlocks.KOGNOLI_PLANKS)
+                .criterion(hasItem(ModBlocks.KOGNOLI_PLANKS), conditionsFromItem(ModBlocks.KOGNOLI_PLANKS))
+                .offerTo(recipeExporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.KOGNOLI_TRAPDOOR, 2)
+                .pattern("ZZZ")
+                .pattern("ZZZ")
+                .input('Z', ModBlocks.KOGNOLI_PLANKS)
+                .criterion(hasItem(ModBlocks.KOGNOLI_PLANKS), conditionsFromItem(ModBlocks.KOGNOLI_PLANKS))
+                .offerTo(recipeExporter);
 
         offerReversibleCompactingRecipes(recipeExporter, RecipeCategory.MISC, ModItems.CHORAZINE_DUST, RecipeCategory.MISC, ModBlocks.CHORAZINE_POWDER_BLOCK);
         offerReversibleCompactingRecipes(recipeExporter, RecipeCategory.MISC, ModItems.DALAMINE_CRYSTAL, RecipeCategory.MISC, ModBlocks.DALAMINE_BLOCK);

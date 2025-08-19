@@ -190,13 +190,17 @@ public class ModBlocks {
     public static final Block KOGNOLI_SLAB = registerBlock("kognoli_slab",
             new SlabBlock(AbstractBlock.Settings.create().strength(5f,1f).sounds(BlockSoundGroup.WOOD).requiresTool()));
     public static final Block KOGNOLI_BUTTON = registerBlock("kognoli_button",
-            new ButtonBlock(BlockSetType.SPRUCE,40,AbstractBlock.Settings.create().strength(5f,1f).sounds(BlockSoundGroup.WOOD).requiresTool().noCollision()));
+            new ButtonBlock(BlockSetType.ACACIA,40,AbstractBlock.Settings.create().strength(5f,1f).sounds(BlockSoundGroup.WOOD).requiresTool().noCollision()));
     public static final Block KOGNOLI_PRESSURE_PLATE = registerBlock("kognoli_pressure_plate",
-            new PressurePlateBlock(BlockSetType.SPRUCE, AbstractBlock.Settings.create().strength(5f,1f).sounds(BlockSoundGroup.WOOD).requiresTool()));
+            new PressurePlateBlock(BlockSetType.ACACIA, AbstractBlock.Settings.create().strength(5f,1f).sounds(BlockSoundGroup.WOOD).requiresTool()));
     public static final Block KOGNOLI_FENCE = registerBlock("kognoli_fence",
             new FenceBlock(AbstractBlock.Settings.create().strength(5f,1f).sounds(BlockSoundGroup.WOOD).requiresTool()));
     public static final Block KOGNOLI_FENCE_GATE = registerBlock("kognoli_fence_gate",
-            new FenceGateBlock(WoodType.SPRUCE, AbstractBlock.Settings.create().strength(5f,1f).sounds(BlockSoundGroup.WOOD).requiresTool()));
+            new FenceGateBlock(WoodType.ACACIA, AbstractBlock.Settings.create().strength(5f,1f).sounds(BlockSoundGroup.WOOD).requiresTool()));
+    public static final Block KOGNOLI_DOOR = registerBlock("kognoli_door",
+            new DoorBlock(BlockSetType.ACACIA,AbstractBlock.Settings.create().strength(5f,1f).sounds(BlockSoundGroup.WOOD).requiresTool().nonOpaque()));
+    public static final Block KOGNOLI_TRAPDOOR = registerBlock("kognoli_trapdoor",
+            new TrapdoorBlock(BlockSetType.ACACIA,AbstractBlock.Settings.create().strength(5f,1f).sounds(BlockSoundGroup.WOOD).requiresTool().nonOpaque()));
 
 
 
