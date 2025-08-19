@@ -67,9 +67,8 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerReversibleCompactingRecipes(recipeExporter, RecipeCategory.MISC, ModItems.LUPAMOONE, RecipeCategory.MISC, ModBlocks.LUPAMOONE_BLOCK);
         offerReversibleCompactingRecipes(recipeExporter, RecipeCategory.MISC, ModItems.ULAU_CLUMP, RecipeCategory.MISC, ModBlocks.ULAU_BLOCK);
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, Items.TORCH, 6)
-                .pattern("   ")
-                .pattern(" U ")
-                .pattern(" S ")
+                .pattern("U")
+                .pattern("S")
                 .input('U', ModItems.ULAU_CLUMP)
                 .input('S', Items.STICK)
                 .criterion(hasItem(ModItems.ULAU_CLUMP), conditionsFromItem(ModItems.ULAU_CLUMP))
@@ -419,7 +418,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerPlanksRecipe(recipeExporter, ModBlocks.ELASTAU_PLANKS, ModTags.Items.ELASTAU_PLANKS_POOL, 4);
         offerBarkBlockRecipe(recipeExporter, ModBlocks.ELASTAU_WOOD, ModBlocks.ELASTAU_LOG);
         offerBarkBlockRecipe(recipeExporter, ModBlocks.STRIPPED_ELASTAU_WOOD, ModBlocks.STRIPPED_ELASTAU_LOG);
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.ELASTAU_STAIRS)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.ELASTAU_STAIRS, 4)
                 .pattern("A  ")
                 .pattern("AA ")
                 .pattern("AAA")
@@ -451,7 +450,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerPlanksRecipe(recipeExporter, ModBlocks.KOGNOLI_PLANKS, ModTags.Items.KOGNOLI_PLANKS_POOL, 4);
         offerBarkBlockRecipe(recipeExporter, ModBlocks.KOGNOLI_WOOD, ModBlocks.KOGNOLI_LOG);
         offerBarkBlockRecipe(recipeExporter, ModBlocks.STRIPPED_KOGNOLI_WOOD, ModBlocks.STRIPPED_KOGNOLI_LOG);
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.KOGNOLI_STAIRS)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.KOGNOLI_STAIRS, 4)
                 .pattern("A  ")
                 .pattern("AA ")
                 .pattern("AAA")

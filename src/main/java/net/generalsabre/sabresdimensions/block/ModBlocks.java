@@ -174,16 +174,16 @@ public class ModBlocks {
 
     // Kognoli
     public static final Block KOGNOLI_LOG = registerBlock("kognoli_log",
-            new PillarBlock(AbstractBlock.Settings.copy(Blocks.ACACIA_LOG)));
+            new PillarBlock(AbstractBlock.Settings.copy(Blocks.ACACIA_LOG).strength(5f,1f)));
     public static final Block KOGNOLI_WOOD = registerBlock("kognoli_wood",
-            new PillarBlock(AbstractBlock.Settings.copy(Blocks.ACACIA_WOOD)));
+            new PillarBlock(AbstractBlock.Settings.copy(Blocks.ACACIA_WOOD).strength(5f,1f)));
     public static final Block STRIPPED_KOGNOLI_LOG = registerBlock("stripped_kognoli_log",
-            new PillarBlock(AbstractBlock.Settings.copy(Blocks.STRIPPED_ACACIA_LOG)));
+            new PillarBlock(AbstractBlock.Settings.copy(Blocks.STRIPPED_ACACIA_LOG).strength(5f,1f)));
     public static final Block STRIPPED_KOGNOLI_WOOD = registerBlock("stripped_kognoli_wood",
-            new PillarBlock(AbstractBlock.Settings.copy(Blocks.STRIPPED_ACACIA_WOOD)));
+            new PillarBlock(AbstractBlock.Settings.copy(Blocks.STRIPPED_ACACIA_WOOD).strength(5f,1f)));
 
     public static final Block KOGNOLI_PLANKS = registerBlock("kognoli_planks",
-            new Block(AbstractBlock.Settings.copy(Blocks.ACACIA_PLANKS)));
+            new Block(AbstractBlock.Settings.copy(Blocks.ACACIA_PLANKS).strength(5f,1f)));
     public static final Block KOGNOLI_STAIRS = registerBlock("kognoli_stairs",
             new StairsBlock(ModBlocks.KOGNOLI_PLANKS.getDefaultState(),
                     AbstractBlock.Settings.create().strength(5f,1f).sounds(BlockSoundGroup.WOOD).requiresTool()));
