@@ -4,6 +4,7 @@ import net.generalsabre.sabresdimensions.block.custom.AlloyFurnaceBlock;
 import net.generalsabre.sabresdimensions.block.custom.CrusherBlock;
 import net.generalsabre.sabresdimensions.block.custom.IndustrialFurnaceBlock;
 import net.generalsabre.sabresdimensions.block.custom.IngotPressBlock;
+import net.generalsabre.sabresdimensions.effect.ModEffects;
 import net.minecraft.block.*;
 import net.generalsabre.sabresdimensions.SabresDimensions;
 import net.minecraft.item.BlockItem;
@@ -133,7 +134,7 @@ public class ModBlocks {
     public static final Block COULIEM_STEM = registerBlock("couliem_stem",
             new PillarBlock(AbstractBlock.Settings.create().strength(2f,0.5f).sounds(BlockSoundGroup.BAMBOO_WOOD).requiresTool()));
     public static final Block TARRO_PLANT = registerBlock("tarro_plant",
-            new Block(AbstractBlock.Settings.create()));
+            new FlowerBlock(ModEffects.GROUNDED, 10, AbstractBlock.Settings.create().noCollision().sounds(BlockSoundGroup.GRASS)));
 
 
     public static final Block ALLOY_FURNACE = registerBlock("alloy_furnace",
