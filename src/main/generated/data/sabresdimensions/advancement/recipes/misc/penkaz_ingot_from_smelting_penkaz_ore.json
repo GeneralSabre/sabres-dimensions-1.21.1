@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_penkaz_ore": {
+      "conditions": {
+        "items": [
+          {
+            "items": "sabresdimensions:penkaz_ore"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "sabresdimensions:penkaz_ingot_from_smelting_penkaz_ore"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_penkaz_ore"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "sabresdimensions:penkaz_ingot_from_smelting_penkaz_ore"
+    ]
+  }
+}

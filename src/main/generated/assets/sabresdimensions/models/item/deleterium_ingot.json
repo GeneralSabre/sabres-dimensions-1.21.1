@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "sabresdimensions:item/deleterium_ingot"
+  }
+}

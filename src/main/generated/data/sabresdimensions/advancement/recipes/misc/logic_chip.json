@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_lupamoone_processor": {
+      "conditions": {
+        "items": [
+          {
+            "items": "sabresdimensions:lupamoone_processor"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "sabresdimensions:logic_chip"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_lupamoone_processor"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "sabresdimensions:logic_chip"
+    ]
+  }
+}

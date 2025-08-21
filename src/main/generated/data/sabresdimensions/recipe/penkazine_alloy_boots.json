@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "Z": {
+      "item": "sabresdimensions:penkazine_alloy_ingot"
+    }
+  },
+  "pattern": [
+    "   ",
+    "Z Z",
+    "Z Z"
+  ],
+  "result": {
+    "count": 1,
+    "id": "sabresdimensions:penkazine_alloy_boots"
+  }
+}

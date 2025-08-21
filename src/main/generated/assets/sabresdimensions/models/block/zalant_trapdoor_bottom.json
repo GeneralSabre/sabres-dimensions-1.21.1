@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/template_trapdoor_bottom",
+  "textures": {
+    "texture": "sabresdimensions:block/zalant_trapdoor"
+  }
+}

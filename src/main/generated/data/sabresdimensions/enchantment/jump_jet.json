@@ -1,0 +1,31 @@
+{
+  "anvil_cost": 5,
+  "description": {
+    "translate": "enchantment.sabresdimensions.jump_jet"
+  },
+  "effects": {
+    "minecraft:location_changed": [
+      {
+        "effect": {
+          "type": "sabresdimensions:jump_jet"
+        }
+      }
+    ]
+  },
+  "exclusive_set": "#sabresdimensions:boots_exclusive_set_2",
+  "max_cost": {
+    "base": 25,
+    "per_level_above_first": 9
+  },
+  "max_level": 3,
+  "min_cost": {
+    "base": 5,
+    "per_level_above_first": 7
+  },
+  "primary_items": "#minecraft:foot_armor",
+  "slots": [
+    "feet"
+  ],
+  "supported_items": "#minecraft:enchantable/armor",
+  "weight": 5
+}

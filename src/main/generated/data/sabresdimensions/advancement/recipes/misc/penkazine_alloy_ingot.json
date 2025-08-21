@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_penkazine_alloy_block": {
+      "conditions": {
+        "items": [
+          {
+            "items": "sabresdimensions:penkazine_alloy_block"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "sabresdimensions:penkazine_alloy_ingot"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_penkazine_alloy_block"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "sabresdimensions:penkazine_alloy_ingot"
+    ]
+  }
+}

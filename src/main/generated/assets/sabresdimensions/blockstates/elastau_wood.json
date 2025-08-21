@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "sabresdimensions:block/elastau_wood",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "sabresdimensions:block/elastau_wood"
+    },
+    "axis=z": {
+      "model": "sabresdimensions:block/elastau_wood",
+      "x": 90
+    }
+  }
+}

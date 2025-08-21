@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_deleterium_ingot": {
+      "conditions": {
+        "items": [
+          {
+            "items": "sabresdimensions:deleterium_ingot"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "sabresdimensions:deleterium_block"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_deleterium_ingot"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "sabresdimensions:deleterium_block"
+    ]
+  }
+}

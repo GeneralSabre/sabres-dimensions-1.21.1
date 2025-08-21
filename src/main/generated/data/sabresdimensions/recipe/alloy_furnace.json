@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "sabresdimensions:arakite_bricks"
+    },
+    "Z": {
+      "item": "sabresdimensions:zalant_ingot"
+    }
+  },
+  "pattern": [
+    "AAA",
+    "Z Z",
+    "AAA"
+  ],
+  "result": {
+    "count": 1,
+    "id": "sabresdimensions:alloy_furnace"
+  }
+}

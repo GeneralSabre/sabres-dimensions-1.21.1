@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "minecraft:copper_ingot"
+    },
+    "L": {
+      "item": "sabresdimensions:logic_chip"
+    },
+    "M": {
+      "item": "sabresdimensions:lupamoone"
+    }
+  },
+  "pattern": [
+    "LML",
+    "MCM",
+    "LML"
+  ],
+  "result": {
+    "count": 1,
+    "id": "sabresdimensions:lupamoone_core"
+  }
+}

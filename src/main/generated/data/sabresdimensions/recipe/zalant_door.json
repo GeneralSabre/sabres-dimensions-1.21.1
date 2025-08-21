@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "Z": {
+      "item": "sabresdimensions:zalant_ingot"
+    }
+  },
+  "pattern": [
+    "ZZ",
+    "ZZ",
+    "ZZ"
+  ],
+  "result": {
+    "count": 3,
+    "id": "sabresdimensions:zalant_door"
+  }
+}

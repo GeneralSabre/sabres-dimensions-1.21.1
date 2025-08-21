@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "P": {
+      "item": "sabresdimensions:lupamoone_processor"
+    },
+    "R": {
+      "item": "minecraft:redstone"
+    }
+  },
+  "pattern": [
+    "III",
+    "I I",
+    "PIR"
+  ],
+  "result": {
+    "count": 1,
+    "id": "sabresdimensions:ingot_press"
+  }
+}

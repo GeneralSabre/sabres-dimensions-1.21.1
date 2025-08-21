@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_bottom_right",
+  "textures": {
+    "bottom": "sabresdimensions:block/elastau_door_bottom",
+    "top": "sabresdimensions:block/elastau_door_top"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "sabresdimensions:arakite_rod"
+    },
+    "L": {
+      "item": "minecraft:lever"
+    },
+    "R": {
+      "item": "minecraft:redstone"
+    },
+    "Z": {
+      "item": "sabresdimensions:zalant_ingot"
+    }
+  },
+  "pattern": [
+    "RZL",
+    "ZAZ",
+    "ZZZ"
+  ],
+  "result": {
+    "count": 1,
+    "id": "sabresdimensions:crusher"
+  }
+}

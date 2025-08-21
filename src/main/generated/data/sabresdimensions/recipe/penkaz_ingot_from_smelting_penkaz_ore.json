@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.4,
+  "group": "penkaz_ingot",
+  "ingredient": {
+    "item": "sabresdimensions:penkaz_ore"
+  },
+  "result": {
+    "id": "sabresdimensions:penkaz_ingot"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "sabresdimensions:block/arakite_tiles",
+    "side": "sabresdimensions:block/arakite_tiles",
+    "top": "sabresdimensions:block/arakite_tiles"
+  }
+}

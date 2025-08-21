@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "sabresdimensions:zalant_ingot_from_smelting_zalant_ore"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_zalant_ore": {
+      "conditions": {
+        "items": [
+          {
+            "items": "sabresdimensions:zalant_ore"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_zalant_ore"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "sabresdimensions:zalant_ingot_from_smelting_zalant_ore"
+    ]
+  }
+}

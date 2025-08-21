@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "sabresdimensions:block/elastau_sapling"
+  }
+}

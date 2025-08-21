@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "sabresdimensions:block/kognoli_slab"
+    },
+    "type=double": {
+      "model": "sabresdimensions:block/kognoli_planks"
+    },
+    "type=top": {
+      "model": "sabresdimensions:block/kognoli_slab_top"
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column_horizontal",
+  "textures": {
+    "end": "sabresdimensions:block/elastau_log_top",
+    "side": "sabresdimensions:block/elastau_log"
+  }
+}

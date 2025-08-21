@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "sabresdimensions:block/couliem_stem_top",
+    "side": "sabresdimensions:block/couliem_stem"
+  }
+}

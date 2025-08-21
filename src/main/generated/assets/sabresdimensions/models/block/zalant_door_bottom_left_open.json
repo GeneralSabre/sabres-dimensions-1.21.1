@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_bottom_left_open",
+  "textures": {
+    "bottom": "sabresdimensions:block/zalant_door_bottom",
+    "top": "sabresdimensions:block/zalant_door_top"
+  }
+}

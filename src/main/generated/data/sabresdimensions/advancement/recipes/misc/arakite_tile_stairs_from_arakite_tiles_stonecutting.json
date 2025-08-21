@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_arakite_tiles": {
+      "conditions": {
+        "items": [
+          {
+            "items": "sabresdimensions:arakite_tiles"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "sabresdimensions:arakite_tile_stairs_from_arakite_tiles_stonecutting"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_arakite_tiles"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "sabresdimensions:arakite_tile_stairs_from_arakite_tiles_stonecutting"
+    ]
+  }
+}

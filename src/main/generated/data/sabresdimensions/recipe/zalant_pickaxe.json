@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "S": {
+      "item": "minecraft:stick"
+    },
+    "Z": {
+      "item": "sabresdimensions:zalant_ingot"
+    }
+  },
+  "pattern": [
+    "ZZZ",
+    " S ",
+    " S "
+  ],
+  "result": {
+    "count": 1,
+    "id": "sabresdimensions:zalant_pickaxe"
+  }
+}

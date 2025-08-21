@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "sabresdimensions:torch"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_ulau_clump": {
+      "conditions": {
+        "items": [
+          {
+            "items": "sabresdimensions:ulau_clump"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_ulau_clump"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "sabresdimensions:torch"
+    ]
+  }
+}

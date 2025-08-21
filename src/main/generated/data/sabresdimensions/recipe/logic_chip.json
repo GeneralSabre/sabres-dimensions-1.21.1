@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "minecraft:comparator"
+    },
+    "I": {
+      "item": "minecraft:copper_ingot"
+    },
+    "L": {
+      "item": "sabresdimensions:lupamoone_processor"
+    },
+    "R": {
+      "item": "minecraft:redstone"
+    }
+  },
+  "pattern": [
+    "RCR",
+    "LLL",
+    "RIR"
+  ],
+  "result": {
+    "count": 1,
+    "id": "sabresdimensions:logic_chip"
+  }
+}

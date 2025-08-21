@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "planks",
+  "ingredients": [
+    {
+      "tag": "sabresdimensions:kognoli_planks_pool"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "id": "sabresdimensions:kognoli_planks"
+  }
+}

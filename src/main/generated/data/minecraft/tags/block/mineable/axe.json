@@ -1,0 +1,24 @@
+{
+  "values": [
+    "sabresdimensions:elastau_fence_gate",
+    "sabresdimensions:elastau_fence",
+    "sabresdimensions:elastau_slab",
+    "sabresdimensions:elastau_stairs",
+    "sabresdimensions:elastau_button",
+    "sabresdimensions:elastau_pressure_plate",
+    "sabresdimensions:elastau_planks",
+    "sabresdimensions:elastau_door",
+    "sabresdimensions:elastau_trapdoor",
+    "sabresdimensions:kognoli_fence_gate",
+    "sabresdimensions:kognoli_fence",
+    "sabresdimensions:kognoli_button",
+    "sabresdimensions:kognoli_pressure_plate",
+    "sabresdimensions:kognoli_slab",
+    "sabresdimensions:kognoli_stairs",
+    "sabresdimensions:kognoli_door",
+    "sabresdimensions:kognoli_trapdoor",
+    "sabresdimensions:kognoli_planks",
+    "sabresdimensions:couliem_leaves",
+    "sabresdimensions:couliem_stem"
+  ]
+}

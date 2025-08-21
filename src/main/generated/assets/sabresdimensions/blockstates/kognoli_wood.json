@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "sabresdimensions:block/kognoli_wood",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "sabresdimensions:block/kognoli_wood"
+    },
+    "axis=z": {
+      "model": "sabresdimensions:block/kognoli_wood",
+      "x": 90
+    }
+  }
+}

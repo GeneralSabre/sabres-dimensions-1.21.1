@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "sabresdimensions:block/arakite_slab"
+    },
+    "type=double": {
+      "model": "sabresdimensions:block/arakite"
+    },
+    "type=top": {
+      "model": "sabresdimensions:block/arakite_slab_top"
+    }
+  }
+}

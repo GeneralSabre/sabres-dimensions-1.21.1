@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.2,
+  "group": "zalant_ingot",
+  "ingredient": {
+    "item": "sabresdimensions:zalant_ore"
+  },
+  "result": {
+    "id": "sabresdimensions:zalant_ingot"
+  }
+}

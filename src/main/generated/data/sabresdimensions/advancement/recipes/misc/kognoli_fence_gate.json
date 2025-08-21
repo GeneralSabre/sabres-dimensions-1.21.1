@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_kognoli_planks": {
+      "conditions": {
+        "items": [
+          {
+            "items": "sabresdimensions:kognoli_planks"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "sabresdimensions:kognoli_fence_gate"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_kognoli_planks"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "sabresdimensions:kognoli_fence_gate"
+    ]
+  }
+}

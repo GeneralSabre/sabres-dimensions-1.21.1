@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "sabresdimensions:deleterium_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "sabresdimensions:deleterium_ingot"
+  }
+}

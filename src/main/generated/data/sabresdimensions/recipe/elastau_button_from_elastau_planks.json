@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "elastau",
+  "ingredients": [
+    {
+      "item": "sabresdimensions:elastau_planks"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "sabresdimensions:elastau_button"
+  }
+}

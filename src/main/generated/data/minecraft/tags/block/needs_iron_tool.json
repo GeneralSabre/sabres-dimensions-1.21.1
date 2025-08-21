@@ -1,0 +1,16 @@
+{
+  "values": [
+    "sabresdimensions:penkaz_ore",
+    "sabresdimensions:penkaz_block",
+    "sabresdimensions:raw_penkaz_block",
+    "sabresdimensions:chorazine_ore",
+    "sabresdimensions:dalamine_ore",
+    "sabresdimensions:dalamine_block",
+    "sabresdimensions:penkazine_alloy_block",
+    "sabresdimensions:zalant_block",
+    "sabresdimensions:raw_zalant_block",
+    "sabresdimensions:zalant_ore",
+    "sabresdimensions:lupamoone_block",
+    "sabresdimensions:lupamoone_ore"
+  ]
+}

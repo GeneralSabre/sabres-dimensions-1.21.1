@@ -1,0 +1,26 @@
+// 1.21.1	2025-08-21T16:04:21.279213	Sabre's Dimensions/Tags for minecraft:item
+1e91d7a0b77799e1f22436280cacb268f89ddb73 data\minecraft\tags\item\enchantable\head_armor.json
+3b938ecb2a59d170e4e71a840544835dbad32877 data\minecraft\tags\item\saplings.json
+81bdd95f9ef6f09b380de2de4ff108c418c380c6 data\minecraft\tags\item\enchantable\vanishing.json
+89f8ae97b04f7f36da6f62be6a932d725e51f303 data\minecraft\tags\item\hoes.json
+044a8569358faab9112176358f6608084105cd96 data\minecraft\tags\item\enchantable\armor.json
+044a8569358faab9112176358f6608084105cd96 data\minecraft\tags\item\trimmable_armor.json
+15ccbc365464cda99d51d0fe1ff02620097d659a data\sabresdimensions\tags\item\elastau_planks_pool.json
+c03b76c489b24eda61eedc523e0626088c109e2c data\minecraft\tags\item\pickaxes.json
+5bec9a0e759c627560fdeefc50479487b766abd5 data\minecraft\tags\item\enchantable\foot_armor.json
+c2f5ddb647a208f15fe3cc96b48de40500940225 data\minecraft\tags\item\enchantable\crossbow.json
+3a4b3712e5b7a20052f25184dca037da292b169e data\minecraft\tags\item\enchantable\mining.json
+d803039e0eeb7d1f7fc450bb8363e9792ecd06eb data\minecraft\tags\item\enchantable\weapon.json
+91586a258e4ec12971ed8e54f96a5a45fdd25951 data\minecraft\tags\item\axes.json
+044a8569358faab9112176358f6608084105cd96 data\minecraft\tags\item\enchantable\equippable.json
+51482591b1998535e208f6aa3c9e1af70d7dba7a data\minecraft\tags\item\enchantable\chest_armor.json
+72490de4e240edaf73ef95f72d126f0e403e3004 data\minecraft\tags\item\shovels.json
+97257d48851d9713b1274e3c9ae40a5ae876f889 data\sabresdimensions\tags\item\kognoli_planks_pool.json
+3a4b3712e5b7a20052f25184dca037da292b169e data\minecraft\tags\item\enchantable\mining_loot.json
+483bd916fce838c4a3a550c4796f9b9659895585 data\minecraft\tags\item\swords.json
+483bd916fce838c4a3a550c4796f9b9659895585 data\minecraft\tags\item\enchantable\fire_aspect.json
+9d37aaffa6681f54e5de45b849d3467ff526ccf9 data\minecraft\tags\item\logs.json
+483bd916fce838c4a3a550c4796f9b9659895585 data\minecraft\tags\item\enchantable\sword.json
+b488723c6b2a879c9ecfec4d366aff7b80cdd1f9 data\minecraft\tags\item\planks.json
+877996ec0402c38dba049368d95ee8ebbb469db0 data\minecraft\tags\item\enchantable\durability.json
+7f583279020ce20b6c1025bd0165d4c9b214eed8 data\minecraft\tags\item\enchantable\leg_armor.json

@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "sabresdimensions:block/elastau_planks",
+    "side": "sabresdimensions:block/elastau_planks",
+    "top": "sabresdimensions:block/elastau_planks"
+  }
+}

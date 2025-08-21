@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "sabresdimensions:arakite"
+  },
+  "result": {
+    "count": 1,
+    "id": "sabresdimensions:arakite_brick_stairs"
+  }
+}

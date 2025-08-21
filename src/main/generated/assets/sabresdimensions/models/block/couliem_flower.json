@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/leaves",
+  "textures": {
+    "all": "sabresdimensions:block/couliem_flower"
+  }
+}

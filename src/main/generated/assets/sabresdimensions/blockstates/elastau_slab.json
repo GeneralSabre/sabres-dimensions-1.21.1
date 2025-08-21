@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "sabresdimensions:block/elastau_slab"
+    },
+    "type=double": {
+      "model": "sabresdimensions:block/elastau_planks"
+    },
+    "type=top": {
+      "model": "sabresdimensions:block/elastau_slab_top"
+    }
+  }
+}

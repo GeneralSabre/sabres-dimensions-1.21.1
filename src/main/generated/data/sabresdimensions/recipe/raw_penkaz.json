@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "sabresdimensions:raw_penkaz_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "sabresdimensions:raw_penkaz"
+  }
+}

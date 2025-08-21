@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "planks",
+  "ingredients": [
+    {
+      "tag": "sabresdimensions:elastau_planks_pool"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "id": "sabresdimensions:elastau_planks"
+  }
+}

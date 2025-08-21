@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "sabresdimensions:block/kognoli_planks",
+    "side": "sabresdimensions:block/kognoli_planks",
+    "top": "sabresdimensions:block/kognoli_planks"
+  }
+}

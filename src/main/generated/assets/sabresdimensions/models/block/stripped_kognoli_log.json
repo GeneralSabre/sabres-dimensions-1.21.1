@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "sabresdimensions:block/stripped_kognoli_log_top",
+    "side": "sabresdimensions:block/stripped_kognoli_log"
+  }
+}
