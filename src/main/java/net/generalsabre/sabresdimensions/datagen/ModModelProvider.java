@@ -55,6 +55,7 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.PENKAZ_ORE);
 
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.PENKAZINE_ALLOY_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ULAU_BLOCK);
 
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.COULIEM_LEAVES);
         blockStateModelGenerator.registerSingleton(ModBlocks.COULIEM_FLOWER, TexturedModel.LEAVES);
