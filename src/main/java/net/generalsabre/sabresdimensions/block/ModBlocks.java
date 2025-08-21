@@ -132,6 +132,8 @@ public class ModBlocks {
             new Block(AbstractBlock.Settings.create().strength(0.25f,0f).sounds(BlockSoundGroup.BIG_DRIPLEAF).requiresTool()));
     public static final Block COULIEM_STEM = registerBlock("couliem_stem",
             new PillarBlock(AbstractBlock.Settings.create().strength(2f,0.5f).sounds(BlockSoundGroup.BAMBOO_WOOD).requiresTool()));
+    public static final Block TARRO_PLANT = registerBlock("tarro_plant",
+            new Block(AbstractBlock.Settings.create()));
 
 
     public static final Block ALLOY_FURNACE = registerBlock("alloy_furnace",

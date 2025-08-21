@@ -157,6 +157,8 @@ public class ModItemGroups {
                         entries.add(ModItems.RAW_ORAXIUM);
                         entries.add(ModItems.COOLED_SLAG);
                         entries.add(ModItems.DELETERIUM_INGOT);
+
+                        entries.add(ModBlocks.TARRO_PLANT);
                     })
                     .build());
     public static final ItemGroup SABRES_DIMENSIONS_MISC = Registry.register(Registries.ITEM_GROUP,
