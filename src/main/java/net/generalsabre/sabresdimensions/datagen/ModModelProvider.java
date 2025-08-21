@@ -56,7 +56,9 @@ public class ModModelProvider extends FabricModelProvider {
 
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.PENKAZINE_ALLOY_BLOCK);
 
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ULAU_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.COULIEM_LEAVES);
+        blockStateModelGenerator.registerSingleton(ModBlocks.COULIEM_FLOWER, TexturedModel.LEAVES);
+        blockStateModelGenerator.registerLog(ModBlocks.COULIEM_STEM).log(ModBlocks.COULIEM_STEM);
 
         BlockStateModelGenerator.BlockTexturePool zalantPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.ZALANT_BLOCK);
         zalantPool.pressurePlate(ModBlocks.ZALANT_PRESSURE_PLATE);

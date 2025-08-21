@@ -81,7 +81,11 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.KOGNOLI_PRESSURE_PLATE)
                 .add(ModBlocks.KOGNOLI_SLAB)
                 .add(ModBlocks.KOGNOLI_STAIRS)
-                .add(ModBlocks.KOGNOLI_PLANKS);
+                .add(ModBlocks.KOGNOLI_DOOR)
+                .add(ModBlocks.KOGNOLI_TRAPDOOR)
+                .add(ModBlocks.KOGNOLI_PLANKS)
+                .add(ModBlocks.COULIEM_LEAVES)
+                .add(ModBlocks.COULIEM_STEM);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.PENKAZ_ORE)

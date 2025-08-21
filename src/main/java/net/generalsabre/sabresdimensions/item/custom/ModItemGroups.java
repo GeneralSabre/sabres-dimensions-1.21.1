@@ -94,6 +94,10 @@ public class ModItemGroups {
                         entries.add(ModBlocks.KOGNOLI_DOOR);
                         entries.add(ModBlocks.KOGNOLI_TRAPDOOR);
 
+                        entries.add(ModBlocks.COULIEM_FLOWER);
+                        entries.add(ModBlocks.COULIEM_LEAVES);
+                        entries.add(ModBlocks.COULIEM_STEM);
+
                         entries.add(ModBlocks.ULAU_BLOCK);
                         entries.add(ModBlocks.LUPAMOONE_BLOCK);
                         entries.add(ModBlocks.LUPAMOONE_ORE);

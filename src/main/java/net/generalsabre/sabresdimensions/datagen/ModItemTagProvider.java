@@ -175,11 +175,18 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModBlocks.ELASTAU_LOG.asItem())
                 .add(ModBlocks.STRIPPED_ELASTAU_LOG.asItem())
                 .add(ModBlocks.ELASTAU_WOOD.asItem())
-                .add(ModBlocks.STRIPPED_ELASTAU_WOOD.asItem());
+                .add(ModBlocks.STRIPPED_ELASTAU_WOOD.asItem())
+                .add(ModBlocks.KOGNOLI_WOOD.asItem())
+                .add(ModBlocks.STRIPPED_KOGNOLI_WOOD.asItem())
+                .add(ModBlocks.KOGNOLI_LOG.asItem())
+                .add(ModBlocks.STRIPPED_KOGNOLI_LOG.asItem());
+
         getOrCreateTagBuilder(ItemTags.PLANKS)
-                .add(ModBlocks.ELASTAU_PLANKS.asItem());
+                .add(ModBlocks.ELASTAU_PLANKS.asItem())
+                .add(ModBlocks.KOGNOLI_PLANKS.asItem());
         getOrCreateTagBuilder(ItemTags.SAPLINGS)
-                .add(ModBlocks.ELASTAU_SAPLING.asItem());
+                .add(ModBlocks.ELASTAU_SAPLING.asItem())
+                .add(ModBlocks.KOGNOLI_SAPLING.asItem());
 
         getOrCreateTagBuilder(ModTags.Items.ELASTAU_PLANKS_POOL)
                 .add(ModBlocks.ELASTAU_LOG.asItem())

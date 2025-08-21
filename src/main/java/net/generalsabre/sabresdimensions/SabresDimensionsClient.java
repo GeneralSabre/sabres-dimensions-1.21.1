@@ -25,6 +25,7 @@ public class SabresDimensionsClient implements ClientModInitializer {
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.ZALANT_DOOR, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.ELASTAU_SAPLING, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.KOGNOLI_SAPLING, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.COULIEM_FLOWER, RenderLayer.getCutout());
 
         FluidRenderHandlerRegistry.INSTANCE.register(ModFluids.STILL_MOLTEN_DELETERIUM, ModFluids.FLOWING_MOLTEN_DELETERIUM,
                 new SimpleFluidRenderHandler(

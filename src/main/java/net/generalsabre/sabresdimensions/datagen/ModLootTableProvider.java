@@ -101,7 +101,9 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.KOGNOLI_SAPLING);
         addDrop(ModBlocks.KOGNOLI_LEAVES, leavesDrops(ModBlocks.KOGNOLI_LEAVES,ModBlocks.KOGNOLI_SAPLING, 0.0312f));
 
-
+        addDrop(ModBlocks.COULIEM_FLOWER);
+        addDrop(ModBlocks.COULIEM_STEM);
+        addDrop(ModBlocks.COULIEM_LEAVES);
 
     }
 }

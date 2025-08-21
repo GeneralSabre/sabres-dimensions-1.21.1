@@ -126,6 +126,13 @@ public class ModBlocks {
     public static final Block LUPAMOONE_ORE = registerBlock("lupamoone_ore",
             new TranslucentBlock(AbstractBlock.Settings.create().strength(2.5f,2.5f).sounds(BlockSoundGroup.DEEPSLATE).requiresTool()));
 
+    public static final Block COULIEM_FLOWER = registerBlock("couliem_flower",
+            new Block(AbstractBlock.Settings.create().strength(0.1f,0f).sounds(BlockSoundGroup.BIG_DRIPLEAF)));
+    public static final Block COULIEM_LEAVES = registerBlock("couliem_leaves",
+            new Block(AbstractBlock.Settings.create().strength(0.25f,0f).sounds(BlockSoundGroup.BIG_DRIPLEAF).requiresTool()));
+    public static final Block COULIEM_STEM = registerBlock("couliem_stem",
+            new PillarBlock(AbstractBlock.Settings.create().strength(2f,0.5f).sounds(BlockSoundGroup.BIG_DRIPLEAF).requiresTool()));
+
 
     public static final Block ALLOY_FURNACE = registerBlock("alloy_furnace",
             new AlloyFurnaceBlock(AbstractBlock.Settings.create().strength(1.0f).hardness(1.0f).requiresTool()));
