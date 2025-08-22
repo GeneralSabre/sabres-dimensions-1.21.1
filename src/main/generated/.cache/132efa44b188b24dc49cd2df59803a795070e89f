@@ -1,4 +1,4 @@
-// 1.21.1	2025-08-22T12:16:54.4292115	Sabre's Dimensions/Block Loot Tables
+// 1.21.1	2025-08-22T13:38:14.237434	Sabre's Dimensions/Block Loot Tables
 4f6a78cdda05b1c729e0af1be0597dea383566ec data\sabresdimensions\loot_table\blocks\arakite_button.json
 b129bfde7b8246d29d20cbd8235fd6d28cab289d data\sabresdimensions\loot_table\blocks\polished_arakite_pressure_plate.json
 2a7a89a056441d691424bf1d00c0f80a96f02e25 data\sabresdimensions\loot_table\blocks\penkazine_alloy_block.json
@@ -64,6 +64,7 @@ eb493b78dd13f790bae263fbdfc2d51a32d6e04e data\sabresdimensions\loot_table\blocks
 185a2e40a4209ea9f9a17c69bd900279a145829a data\sabresdimensions\loot_table\blocks\kognoli_slab.json
 a76d3969b66b0cc2c560fe5bf188544447ac7938 data\sabresdimensions\loot_table\blocks\kognoli_pressure_plate.json
 696e72eabfa5fffd2ec08492e7f3df06879cb89c data\sabresdimensions\loot_table\blocks\kognoli_trapdoor.json
+3747f769ed240eb16d8ec7a78b86fd2871b6d7b0 data\sabresdimensions\loot_table\blocks\girado_weeds.json
 c2f0fe4fe8579a1457ffae08a38296adbab6045c data\sabresdimensions\loot_table\blocks\arakite_bricks.json
 22a4e7c03cc6fce78678d8478b8c7cbaab98e430 data\sabresdimensions\loot_table\blocks\zalant_block.json
 50772fdd19f58ec6de012d1501842f7cfa30f730 data\sabresdimensions\loot_table\blocks\arakite_pressure_plate.json

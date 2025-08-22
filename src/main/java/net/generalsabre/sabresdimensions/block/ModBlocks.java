@@ -139,6 +139,8 @@ public class ModBlocks {
 
     public static final Block TARRO_PLANT = registerBlock("tarro_plant",
             new FlowerBlock(ModEffects.GROUNDED, 10, AbstractBlock.Settings.create().noCollision().sounds(BlockSoundGroup.GRASS)));
+    public static final Block GIRADO_WEEDS = registerBlock("girado_weeds",
+            new FlowerBlock(ModEffects.GROUNDED, 2, AbstractBlock.Settings.create().noCollision().sounds(BlockSoundGroup.GRASS)));
 
 
     public static final Block ALLOY_FURNACE = registerBlock("alloy_furnace",

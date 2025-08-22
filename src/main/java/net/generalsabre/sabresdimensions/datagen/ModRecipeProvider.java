@@ -108,6 +108,12 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerPressurePlateRecipe(recipeExporter, ModBlocks.ARAKITE_PRESSURE_PLATE, ModBlocks.ARAKITE);
         offerPressurePlateRecipe(recipeExporter, ModBlocks.POLISHED_ARAKITE_PRESSURE_PLATE, ModBlocks.POLISHED_ARAKITE);
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, Items.YELLOW_DYE)
+                .pattern("T")
+                .input('T', ModBlocks.TARRO_PLANT)
+                .criterion(hasItem(ModBlocks.TARRO_PLANT), conditionsFromItem(ModBlocks.TARRO_PLANT))
+                .offerTo(recipeExporter);
+
 
 
         // Stonecutter

@@ -135,5 +135,12 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         getOrCreateTagBuilder(BlockTags.FENCE_GATES)
                 .add(ModBlocks.ELASTAU_FENCE_GATE)
                 .add(ModBlocks.KOGNOLI_FENCE_GATE);
+
+        getOrCreateTagBuilder(BlockTags.BAMBOO_PLANTABLE_ON)
+                .add(ModBlocks.GIRADO_SOIL);
+
+        getOrCreateTagBuilder(BlockTags.FLOWERS)
+                .add(ModBlocks.TARRO_PLANT)
+                .add(ModBlocks.GIRADO_WEEDS);
     }
 }

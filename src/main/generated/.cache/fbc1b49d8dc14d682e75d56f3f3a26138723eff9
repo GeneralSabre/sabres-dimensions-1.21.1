@@ -1,5 +1,6 @@
-// 1.21.1	2025-08-22T12:16:54.4262749	Sabre's Dimensions/Recipes
+// 1.21.1	2025-08-22T13:38:14.233437	Sabre's Dimensions/Recipes
 bfd2eed11cf457bae477ffead172d9515233b68d data\sabresdimensions\advancement\recipes\misc\zalant_ingot_from_smelting_zalant_ore.json
+72acb9f424b5bb4ff199da1a9314ad90081a4e2c data\sabresdimensions\advancement\recipes\misc\yellow_dye.json
 331d19425bede2ce43b171b37ed1a35c13a67dba data\sabresdimensions\advancement\recipes\misc\zalant_rod.json
 e2ac53149451c67fb58cf19d7692a316012a623d data\sabresdimensions\recipe\arakite_slab.json
 5fe2fdd89ef98ed12e59de77e722955c296c127c data\sabresdimensions\advancement\recipes\redstone\arakite_pressure_plate.json
@@ -94,6 +95,7 @@ b5d8a26f650a19293c6f671e7b22a52325e5b484 data\sabresdimensions\recipe\arakite_br
 76b32088ae2ddfb7a1597f1791b940fbb3da3cad data\sabresdimensions\recipe\penkazine_alloy_helmet.json
 32cba5c254bbf3d25c581f3e3b0815dadae89603 data\sabresdimensions\advancement\recipes\misc\kognoli_stairs.json
 5761c0f5092a9cdc6ef6888fa565ba1cf5e338b2 data\sabresdimensions\recipe\raw_zalant_block.json
+dc4c27fd8188c8f80164efeab6badfb27fef8ef7 data\sabresdimensions\recipe\yellow_dye.json
 02d7b04e97329d2c51b05e03b438f446709f5a5c data\sabresdimensions\advancement\recipes\misc\coated_string.json
 d97b49ae68be7a2df8be84075832a7ac7909c410 data\sabresdimensions\advancement\recipes\misc\arakite_brick_slab_from_arakite_stonecutting.json
 5f866bbc7d6695e221dba3ff455f86462ae15712 data\sabresdimensions\recipe\raw_penkaz.json
