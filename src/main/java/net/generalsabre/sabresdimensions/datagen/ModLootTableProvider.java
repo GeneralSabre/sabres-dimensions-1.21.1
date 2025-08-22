@@ -104,6 +104,9 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.COULIEM_FLOWER);
         addDrop(ModBlocks.COULIEM_STEM);
         addDrop(ModBlocks.COULIEM_LEAVES);
+
+        addDrop(ModBlocks.GIRADO_SOIL);
+
         addDrop(ModBlocks.TARRO_PLANT);
 
     }

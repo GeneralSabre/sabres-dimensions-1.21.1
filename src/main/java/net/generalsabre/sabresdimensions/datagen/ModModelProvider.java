@@ -60,6 +60,9 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.COULIEM_LEAVES);
         blockStateModelGenerator.registerSingleton(ModBlocks.COULIEM_FLOWER, TexturedModel.LEAVES);
         blockStateModelGenerator.registerLog(ModBlocks.COULIEM_STEM).log(ModBlocks.COULIEM_STEM);
+
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.GIRADO_SOIL);
+
         blockStateModelGenerator.registerTintableCross(ModBlocks.TARRO_PLANT, BlockStateModelGenerator.TintType.NOT_TINTED);
 
         BlockStateModelGenerator.BlockTexturePool zalantPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.ZALANT_BLOCK);

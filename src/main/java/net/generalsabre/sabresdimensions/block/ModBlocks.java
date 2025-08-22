@@ -133,6 +133,10 @@ public class ModBlocks {
             new Block(AbstractBlock.Settings.create().strength(0.25f,0f).sounds(BlockSoundGroup.BIG_DRIPLEAF).requiresTool()));
     public static final Block COULIEM_STEM = registerBlock("couliem_stem",
             new PillarBlock(AbstractBlock.Settings.create().strength(2f,0.5f).sounds(BlockSoundGroup.BAMBOO_WOOD).requiresTool()));
+
+    public static final Block GIRADO_SOIL = registerBlock("girado_soil",
+            new Block(AbstractBlock.Settings.create().strength(0.6f, 0.25f).sounds(BlockSoundGroup.ROOTED_DIRT).requiresTool()));
+
     public static final Block TARRO_PLANT = registerBlock("tarro_plant",
             new FlowerBlock(ModEffects.GROUNDED, 10, AbstractBlock.Settings.create().noCollision().sounds(BlockSoundGroup.GRASS)));
 

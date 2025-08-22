@@ -86,6 +86,9 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.COULIEM_LEAVES)
                 .add(ModBlocks.COULIEM_STEM);
 
+        getOrCreateTagBuilder(BlockTags.SHOVEL_MINEABLE)
+                .add(ModBlocks.GIRADO_SOIL);
+
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.PENKAZ_ORE)
                 .add(ModBlocks.PENKAZ_BLOCK)
