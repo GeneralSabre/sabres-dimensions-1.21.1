@@ -42,6 +42,10 @@ public class ModModelProvider extends FabricModelProvider {
 
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CORRODED_ARAKITE);
 
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.KERALAN);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.KERALAN_BRICKS);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.COBBLED_KERALAN);
+
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CHORAZINE_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CHORAZINE_POWDER_BLOCK);
 

@@ -89,10 +89,11 @@ public class ModBlocks {
 
     // Keralan
     public static final Block KERALAN = registerBlock("keralan",
-            new Block(AbstractBlock.Settings.create().strength(4f, 4f).sounds(BlockSoundGroup.STONE)));
+            new Block(AbstractBlock.Settings.create().strength(9f, 6f).sounds(BlockSoundGroup.STONE).requiresTool()));
     public static final Block COBBLED_KERALAN = registerBlock("cobbled_keralan",
-            new Block(AbstractBlock.Settings.create().strength(3f, 3.5f).sounds(BlockSoundGroup.STONE)));
-
+            new Block(AbstractBlock.Settings.create().strength(7f, 5.5f).sounds(BlockSoundGroup.STONE).requiresTool()));
+    public static final Block KERALAN_BRICKS = registerBlock("keralan_bricks",
+            new Block(AbstractBlock.Settings.create().strength(7f, 5.5f).sounds(BlockSoundGroup.STONE).requiresTool()));
 
 
 

@@ -108,6 +108,13 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerPressurePlateRecipe(recipeExporter, ModBlocks.ARAKITE_PRESSURE_PLATE, ModBlocks.ARAKITE);
         offerPressurePlateRecipe(recipeExporter, ModBlocks.POLISHED_ARAKITE_PRESSURE_PLATE, ModBlocks.POLISHED_ARAKITE);
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.KERALAN_BRICKS)
+                .pattern("AA")
+                .pattern("AA")
+                .input('A', ModBlocks.KERALAN)
+                .criterion(hasItem(ModBlocks.KERALAN), conditionsFromItem(ModBlocks.KERALAN))
+                .offerTo(recipeExporter);
+
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, Items.YELLOW_DYE)
                 .pattern("T")
                 .input('T', ModBlocks.TARRO_PLANT)
@@ -143,6 +150,8 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerStonecuttingRecipe(recipeExporter,RecipeCategory.MISC,ModBlocks.POLISHED_ARAKITE_WALL,ModBlocks.POLISHED_ARAKITE,1);
         offerStonecuttingRecipe(recipeExporter,RecipeCategory.MISC,ModBlocks.POLISHED_ARAKITE_WALL,ModBlocks.ARAKITE,1);
 
+        offerStonecuttingRecipe(recipeExporter,RecipeCategory.MISC,ModBlocks.KERALAN_BRICKS,ModBlocks.KERALAN,1);
+
 
 
 
@@ -155,7 +164,8 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerSmelting(recipeExporter, PENKAZ_INGOT_SMELTABLES, RecipeCategory.MISC, ModItems.PENKAZ_INGOT,0.4f,200,"penkaz_ingot");
         List<ItemConvertible> ARAKITE_SMELTABLES = List.of(ModBlocks.CORRODED_ARAKITE);
         offerSmelting(recipeExporter, ARAKITE_SMELTABLES, RecipeCategory.MISC, ModBlocks.ARAKITE,0.2f,260,"arakite");
-
+        List<ItemConvertible> KERALAN_SMELTABLES = List.of(ModBlocks.CORRODED_ARAKITE);
+        offerSmelting(recipeExporter, KERALAN_SMELTABLES, RecipeCategory.MISC, ModBlocks.KERALAN, 0.2f, 260, "keralan");
 
 
         // Tools & Armor

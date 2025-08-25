@@ -42,6 +42,10 @@ public class ModItemGroups {
                         entries.add(ModBlocks.ARAKITE_TILE_SLAB);
                         entries.add(ModBlocks.ARAKITE_TILE_STAIRS);
 
+                        entries.add(ModBlocks.KERALAN);
+                        entries.add(ModBlocks.COBBLED_KERALAN);
+                        entries.add(ModBlocks.KERALAN_BRICKS);
+
                         entries.add(ModBlocks.CHORAZINE_ORE);
                         entries.add(ModBlocks.CHORAZINE_POWDER_BLOCK);
 

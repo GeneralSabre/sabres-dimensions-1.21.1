@@ -40,6 +40,10 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
                 .add(ModBlocks.CORRODED_ARAKITE)
 
+                .add(ModBlocks.KERALAN)
+                .add(ModBlocks.COBBLED_KERALAN)
+                .add(ModBlocks.KERALAN_BRICKS)
+
                 .add(ModBlocks.CHORAZINE_ORE)
                 .add(ModBlocks.DALAMINE_BLOCK)
                 .add(ModBlocks.DALAMINE_ORE)
@@ -105,7 +109,10 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
 
         getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL)
-                .add((ModBlocks.ORAXIUM_ORE));
+                .add((ModBlocks.ORAXIUM_ORE))
+                .add((ModBlocks.KERALAN))
+                .add((ModBlocks.KERALAN_BRICKS))
+                .add((ModBlocks.COBBLED_KERALAN));
 
         getOrCreateTagBuilder(BlockTags.WALLS)
                 .add(ModBlocks.ARAKITE_WALL)
