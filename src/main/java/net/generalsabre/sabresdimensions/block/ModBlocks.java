@@ -1,12 +1,11 @@
 package net.generalsabre.sabresdimensions.block;
 
-import net.generalsabre.sabresdimensions.block.custom.AlloyFurnaceBlock;
-import net.generalsabre.sabresdimensions.block.custom.CrusherBlock;
-import net.generalsabre.sabresdimensions.block.custom.IndustrialFurnaceBlock;
-import net.generalsabre.sabresdimensions.block.custom.IngotPressBlock;
+import net.generalsabre.sabresdimensions.block.custom.*;
 import net.generalsabre.sabresdimensions.effect.ModEffects;
 import net.minecraft.block.*;
 import net.generalsabre.sabresdimensions.SabresDimensions;
+import net.minecraft.enchantment.effect.AllOfEnchantmentEffects;
+import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
@@ -88,6 +87,12 @@ public class ModBlocks {
             new Block(AbstractBlock.Settings.create().strength(2f,3.5f).requiresTool().sounds(BlockSoundGroup.DEEPSLATE)));
 
 
+    // Keralan
+    public static final Block KERALAN = registerBlock("keralan",
+            new Block(AbstractBlock.Settings.create().strength(4f, 4f).sounds(BlockSoundGroup.STONE)));
+    public static final Block COBBLED_KERALAN = registerBlock("cobbled_keralan",
+            new Block(AbstractBlock.Settings.create().strength(3f, 3.5f).sounds(BlockSoundGroup.STONE)));
+
 
 
 
@@ -138,10 +143,11 @@ public class ModBlocks {
             new Block(AbstractBlock.Settings.create().strength(0.6f, 0.25f).sounds(BlockSoundGroup.ROOTED_DIRT).requiresTool()));
 
     public static final Block TARRO_PLANT = registerBlock("tarro_plant",
-            new FlowerBlock(ModEffects.GROUNDED, 10, AbstractBlock.Settings.create().noCollision().sounds(BlockSoundGroup.GRASS)));
+            new ModFlowerBlock(ModEffects.GROUNDED, 10, AbstractBlock.Settings.create().noCollision().sounds(BlockSoundGroup.GRASS)));
     public static final Block GIRADO_WEEDS = registerBlock("girado_weeds",
-            new FlowerBlock(ModEffects.GROUNDED, 2, AbstractBlock.Settings.create().noCollision().sounds(BlockSoundGroup.GRASS)));
-
+            new ModFlowerBlock(ModEffects.GROUNDED, 2, AbstractBlock.Settings.create().noCollision().sounds(BlockSoundGroup.GRASS)));
+    public static final Block GIRADO_GRASS = registerBlock("girado_grass",
+            new ModFlowerBlock(ModEffects.GROUNDED, 5, AbstractBlock.Settings.create().noCollision().sounds(BlockSoundGroup.GRASS)));
 
     public static final Block ALLOY_FURNACE = registerBlock("alloy_furnace",
             new AlloyFurnaceBlock(AbstractBlock.Settings.create().strength(1.0f).hardness(1.0f).requiresTool()));

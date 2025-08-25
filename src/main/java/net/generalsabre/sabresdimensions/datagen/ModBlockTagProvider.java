@@ -141,6 +141,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
         getOrCreateTagBuilder(BlockTags.FLOWERS)
                 .add(ModBlocks.TARRO_PLANT)
+                .add(ModBlocks.GIRADO_GRASS)
                 .add(ModBlocks.GIRADO_WEEDS);
     }
 }

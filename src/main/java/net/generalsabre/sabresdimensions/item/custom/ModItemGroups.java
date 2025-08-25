@@ -162,6 +162,7 @@ public class ModItemGroups {
 
                         entries.add(ModBlocks.TARRO_PLANT);
                         entries.add(ModBlocks.GIRADO_WEEDS);
+                        entries.add(ModBlocks.GIRADO_GRASS);
                     })
                     .build());
     public static final ItemGroup SABRES_DIMENSIONS_MISC = Registry.register(Registries.ITEM_GROUP,
