@@ -42,9 +42,18 @@ public class ModModelProvider extends FabricModelProvider {
 
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CORRODED_ARAKITE);
 
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.KERALAN);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.KERALAN_BRICKS);
+        BlockStateModelGenerator.BlockTexturePool keralanPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.KERALAN);
+        BlockStateModelGenerator.BlockTexturePool keralanBrickPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.KERALAN_BRICKS);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.COBBLED_KERALAN);
+        keralanPool.slab(ModBlocks.KERALAN_SLAB);
+        keralanPool.stairs(ModBlocks.KERALAN_STAIRS);
+        keralanPool.button(ModBlocks.KERALAN_BUTTON);
+        keralanPool.pressurePlate(ModBlocks.KERALAN_PRESSURE_PLATE);
+        keralanPool.wall(ModBlocks.KERALAN_WALL);
+        keralanBrickPool.slab(ModBlocks.KERALAN_BRICK_SLAB);
+        keralanBrickPool.stairs(ModBlocks.KERALAN_BRICK_STAIRS);
+        keralanBrickPool.wall(ModBlocks.KERALAN_BRICK_WALL);
+
 
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CHORAZINE_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CHORAZINE_POWDER_BLOCK);

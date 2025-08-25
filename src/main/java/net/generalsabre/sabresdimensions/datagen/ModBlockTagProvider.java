@@ -42,7 +42,15 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
                 .add(ModBlocks.KERALAN)
                 .add(ModBlocks.COBBLED_KERALAN)
+                .add(ModBlocks.KERALAN_BUTTON)
+                .add(ModBlocks.KERALAN_SLAB)
+                .add(ModBlocks.KERALAN_STAIRS)
+                .add(ModBlocks.KERALAN_PRESSURE_PLATE)
+                .add(ModBlocks.KERALAN_WALL)
                 .add(ModBlocks.KERALAN_BRICKS)
+                .add(ModBlocks.KERALAN_BRICK_SLAB)
+                .add(ModBlocks.KERALAN_BRICK_STAIRS)
+                .add(ModBlocks.KERALAN_BRICK_WALL)
 
                 .add(ModBlocks.CHORAZINE_ORE)
                 .add(ModBlocks.DALAMINE_BLOCK)
@@ -110,9 +118,17 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
         getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL)
                 .add((ModBlocks.ORAXIUM_ORE))
-                .add((ModBlocks.KERALAN))
-                .add((ModBlocks.KERALAN_BRICKS))
-                .add((ModBlocks.COBBLED_KERALAN));
+                .add(ModBlocks.KERALAN)
+                .add(ModBlocks.COBBLED_KERALAN)
+                .add(ModBlocks.KERALAN_BUTTON)
+                .add(ModBlocks.KERALAN_SLAB)
+                .add(ModBlocks.KERALAN_STAIRS)
+                .add(ModBlocks.KERALAN_PRESSURE_PLATE)
+                .add(ModBlocks.KERALAN_WALL)
+                .add(ModBlocks.KERALAN_BRICKS)
+                .add(ModBlocks.KERALAN_BRICK_SLAB)
+                .add(ModBlocks.KERALAN_BRICK_STAIRS)
+                .add(ModBlocks.KERALAN_BRICK_WALL);
 
         getOrCreateTagBuilder(BlockTags.WALLS)
                 .add(ModBlocks.ARAKITE_WALL)

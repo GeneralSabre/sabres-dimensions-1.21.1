@@ -44,8 +44,16 @@
   "item.sabresdimensions.arakite_rod": "Arakite Rod",
 
   "block.sabresdimensions.keralan": "Keralan",
+  "block.sabresdimensions.keralan_stairs": "Keralan Stairs",
+  "block.sabresdimensions.keralan_slab": "Keralan Slab",
+  "block.sabresdimensions.keralan_button": "Keralan Button",
+  "block.sabresdimensions.keralan_pressure_plate": "Keralan Pressure Plate",
+  "block.sabresdimensions.keralan_wall": "Keralan Wall",
   "block.sabresdimensions.cobbled_keralan": "Cobbled Keralan",
   "block.sabresdimensions.keralan_bricks": "Keralan Bricks",
+  "block.sabresdimensions.keralan_brick_slab": "Keralan Brick Slab",
+  "block.sabresdimensions.keralan_brick_stairs": "Keralan Brick Stairs",
+  "block.sabresdimensions.keralan_brick_wall": "Keralan Brick Wall",
 
   "item.sabresdimensions.dalamine_crystal": "Dalamine Crystal",
   "block.sabresdimensions.dalamine_ore": "Dalamine Ore",

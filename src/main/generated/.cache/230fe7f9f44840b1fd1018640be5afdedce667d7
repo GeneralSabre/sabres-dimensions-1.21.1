@@ -1,4 +1,4 @@
-// 1.21.1	2025-08-25T11:53:52.2879068	Sabre's Dimensions/Tags for minecraft:item
+// 1.21.1	2025-08-25T12:38:13.9738903	Sabre's Dimensions/Tags for minecraft:item
 1e91d7a0b77799e1f22436280cacb268f89ddb73 data\minecraft\tags\item\enchantable\head_armor.json
 3b938ecb2a59d170e4e71a840544835dbad32877 data\minecraft\tags\item\saplings.json
 81bdd95f9ef6f09b380de2de4ff108c418c380c6 data\minecraft\tags\item\enchantable\vanishing.json
@@ -20,6 +20,7 @@ d803039e0eeb7d1f7fc450bb8363e9792ecd06eb data\minecraft\tags\item\enchantable\we
 483bd916fce838c4a3a550c4796f9b9659895585 data\minecraft\tags\item\swords.json
 483bd916fce838c4a3a550c4796f9b9659895585 data\minecraft\tags\item\enchantable\fire_aspect.json
 9d37aaffa6681f54e5de45b849d3467ff526ccf9 data\minecraft\tags\item\logs.json
+9ff4324d25d47a557e22e8316bae4b893c2c94dc data\minecraft\tags\item\stone_crafting_materials.json
 483bd916fce838c4a3a550c4796f9b9659895585 data\minecraft\tags\item\enchantable\sword.json
 b488723c6b2a879c9ecfec4d366aff7b80cdd1f9 data\minecraft\tags\item\planks.json
 877996ec0402c38dba049368d95ee8ebbb469db0 data\minecraft\tags\item\enchantable\durability.json

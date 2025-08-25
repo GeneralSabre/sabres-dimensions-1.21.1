@@ -2,7 +2,15 @@
   "values": [
     "sabresdimensions:oraxium_ore",
     "sabresdimensions:keralan",
+    "sabresdimensions:cobbled_keralan",
+    "sabresdimensions:keralan_button",
+    "sabresdimensions:keralan_slab",
+    "sabresdimensions:keralan_stairs",
+    "sabresdimensions:keralan_pressure_plate",
+    "sabresdimensions:keralan_wall",
     "sabresdimensions:keralan_bricks",
-    "sabresdimensions:cobbled_keralan"
+    "sabresdimensions:keralan_brick_slab",
+    "sabresdimensions:keralan_brick_stairs",
+    "sabresdimensions:keralan_brick_wall"
   ]
 }

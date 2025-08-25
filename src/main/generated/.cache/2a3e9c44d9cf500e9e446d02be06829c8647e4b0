@@ -1,14 +1,14 @@
-// 1.21.1	2025-08-25T11:53:52.2859047	Sabre's Dimensions/Tags for minecraft:block
+// 1.21.1	2025-08-25T12:38:13.9689479	Sabre's Dimensions/Tags for minecraft:block
 a0a943ab5935abfd86992a0ef81da67459092b73 data\minecraft\tags\block\walls.json
 d1910ef807916391dffd5bbdd5ac5e6c33e18a44 data\minecraft\tags\block\logs.json
 9f76caad7e8050ec1123038ae39c6d41145b5fea data\minecraft\tags\block\bamboo_plantable_on.json
 32b13946c4cd1f944b029659ccce5fcb2adad4ff data\sabresdimensions\tags\block\needs_zalant_tool.json
 d39b0b2b13ebb11d84ffafc9a9086c4c86b10590 data\minecraft\tags\block\mineable\axe.json
 9f76caad7e8050ec1123038ae39c6d41145b5fea data\minecraft\tags\block\mineable\shovel.json
-61390472e74674becd2a9b181d6d1d86b0650ddb data\minecraft\tags\block\needs_diamond_tool.json
+ee5c8ff27ecfc9d19cc7524f0810ab3c801a878c data\minecraft\tags\block\needs_diamond_tool.json
 747630d7f0d3bb5cd47e7ee430e27bddad361d14 data\minecraft\tags\block\flowers.json
 6846501a60e967b80ede7123d7ddabc9f9d09938 data\minecraft\tags\block\needs_iron_tool.json
+d5599d369ade4f1c2baaa471f5d00bfe87c08834 data\minecraft\tags\block\mineable\pickaxe.json
 8d6df91e906a272482be404b43abead48fb448e2 data\minecraft\tags\block\fence_gates.json
-62c2662d91be6da50610dd37ea22b80530025822 data\minecraft\tags\block\mineable\pickaxe.json
 cd9d1cdfebae9a22317b100e0bc28c03c6e2d714 data\minecraft\tags\block\wooden_fences.json
 a249c46329a41538f49a564e1f14338aaf1be5a0 data\sabresdimensions\tags\block\needs_penkazine_tool.json

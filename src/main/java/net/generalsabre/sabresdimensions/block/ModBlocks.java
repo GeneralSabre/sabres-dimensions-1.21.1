@@ -94,6 +94,24 @@ public class ModBlocks {
             new Block(AbstractBlock.Settings.create().strength(7f, 5.5f).sounds(BlockSoundGroup.STONE).requiresTool()));
     public static final Block KERALAN_BRICKS = registerBlock("keralan_bricks",
             new Block(AbstractBlock.Settings.create().strength(7f, 5.5f).sounds(BlockSoundGroup.STONE).requiresTool()));
+    public static final Block KERALAN_STAIRS = registerBlock("keralan_stairs",
+            new StairsBlock(ModBlocks.KERALAN.getDefaultState(),
+                    AbstractBlock.Settings.create().strength(9f, 6f).requiresTool().sounds(BlockSoundGroup.STONE)));
+    public static final Block KERALAN_SLAB = registerBlock("keralan_slab",
+            new SlabBlock(AbstractBlock.Settings.create().strength(9f, 6f).requiresTool().sounds(BlockSoundGroup.STONE)));
+    public static final Block KERALAN_BUTTON = registerBlock("keralan_button",
+            new ButtonBlock(BlockSetType.STONE,20,AbstractBlock.Settings.create().strength(9f, 6f).requiresTool().sounds(BlockSoundGroup.STONE).noCollision()));
+    public static final Block KERALAN_PRESSURE_PLATE = registerBlock("keralan_pressure_plate",
+            new PressurePlateBlock(BlockSetType.STONE, AbstractBlock.Settings.create().strength(9f, 6f).requiresTool().sounds(BlockSoundGroup.STONE)));
+    public static final Block KERALAN_WALL = registerBlock("keralan_wall",
+            new WallBlock(AbstractBlock.Settings.create().strength(9f, 6f).requiresTool().sounds(BlockSoundGroup.STONE)));
+    public static final Block KERALAN_BRICK_STAIRS = registerBlock("keralan_brick_stairs",
+            new StairsBlock(ModBlocks.KERALAN_BRICKS.getDefaultState(),
+                    AbstractBlock.Settings.create().strength(7f, 5.5f).requiresTool().sounds(BlockSoundGroup.STONE)));
+    public static final Block KERALAN_BRICK_SLAB = registerBlock("keralan_brick_slab",
+            new SlabBlock(AbstractBlock.Settings.create().strength(7f, 5.5f).requiresTool().sounds(BlockSoundGroup.STONE)));
+    public static final Block KERALAN_BRICK_WALL = registerBlock("keralan_brick_wall",
+            new WallBlock(AbstractBlock.Settings.create().strength(7f, 5.5f).requiresTool().sounds(BlockSoundGroup.STONE)));
 
 
 

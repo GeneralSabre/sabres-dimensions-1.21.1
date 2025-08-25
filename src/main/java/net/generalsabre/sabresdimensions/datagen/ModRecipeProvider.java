@@ -108,12 +108,24 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerPressurePlateRecipe(recipeExporter, ModBlocks.ARAKITE_PRESSURE_PLATE, ModBlocks.ARAKITE);
         offerPressurePlateRecipe(recipeExporter, ModBlocks.POLISHED_ARAKITE_PRESSURE_PLATE, ModBlocks.POLISHED_ARAKITE);
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.KERALAN_BRICKS)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.KERALAN_BRICKS, 4)
                 .pattern("AA")
                 .pattern("AA")
                 .input('A', ModBlocks.KERALAN)
                 .criterion(hasItem(ModBlocks.KERALAN), conditionsFromItem(ModBlocks.KERALAN))
                 .offerTo(recipeExporter);
+
+        offerSlabRecipe(recipeExporter, RecipeCategory.MISC, ModBlocks.KERALAN_SLAB, ModBlocks.KERALAN);
+        offerSlabRecipe(recipeExporter, RecipeCategory.MISC, ModBlocks.KERALAN_BRICK_SLAB, ModBlocks.KERALAN_BRICKS);
+        offerWallRecipe(recipeExporter, RecipeCategory.MISC, ModBlocks.KERALAN_WALL, ModBlocks.KERALAN);
+        offerWallRecipe(recipeExporter, RecipeCategory.MISC, ModBlocks.KERALAN_BRICK_WALL, ModBlocks.KERALAN_BRICKS);
+        offerPressurePlateRecipe(recipeExporter, ModBlocks.KERALAN_PRESSURE_PLATE, ModBlocks.KERALAN);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.KERALAN_BUTTON)
+                .pattern("A")
+                .input('A', ModBlocks.KERALAN)
+                .criterion(hasItem(ModBlocks.KERALAN), conditionsFromItem(ModBlocks.KERALAN))
+                .offerTo(recipeExporter);
+
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, Items.YELLOW_DYE)
                 .pattern("T")
@@ -151,6 +163,15 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerStonecuttingRecipe(recipeExporter,RecipeCategory.MISC,ModBlocks.POLISHED_ARAKITE_WALL,ModBlocks.ARAKITE,1);
 
         offerStonecuttingRecipe(recipeExporter,RecipeCategory.MISC,ModBlocks.KERALAN_BRICKS,ModBlocks.KERALAN,1);
+        offerStonecuttingRecipe(recipeExporter,RecipeCategory.MISC,ModBlocks.KERALAN_SLAB,ModBlocks.KERALAN,2);
+        offerStonecuttingRecipe(recipeExporter,RecipeCategory.MISC,ModBlocks.KERALAN_STAIRS,ModBlocks.KERALAN,1);
+        offerStonecuttingRecipe(recipeExporter,RecipeCategory.MISC,ModBlocks.KERALAN_WALL,ModBlocks.KERALAN,1);
+        offerStonecuttingRecipe(recipeExporter,RecipeCategory.MISC,ModBlocks.KERALAN_BRICK_SLAB,ModBlocks.KERALAN_BRICKS,2);
+        offerStonecuttingRecipe(recipeExporter,RecipeCategory.MISC,ModBlocks.KERALAN_BRICK_STAIRS,ModBlocks.KERALAN_BRICKS,1);
+        offerStonecuttingRecipe(recipeExporter,RecipeCategory.MISC,ModBlocks.KERALAN_BRICK_WALL,ModBlocks.KERALAN_BRICKS,1);
+        offerStonecuttingRecipe(recipeExporter,RecipeCategory.MISC,ModBlocks.KERALAN_BRICK_SLAB,ModBlocks.KERALAN,2);
+        offerStonecuttingRecipe(recipeExporter,RecipeCategory.MISC,ModBlocks.KERALAN_BRICK_STAIRS,ModBlocks.KERALAN,1);
+        offerStonecuttingRecipe(recipeExporter,RecipeCategory.MISC,ModBlocks.KERALAN_BRICK_WALL,ModBlocks.KERALAN,1);
 
 
 
@@ -164,7 +185,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerSmelting(recipeExporter, PENKAZ_INGOT_SMELTABLES, RecipeCategory.MISC, ModItems.PENKAZ_INGOT,0.4f,200,"penkaz_ingot");
         List<ItemConvertible> ARAKITE_SMELTABLES = List.of(ModBlocks.CORRODED_ARAKITE);
         offerSmelting(recipeExporter, ARAKITE_SMELTABLES, RecipeCategory.MISC, ModBlocks.ARAKITE,0.2f,260,"arakite");
-        List<ItemConvertible> KERALAN_SMELTABLES = List.of(ModBlocks.CORRODED_ARAKITE);
+        List<ItemConvertible> KERALAN_SMELTABLES = List.of(ModBlocks.COBBLED_KERALAN);
         offerSmelting(recipeExporter, KERALAN_SMELTABLES, RecipeCategory.MISC, ModBlocks.KERALAN, 0.2f, 260, "keralan");
 
 

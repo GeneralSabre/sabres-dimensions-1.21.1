@@ -181,6 +181,10 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModBlocks.KOGNOLI_LOG.asItem())
                 .add(ModBlocks.STRIPPED_KOGNOLI_LOG.asItem());
 
+        getOrCreateTagBuilder(ItemTags.STONE_CRAFTING_MATERIALS)
+                .add(ModBlocks.KERALAN.asItem())
+                .add(ModBlocks.COBBLED_KERALAN.asItem());
+
         getOrCreateTagBuilder(ItemTags.PLANKS)
                 .add(ModBlocks.ELASTAU_PLANKS.asItem())
                 .add(ModBlocks.KOGNOLI_PLANKS.asItem());

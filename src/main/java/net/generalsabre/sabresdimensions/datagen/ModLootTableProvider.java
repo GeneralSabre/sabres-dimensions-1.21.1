@@ -36,8 +36,19 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.POLISHED_ARAKITE_SLAB,slabDrops(ModBlocks.POLISHED_ARAKITE_SLAB));
         addDrop(ModBlocks.POLISHED_ARAKITE);
 
-        addDrop(ModBlocks.COBBLED_KERALAN);
+
+        addDrop(ModBlocks.KERALAN_WALL);
+        addDrop(ModBlocks.KERALAN_STAIRS);
+        addDrop(ModBlocks.KERALAN_SLAB,slabDrops(ModBlocks.KERALAN_SLAB));
+        addDrop(ModBlocks.KERALAN_BUTTON);
+        addDrop(ModBlocks.KERALAN_PRESSURE_PLATE);
+
+        addDrop(ModBlocks.KERALAN_BRICK_STAIRS);
+        addDrop(ModBlocks.KERALAN_BRICK_WALL);
+        addDrop(ModBlocks.KERALAN_BRICK_SLAB,slabDrops(ModBlocks.KERALAN_BRICK_SLAB));
         addDrop(ModBlocks.KERALAN_BRICKS);
+
+        addDrop(ModBlocks.COBBLED_KERALAN);
         addDrop(ModBlocks.KERALAN, ModBlocks.COBBLED_KERALAN);
 
         addDrop(ModBlocks.CHORAZINE_POWDER_BLOCK);
