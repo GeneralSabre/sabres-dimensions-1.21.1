@@ -22,6 +22,6 @@ public class ModFlowerBlock extends FlowerBlock {
     }
 
     protected boolean canPlantOnModBlock(BlockState floor, BlockView world, BlockPos pos) {
-        return floor.isOf(ModBlocks.GIRADO_SOIL);
+        return floor.isOf(ModBlocks.GIRADO_SOIL) || floor.isOf(ModBlocks.CORRODED_ARAKITE);
     }
 }

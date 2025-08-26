@@ -54,16 +54,6 @@ public class ModItemGroups {
                         entries.add(ModBlocks.KERALAN_BRICK_STAIRS);
                         entries.add(ModBlocks.KERALAN_BRICK_WALL);
 
-                        entries.add(ModBlocks.CHORAZINE_ORE);
-                        entries.add(ModBlocks.CHORAZINE_POWDER_BLOCK);
-
-                        entries.add(ModBlocks.DALAMINE_BLOCK);
-                        entries.add(ModBlocks.DALAMINE_ORE);
-
-                        entries.add(ModBlocks.PENKAZ_BLOCK);
-                        entries.add(ModBlocks.PENKAZ_ORE);
-                        entries.add(ModBlocks.RAW_PENKAZ_BLOCK);
-
                         entries.add(ModBlocks.ZALANT_BLOCK);
                         entries.add(ModBlocks.ZALANT_DOOR);
                         entries.add(ModBlocks.ZALANT_TRAPDOOR);
@@ -113,6 +103,18 @@ public class ModItemGroups {
                         entries.add(ModBlocks.GIRADO_SOIL);
 
                         entries.add(ModBlocks.ULAU_BLOCK);
+                        entries.add(ModBlocks.IRP_WEAVE);
+
+                        entries.add(ModBlocks.CHORAZINE_ORE);
+                        entries.add(ModBlocks.CHORAZINE_POWDER_BLOCK);
+
+                        entries.add(ModBlocks.DALAMINE_BLOCK);
+                        entries.add(ModBlocks.DALAMINE_ORE);
+
+                        entries.add(ModBlocks.PENKAZ_BLOCK);
+                        entries.add(ModBlocks.PENKAZ_ORE);
+                        entries.add(ModBlocks.RAW_PENKAZ_BLOCK);
+
                         entries.add(ModBlocks.LUPAMOONE_BLOCK);
                         entries.add(ModBlocks.LUPAMOONE_ORE);
 

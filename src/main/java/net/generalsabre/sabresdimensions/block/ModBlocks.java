@@ -146,6 +146,9 @@ public class ModBlocks {
     // Misc.
     public static final Block ULAU_BLOCK = registerBlock("ulau_block",
             new TranslucentBlock(AbstractBlock.Settings.create().strength(0.25f,0.25f).sounds(BlockSoundGroup.HONEY).nonOpaque()));
+    public static final Block IRP_WEAVE = registerBlock("irp_weave",
+            new HayBlock(AbstractBlock.Settings.create().strength(0.4f,0f).sounds(BlockSoundGroup.CHERRY_LEAVES).nonOpaque()));
+    
     public static final Block LUPAMOONE_BLOCK = registerBlock("lupamoone_block",
             new TranslucentBlock(AbstractBlock.Settings.create().strength(3f,3f).sounds(BlockSoundGroup.METAL).requiresTool()));
     public static final Block LUPAMOONE_ORE = registerBlock("lupamoone_ore",

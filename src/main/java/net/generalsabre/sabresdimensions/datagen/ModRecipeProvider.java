@@ -133,6 +133,12 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModBlocks.TARRO_PLANT), conditionsFromItem(ModBlocks.TARRO_PLANT))
                 .offerTo(recipeExporter);
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, Items.STRING, 8)
+                .pattern("A")
+                .input('A', ModBlocks.IRP_WEAVE)
+                .criterion(hasItem(ModBlocks.IRP_WEAVE), conditionsFromItem(ModBlocks.IRP_WEAVE))
+                .offerTo(recipeExporter);
+
 
 
         // Stonecutter
