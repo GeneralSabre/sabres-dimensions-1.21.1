@@ -1,4 +1,4 @@
-// 1.21.1	2025-09-20T10:42:08.1121943	Sabre's Dimensions/Tags for minecraft:item
+// 1.21.1	2025-09-20T11:04:17.9205947	Sabre's Dimensions/Tags for minecraft:item
 1e91d7a0b77799e1f22436280cacb268f89ddb73 data\minecraft\tags\item\enchantable\head_armor.json
 3b938ecb2a59d170e4e71a840544835dbad32877 data\minecraft\tags\item\saplings.json
 b2cd73ad406e1bcf9fa36841c9b1ed07dd80a25c data\minecraft\tags\item\enchantable\vanishing.json
@@ -11,7 +11,7 @@ c03b76c489b24eda61eedc523e0626088c109e2c data\minecraft\tags\item\pickaxes.json
 c2f5ddb647a208f15fe3cc96b48de40500940225 data\minecraft\tags\item\enchantable\crossbow.json
 3a4b3712e5b7a20052f25184dca037da292b169e data\minecraft\tags\item\enchantable\mining.json
 eb803a781b36148c4e5c9c96a5a4f52f3b162842 data\minecraft\tags\item\enchantable\weapon.json
-e0fe9cae8bf4addec83a1c51b28f2dc624861e44 data\minecraft\tags\item\axes.json
+91586a258e4ec12971ed8e54f96a5a45fdd25951 data\minecraft\tags\item\axes.json
 044a8569358faab9112176358f6608084105cd96 data\minecraft\tags\item\enchantable\equippable.json
 51482591b1998535e208f6aa3c9e1af70d7dba7a data\minecraft\tags\item\enchantable\chest_armor.json
 72490de4e240edaf73ef95f72d126f0e403e3004 data\minecraft\tags\item\shovels.json

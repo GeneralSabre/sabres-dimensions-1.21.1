@@ -40,7 +40,6 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
 
         getOrCreateTagBuilder(ItemTags.AXES)
                 .add(ModItems.ZALANT_AXE)
-                .add(ModItems.DELETERIUM_AXE)
                 .add(ModItems.PENKAZINE_ALLOY_AXE);
 
         getOrCreateTagBuilder(ItemTags.HOES)
