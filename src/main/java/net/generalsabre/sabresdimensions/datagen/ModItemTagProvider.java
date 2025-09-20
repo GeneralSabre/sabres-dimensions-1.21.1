@@ -27,6 +27,7 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
         getOrCreateTagBuilder(ItemTags.SWORDS)
                 .add(ModItems.ZALANT_SWORD)
+                .add(ModItems.DELETERIUM_SWORD)
                 .add(ModItems.PENKAZINE_ALLOY_SWORD);
 
         getOrCreateTagBuilder(ItemTags.SHOVELS)
@@ -39,6 +40,7 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
 
         getOrCreateTagBuilder(ItemTags.AXES)
                 .add(ModItems.ZALANT_AXE)
+                .add(ModItems.DELETERIUM_AXE)
                 .add(ModItems.PENKAZINE_ALLOY_AXE);
 
         getOrCreateTagBuilder(ItemTags.HOES)
@@ -47,6 +49,7 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
 
         getOrCreateTagBuilder(ItemTags.SWORD_ENCHANTABLE)
                 .add(ModItems.ZALANT_SWORD)
+                .add(ModItems.DELETERIUM_SWORD)
                 .add(ModItems.PENKAZINE_ALLOY_SWORD);
 
         getOrCreateTagBuilder(ItemTags.CROSSBOW_ENCHANTABLE)
@@ -67,6 +70,8 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.ZALANT_CHESTPLATE)
                 .add(ModItems.ZALANT_LEGGINGS)
                 .add(ModItems.ZALANT_BOOTS)
+                .add(ModItems.DELETERIUM_AXE)
+                .add(ModItems.DELETERIUM_SWORD)
                 .add(ModItems.PENKAZINE_ALLOY_HELMET)
                 .add(ModItems.PENKAZINE_ALLOY_CHESTPLATE)
                 .add(ModItems.PENKAZINE_ALLOY_LEGGINGS)
@@ -95,6 +100,7 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
 
         getOrCreateTagBuilder(ItemTags.FIRE_ASPECT_ENCHANTABLE)
                 .add(ModItems.ZALANT_SWORD)
+                .add(ModItems.DELETERIUM_SWORD)
                 .add(ModItems.PENKAZINE_ALLOY_SWORD);
 
         getOrCreateTagBuilder(ItemTags.VANISHING_ENCHANTABLE)
@@ -106,6 +112,8 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.PENKAZINE_ALLOY_SWORD)
                 .add(ModItems.HZC)
                 .add(ModItems.ZALANT_PICKAXE)
+                .add(ModItems.DELETERIUM_SWORD)
+                .add(ModItems.DELETERIUM_AXE)
                 .add(ModItems.PENKAZINE_ALLOY_PICKAXE)
                 .add(ModItems.ZALANT_SHOVEL)
                 .add(ModItems.PENKAZINE_ALLOY_SHOVEL)
@@ -131,6 +139,8 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
         getOrCreateTagBuilder(ItemTags.WEAPON_ENCHANTABLE)
                 .add(ModItems.ZALANT_SWORD)
                 .add(ModItems.PENKAZINE_ALLOY_SWORD)
+                .add(ModItems.DELETERIUM_SWORD)
+                .add(ModItems.DELETERIUM_AXE)
                 .add(ModItems.ZALANT_AXE)
                 .add(ModItems.PENKAZINE_ALLOY_AXE);
 

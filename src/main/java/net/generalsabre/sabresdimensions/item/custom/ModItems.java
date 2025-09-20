@@ -89,6 +89,15 @@ public class ModItems {
     public static final Item ULAU_CLUMP = registerItem("ulau_clump", new Item(new Item.Settings()));
     public static final Item COATED_STRING = registerItem("coated_string", new Item(new Item.Settings()));
 
+    //DELETERIUM
+    public static final Item DELETERIUM_AXE = registerItem("deleterium_axe",
+            new AxeItem(ModToolMaterials.DELETERIUM, new Item.Settings()
+                    .attributeModifiers(AxeItem.createAttributeModifiers(ModToolMaterials.DELETERIUM,7,-3.5f))));
+    public static final Item DELETERIUM_SWORD = registerItem("deleterium_sword",
+            new SwordItem(ModToolMaterials.DELETERIUM, new Item.Settings()
+                    .attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.DELETERIUM,4,-2.2f))));
+
+
     // LUPAMOONE
     public static final Item LUPAMOONE = registerItem("lupamoone", new Item(new Item.Settings()));
     public static final Item LUPAMOONE_PROCESSOR = registerItem("lupamoone_processor", new Item(new Item.Settings()));

@@ -172,7 +172,10 @@ public class ModItemGroups {
                         entries.add(ModItems.CRUSHED_ORAXIUM);
                         entries.add(ModItems.RAW_ORAXIUM);
                         entries.add(ModItems.COOLED_SLAG);
+
                         entries.add(ModItems.DELETERIUM_INGOT);
+                        entries.add(ModItems.DELETERIUM_SWORD);
+                        entries.add(ModItems.DELETERIUM_AXE);
 
                         entries.add(ModBlocks.TARRO_PLANT);
                         entries.add(ModBlocks.GIRADO_WEEDS);

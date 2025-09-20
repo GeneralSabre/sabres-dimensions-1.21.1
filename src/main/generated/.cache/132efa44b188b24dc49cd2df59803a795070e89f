@@ -1,4 +1,4 @@
-// 1.21.1	2025-08-26T10:00:21.8156253	Sabre's Dimensions/Block Loot Tables
+// 1.21.1	2025-09-20T10:30:58.3460995	Sabre's Dimensions/Block Loot Tables
 4f6a78cdda05b1c729e0af1be0597dea383566ec data\sabresdimensions\loot_table\blocks\arakite_button.json
 ff175490b16e6f4b76eacc684ce85a6bd3e5b6f4 data\sabresdimensions\loot_table\blocks\keralan_brick_wall.json
 b129bfde7b8246d29d20cbd8235fd6d28cab289d data\sabresdimensions\loot_table\blocks\polished_arakite_pressure_plate.json
@@ -67,9 +67,9 @@ b93b5f927f8bc94400e5180476402b155f946076 data\sabresdimensions\loot_table\blocks
 ca69f3d587671c55435820b5f110ceb79b24c4bd data\sabresdimensions\loot_table\blocks\girado_soil.json
 6115b30cc29d5189eb21dc55b31f94aac601a981 data\sabresdimensions\loot_table\blocks\stripped_elastau_log.json
 35eb913c53b37adeb5113ecd20f95769faae58ae data\sabresdimensions\loot_table\blocks\kognoli_wood.json
+baa1f0fbe14323385a1e7e91c42a762b4b23c8a6 data\sabresdimensions\loot_table\blocks\stripped_elastau_wood.json
 41478ceec25ab929b9a8ebd60f23fbefa06b0b0f data\sabresdimensions\loot_table\blocks\elastau_planks.json
 e22515ca0680f8b2d7affd45341e1e5654bce124 data\sabresdimensions\loot_table\blocks\alloy_furnace.json
-baa1f0fbe14323385a1e7e91c42a762b4b23c8a6 data\sabresdimensions\loot_table\blocks\stripped_elastau_wood.json
 28949d004027531745c2d0ba8d8aca66e2179e54 data\sabresdimensions\loot_table\blocks\ingot_press.json
 748c0a753ae741544e5f154933e0e14d2827c78a data\sabresdimensions\loot_table\blocks\keralan_brick_stairs.json
 eb493b78dd13f790bae263fbdfc2d51a32d6e04e data\sabresdimensions\loot_table\blocks\couliem_stem.json

@@ -152,9 +152,11 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.ZALANT_INGOT, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.ZALANT_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.DELETERIUM_SWORD, Models.HANDHELD);
         itemModelGenerator.register(ModItems.ZALANT_SHOVEL, Models.HANDHELD);
         itemModelGenerator.register(ModItems.ZALANT_PICKAXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.ZALANT_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.DELETERIUM_AXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.ZALANT_HOE, Models.HANDHELD);
 
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.ZALANT_HELMET));
