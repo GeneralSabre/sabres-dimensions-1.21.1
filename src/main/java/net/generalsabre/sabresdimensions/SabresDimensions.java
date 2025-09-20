@@ -2,7 +2,6 @@ package net.generalsabre.sabresdimensions;
 
 import net.fabricmc.api.ModInitializer;
 
-import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerTickEvents;
 import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
@@ -19,10 +18,8 @@ import net.generalsabre.sabresdimensions.util.ArmorChangeHandler;
 import net.generalsabre.sabresdimensions.util.ModKeyBindings;
 import net.generalsabre.sabresdimensions.util.ModKeyHandler;
 import net.generalsabre.sabresdimensions.util.ModModelPredicates;
-import net.minecraft.registry.Registry;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.util.math.Vec3d;
-import net.minecraft.world.tick.Tick;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
