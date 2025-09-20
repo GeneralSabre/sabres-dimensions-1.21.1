@@ -92,7 +92,7 @@ public class ModItems {
     //DELETERIUM
     public static final Item DELETERIUM_AXE = registerItem("deleterium_axe",
             new AxeItem(ModToolMaterials.DELETERIUM, new Item.Settings()
-                    .attributeModifiers(AxeItem.createAttributeModifiers(ModToolMaterials.DELETERIUM,7,-3.5f))));
+                    .attributeModifiers(AxeItem.createAttributeModifiers(ModToolMaterials.DELETERIUM,9,-3.35f))));
     public static final Item DELETERIUM_SWORD = registerItem("deleterium_sword",
             new SwordItem(ModToolMaterials.DELETERIUM, new Item.Settings()
                     .attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.DELETERIUM,4,-2.2f))));

@@ -31,12 +31,22 @@ public abstract class LivingEntityMixin {
         if (source.getAttacker() instanceof LivingEntity attacker) {
             ItemStack weapon = attacker.getMainHandStack();
 
-            if (weapon.isOf(ModItems.DELETERIUM_INGOT)) {
+            if (weapon.isOf(ModItems.DELETERIUM_SWORD)) {
                 // Loop through armor pieces
                 for (ItemStack armorPiece : self.getArmorItems()) {
                     if (!armorPiece.isEmpty()) {
                         // Extra damage to durability: e.g., +2 durability per hit
-                        armorPiece.damage(100, self, null);
+                        armorPiece.damage(30, self, null);
+                    }
+                }
+            }
+
+            if (weapon.isOf(ModItems.DELETERIUM_AXE)) {
+                // Loop through armor pieces
+                for (ItemStack armorPiece : self.getArmorItems()) {
+                    if (!armorPiece.isEmpty()) {
+                        // Extra damage to durability: e.g., +2 durability per hit
+                        armorPiece.damage(60, self, null);
                     }
                 }
             }

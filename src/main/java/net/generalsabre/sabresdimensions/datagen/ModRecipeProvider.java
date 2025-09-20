@@ -371,17 +371,17 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
         // Penkazine Alloy
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.PENKAZINE_ALLOY_SWORD)
-                .pattern(" P ")
-                .pattern(" P ")
-                .pattern(" S ")
+                .pattern("P")
+                .pattern("P")
+                .pattern("S")
                 .input('P', ModItems.PENKAZINE_ALLOY_INGOT)
                 .input('S', Items.STICK)
                 .criterion(hasItem(ModItems.PENKAZINE_ALLOY_INGOT), conditionsFromItem(ModItems.PENKAZINE_ALLOY_INGOT))
                 .offerTo(recipeExporter);
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.PENKAZINE_ALLOY_SHOVEL)
-                .pattern(" P ")
-                .pattern(" S ")
-                .pattern(" S ")
+                .pattern("P")
+                .pattern("S")
+                .pattern("S")
                 .input('P', ModItems.PENKAZINE_ALLOY_INGOT)
                 .input('S', Items.STICK)
                 .criterion(hasItem(ModItems.PENKAZINE_ALLOY_INGOT), conditionsFromItem(ModItems.PENKAZINE_ALLOY_INGOT))
@@ -395,17 +395,17 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.PENKAZINE_ALLOY_INGOT), conditionsFromItem(ModItems.PENKAZINE_ALLOY_INGOT))
                 .offerTo(recipeExporter);
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.PENKAZINE_ALLOY_AXE)
-                .pattern("PP ")
-                .pattern("PS ")
-                .pattern(" S ")
+                .pattern("PP")
+                .pattern("PS")
+                .pattern(" S")
                 .input('P', ModItems.PENKAZINE_ALLOY_INGOT)
                 .input('S', Items.STICK)
                 .criterion(hasItem(ModItems.PENKAZINE_ALLOY_INGOT), conditionsFromItem(ModItems.PENKAZINE_ALLOY_INGOT))
                 .offerTo(recipeExporter);
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.PENKAZINE_ALLOY_HOE)
-                .pattern("PP ")
-                .pattern(" S ")
-                .pattern(" S ")
+                .pattern("PP")
+                .pattern(" S")
+                .pattern(" S")
                 .input('P', ModItems.PENKAZINE_ALLOY_INGOT)
                 .input('S', Items.STICK)
                 .criterion(hasItem(ModItems.PENKAZINE_ALLOY_INGOT), conditionsFromItem(ModItems.PENKAZINE_ALLOY_INGOT))
@@ -467,6 +467,24 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('M', ModItems.LUPAMOONE)
                 .input('C', Items.COPPER_INGOT)
                 .criterion(hasItem(ModItems.LOGIC_CHIP), conditionsFromItem(ModItems.LOGIC_CHIP))
+                .offerTo(recipeExporter);
+
+        // Deleterium
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.DELETERIUM_SWORD)
+                .pattern("P")
+                .pattern("P")
+                .pattern("S")
+                .input('P', ModItems.DELETERIUM_INGOT)
+                .input('S', Items.STICK)
+                .criterion(hasItem(ModItems.DELETERIUM_INGOT), conditionsFromItem(ModItems.DELETERIUM_INGOT))
+                .offerTo(recipeExporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.DELETERIUM_AXE)
+                .pattern("PPP")
+                .pattern("PSP")
+                .pattern(" S ")
+                .input('P', ModItems.DELETERIUM_INGOT)
+                .input('S', Items.STICK)
+                .criterion(hasItem(ModItems.DELETERIUM_INGOT), conditionsFromItem(ModItems.DELETERIUM_INGOT))
                 .offerTo(recipeExporter);
 
         // Elastau Wood

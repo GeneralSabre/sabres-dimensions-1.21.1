@@ -10,9 +10,9 @@
     }
   },
   "pattern": [
-    "PP ",
-    "PS ",
-    " S "
+    "PP",
+    "PS",
+    " S"
   ],
   "result": {
     "count": 1,
