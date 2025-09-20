@@ -3,7 +3,7 @@
 	"package": "net.generalsabre.sabresdimensions.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
-		"ExampleMixin"
+		"LivingEntityMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1
