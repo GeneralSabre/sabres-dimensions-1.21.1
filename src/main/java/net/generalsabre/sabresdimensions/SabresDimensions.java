@@ -18,6 +18,7 @@ import net.generalsabre.sabresdimensions.util.ArmorChangeHandler;
 import net.generalsabre.sabresdimensions.util.ModKeyBindings;
 import net.generalsabre.sabresdimensions.util.ModKeyHandler;
 import net.generalsabre.sabresdimensions.util.ModModelPredicates;
+import net.generalsabre.sabresdimensions.world.gen.ModWorldGeneration;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.util.math.Vec3d;
 import org.slf4j.Logger;
@@ -49,6 +50,7 @@ public class SabresDimensions implements ModInitializer {
 		ModKeyHandler.registerKeyHandler();
 
 		ModEnchantmentEffects.registerModEnchantmentEffects();
+		ModWorldGeneration.generateModWorldGen();
 
 		StrippableBlockRegistry.register(ModBlocks.ELASTAU_LOG, ModBlocks.STRIPPED_ELASTAU_LOG);
 		StrippableBlockRegistry.register(ModBlocks.ELASTAU_WOOD, ModBlocks.STRIPPED_ELASTAU_WOOD);
