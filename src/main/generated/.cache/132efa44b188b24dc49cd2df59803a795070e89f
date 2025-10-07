@@ -1,4 +1,4 @@
-// 1.21.1	2025-09-20T11:04:17.9215969	Sabre's Dimensions/Block Loot Tables
+// 1.21.1	2025-10-06T16:57:47.7303225	Sabre's Dimensions/Block Loot Tables
 4f6a78cdda05b1c729e0af1be0597dea383566ec data\sabresdimensions\loot_table\blocks\arakite_button.json
 ff175490b16e6f4b76eacc684ce85a6bd3e5b6f4 data\sabresdimensions\loot_table\blocks\keralan_brick_wall.json
 b129bfde7b8246d29d20cbd8235fd6d28cab289d data\sabresdimensions\loot_table\blocks\polished_arakite_pressure_plate.json
@@ -18,6 +18,7 @@ e00ed4833721fad8f6a9211bd6da08c8ead5ecf3 data\sabresdimensions\loot_table\blocks
 19712ec01d85a1d6d9cb026b24e81784282bde01 data\sabresdimensions\loot_table\blocks\dalamine_block.json
 6025f8c8535c3f85dfed97b76dceed052178e68f data\sabresdimensions\loot_table\blocks\dalamine_ore.json
 3ccde51c3e0771e9b63e3efdd9ba7df975a7f3b9 data\sabresdimensions\loot_table\blocks\ulau_block.json
+de432984d79875fd6d834b7a7afcfd0d49f5a73d data\sabresdimensions\loot_table\blocks\sd_pfb.json
 cdf0880080c380d42419befbdbe27b5a9abffe88 data\sabresdimensions\loot_table\blocks\keralan_brick_slab.json
 326d90fe96e2bbec53f3af25f6b8a6458c405f9d data\sabresdimensions\loot_table\blocks\keralan_bricks.json
 516bb1c06489eddec4ff747961423b7fcff363dd data\sabresdimensions\loot_table\blocks\penkaz_block.json

@@ -104,6 +104,7 @@ public class ModItemGroups {
 
                         entries.add(ModBlocks.ULAU_BLOCK);
                         entries.add(ModBlocks.IRP_WEAVE);
+                        entries.add(ModBlocks.SD_PFB);
 
                         entries.add(ModBlocks.CHORAZINE_ORE);
                         entries.add(ModBlocks.CHORAZINE_POWDER_BLOCK);

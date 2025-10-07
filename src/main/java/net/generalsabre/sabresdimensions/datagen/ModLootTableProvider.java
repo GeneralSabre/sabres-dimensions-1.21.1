@@ -64,6 +64,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.PENKAZ_ORE, oreDrops(ModBlocks.PENKAZ_ORE, ModItems.RAW_PENKAZ));
 
         addDrop(ModBlocks.PENKAZINE_ALLOY_BLOCK);
+        addDrop(ModBlocks.SD_PFB);
 
         addDrop(ModBlocks.ULAU_BLOCK);
         addDrop(ModBlocks.IRP_WEAVE);

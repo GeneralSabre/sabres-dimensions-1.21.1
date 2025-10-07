@@ -180,6 +180,9 @@ public class ModBlocks {
     public static final Block INDUSTRIAL_FURNACE = registerBlock("industrial_furnace",
             new IndustrialFurnaceBlock(AbstractBlock.Settings.create().strength(1.0f).hardness(1.0f).requiresTool()));
 
+    public static final Block SD_PFB = registerBlock("sd_pfb",
+            new Block(AbstractBlock.Settings.create().strength(4,12).requiresTool().sounds(BlockSoundGroup.NETHER_BRICKS)));
+
     // Deleterium / Oraxium
     public static final Block ORAXIUM_ORE = registerBlock("oraxium_ore",
             new TranslucentBlock(AbstractBlock.Settings.create().strength(2.5f,2.5f).sounds(BlockSoundGroup.DEEPSLATE).requiresTool()));

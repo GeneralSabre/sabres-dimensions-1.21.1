@@ -69,6 +69,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.PENKAZINE_ALLOY_BLOCK)
                 .add(ModBlocks.LUPAMOONE_BLOCK)
                 .add(ModBlocks.LUPAMOONE_ORE)
+                .add(ModBlocks.SD_PFB)
 
                 .add(ModBlocks.ORAXIUM_ORE)
                 .add(ModBlocks.DELETERIUM_BLOCK)
@@ -118,6 +119,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
         getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL)
                 .add((ModBlocks.ORAXIUM_ORE))
+                .add((ModBlocks.SD_PFB))
                 .add(ModBlocks.KERALAN)
                 .add(ModBlocks.COBBLED_KERALAN)
                 .add(ModBlocks.KERALAN_BUTTON)
